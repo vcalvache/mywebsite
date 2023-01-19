@@ -1,9 +1,4 @@
 ---
-title: "About"
+title: "About me"
 ---
-
-This website has two main purposes:
-
-- Documentation for the Web App Developement course.
-- Use the website as porftolio.
 

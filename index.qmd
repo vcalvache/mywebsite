@@ -1,7 +1,15 @@
 ---
-title: "mywebsite"
+title: "Home"
 ---
 
-This is a Quarto website.
+This website has two main purposes:
+
+- Documentation for the Web App Developement course.
+- Use the website as porftolio.
+
+----
+
+Under construction
+
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
