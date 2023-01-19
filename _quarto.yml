@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "mywebsite"
+  title: "vcalvache"
   navbar:
     left:
       - href: index.qmd
