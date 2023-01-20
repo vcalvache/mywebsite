@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://vcalvache.github.io/mywebsite/javase.html</loc>
-    <lastmod>2023-01-19T12:30:36.508Z</lastmod>
+    <lastmod>2023-01-20T09:38:13.054Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vcalvache.github.io/mywebsite/labs.html</loc>
+    <lastmod>2023-01-20T09:38:13.346Z</lastmod>
   </url>
   <url>
     <loc>https://vcalvache.github.io/mywebsite/about.html</loc>
-    <lastmod>2023-01-19T12:30:36.760Z</lastmod>
+    <lastmod>2023-01-20T09:38:13.638Z</lastmod>
   </url>
   <url>
     <loc>https://vcalvache.github.io/mywebsite/index.html</loc>
-    <lastmod>2023-01-19T12:30:36.992Z</lastmod>
+    <lastmod>2023-01-20T09:38:13.886Z</lastmod>
   </url>
 </urlset>
