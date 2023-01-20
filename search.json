@@ -2,9 +2,9 @@
   {
     "objectID": "javase.html",
     "href": "javase.html",
-    "title": "vcalvache",
+    "title": "Java SE",
     "section": "",
-    "text": "This section will cover some of the Java particularities. Principles, concepts, desing heat sheets and even how-to’s. So you can have a quick and accesible consulting guide."
+    "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA)."
   },
   {
     "objectID": "labs.html",
