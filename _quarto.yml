@@ -1,20 +1,36 @@
 project:
   type: website
 
+format:
+  html:
+    fontsize:  "1.0em"
+    theme:
+      light: cosmo
+      dark: slate
+    css: styles.css
+    toc: true
+    toc-depth: 5
+    email-obfuscation: javascript
+    smooth-scroll: true
+    #backgroundcolor: black
+    code-link: true
+    #code-block-bg: "#29465B"
+    code-line-numbers: "true"
+    code-overflow: "wrap" 
+
 website:
   title: "vcalvache"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
-      - javase.qmd
+      - href: about.qmd
+        text: About me
+      - href: javase.qmd
+        text: Java SE
+      - href: labs.qmd
+        text: Labs
 
-format:
-  html:
-    theme: cosmo
-    css: styles.css
-    toc: true
 
 
 
