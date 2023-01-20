@@ -1,1 +1,15 @@
-This section will cover some of the Java particularities. Principles, concepts, desing heat sheets and even how-to's. So you can have a quick and accesible consulting guide.
+---
+title: "Java SE"
+subtitle: Java Fundamentals and concepts
+author: vcalvache
+categories: [Java SE, basics, concepts]
+toc: true
+format:
+  html
+---
+
+## What is java?
+
+Java was originally developed by James Gosling. It was released in May 1995.
+
+Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).
