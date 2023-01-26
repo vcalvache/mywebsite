@@ -4,7 +4,14 @@
     "href": "javase.html",
     "title": "Java SE",
     "section": "",
-    "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA)."
+    "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).\nYou can install Java SE for free at: https://www.oracle.com/java/technologies/java-se-glance.html"
+  },
+  {
+    "objectID": "javase.html#java-primitive-data-types",
+    "href": "javase.html#java-primitive-data-types",
+    "title": "Java SE",
+    "section": "Java Primitive Data Types",
+    "text": "Java Primitive Data Types\n\n\n\n\n\n\n\n\n\n\n\ndata Type\nSize\nDescription\nDeclaration example\n\n\n\n\n\nbyte\n1 byte\nStores whole number from -128 to 127\nbyte variableName = value;\n\n\n\nshort\n2 bytes\nStores whole numbers from -32,768 to 32,767\nshort variableName = value;\n\n\n\nint\n4 bytes\nStores whole numbers from -2,147,483,648 to 2,147,483,647\nint variableName = value;\n\n\n\nlong\n8 bytes\nStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\nlong variableName = value;\n\n\n\nfloat\n4 bytes\nStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\nfloat variableName = number.deciaml\n\n\n\ndouble\n8 bytes\nStores fractional numbers. Sufficient for storing 15 decimal digits\ndouble variableName = number.decimal\n\n\n\nboolean\n1 bit\nStores true or false values\nboolean variableName = true/false\n\n\n\nchar\n2 bytes\nStores a single character/letter or ASCII values\nchar varaibleName = ‘b’ or 98"
   },
   {
     "objectID": "labs.html",
