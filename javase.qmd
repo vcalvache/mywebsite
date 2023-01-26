@@ -6,6 +6,7 @@ categories: [Java SE, basics, concepts]
 toc: true
 format:
   html
+code-annotations: false
 ---
 
 ## What is java?
@@ -13,3 +14,35 @@ format:
 Java was originally developed by James Gosling. It was released in May 1995.
 
 Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).
+
+You can install Java SE for free at: <a href="url">https://www.oracle.com/java/technologies/java-se-glance.html</a>
+---
+
+
+## Java Primitive Data Types
+
+::: {.column-page-right}
+| data Type  | Size | Description | Declaration example |
+| -- | -- | -- | -- | -- |
+| byte | 1 byte | Stores whole number from -128 to 127 | byte variableName = value; |
+| short | 2 bytes | Stores whole numbers from -32,768 to 32,767 | short variableName = value; |
+| int | 4 bytes | Stores whole numbers from -2,147,483,648 to 2,147,483,647 | int variableName = value; |
+| long | 8 bytes | 	Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | long variableName = value;
+| float | 4 bytes | 	Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits | float variableName = number.deciaml |
+| double | 8 bytes | Stores fractional numbers. Sufficient for storing 15 decimal digits | double variableName = number.decimal |
+| boolean | 1 bit | Stores true or false values | boolean variableName = true/false |
+| char | 2 bytes | 	Stores a single character/letter or ASCII values |  char varaibleName = 'b' or 98 |
+
+:::
+
+# Java Non-primitive Data Types
+
+::: {.column-page-right}
+| data Type | Description | Declaration example |
+| -- | -- | -- | -- |
+| String | Contains a collection of characters surrounded by double quotes  | String variabmeName = "Hello"; |
+| Arrays | Stores multipe variables of the same type in a single variable.  | variableType[] variableName; |
+| Clases | Everything in java is associated with a classes and objects with it's own attributes and methods  | public class className {} |
+| Interface| Is a blueprint of a class. It contains static constants and abstract methods. | interface &lt;interfaceName>{ } |
+
+:::
