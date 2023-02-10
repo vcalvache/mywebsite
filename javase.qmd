@@ -15,12 +15,13 @@ Java was originally developed by James Gosling. It was released in May 1995.
 
 Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).
 
-You can install Java SE for free at:
+You can install Java SE for free here:
+
 <a href="url">https://www.oracle.com/java/technologies/java-se-glance.html</a>
 ---
 
 
-## Java Primitive Data Types
+### Java Primitive Data Types
 
 ::: {.column-page-right}
 | data Type  | Size | Description | Declaration example |

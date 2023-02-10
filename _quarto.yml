@@ -21,14 +21,14 @@ format:
 website:
   title: "vcalvache"
   navbar:
-    left:
-      - href: index.qmd
+    right:
+      - file: index.qmd
         text: Home
-      - href: about.qmd
+      - file: about.qmd
         text: About me
-      - href: javase.qmd
+      - file: javase.qmd
         text: Java SE
-      - href: labs.qmd
+      - file: labs.qmd
         text: Labs
 
 

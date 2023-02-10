@@ -1,0 +1,21 @@
+---
+title: "Lab#SE02-1: Movie/Review, Model"
+subtitle: Java SE Lab 02 part 1
+author: vcalvache
+date: "10/02/2023"
+date-modified: last-modified
+date-format: full
+description:  Java SE Lab 02, part 1 work on the Model
+categories: [javase, lab, composition, model]
+toc: true
+number-sections: true
+format:
+  html
+---
+
+### Goal
+
+The goal of this project consist on creating different Java classes to define the Model.
+
+### Tasks
+
