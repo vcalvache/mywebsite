@@ -1,5 +1,6 @@
 ---
 title: "Home"
+sidebar: false
 ---
 
 This website has two main purposes:
