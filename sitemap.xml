@@ -1,19 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vcalvache.github.io/mywebsite/javase.html</loc>
-    <lastmod>2023-01-26T08:59:36.118Z</lastmod>
+    <loc>https://vcalvache.github.io/mywebsite/lab_se02_1.html</loc>
+    <lastmod>2023-02-12T18:04:49.448Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vcalvache.github.io/mywebsite/lab_se02_2.html</loc>
+    <lastmod>2023-02-12T18:04:49.748Z</lastmod>
   </url>
   <url>
     <loc>https://vcalvache.github.io/mywebsite/labs.html</loc>
-    <lastmod>2023-01-26T08:59:36.390Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vcalvache.github.io/mywebsite/about.html</loc>
-    <lastmod>2023-01-26T08:59:36.642Z</lastmod>
+    <lastmod>2023-02-12T18:04:50.015Z</lastmod>
   </url>
   <url>
     <loc>https://vcalvache.github.io/mywebsite/index.html</loc>
-    <lastmod>2023-01-26T08:59:36.894Z</lastmod>
+    <lastmod>2023-02-12T18:04:50.290Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vcalvache.github.io/mywebsite/javase.html</loc>
+    <lastmod>2023-02-12T18:04:50.650Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vcalvache.github.io/mywebsite/about.html</loc>
+    <lastmod>2023-02-12T18:04:50.915Z</lastmod>
   </url>
 </urlset>

@@ -61,13 +61,12 @@ ul.task-list li input[type="checkbox"] {
     "search-submit-button-title": "Submit"
   }
 }</script>
-<style>html{ scroll-behavior: smooth; }</style>
 
 
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-sidebar docked nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -82,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link" href="./index.html">
  <span class="menu-text">Home</span></a>
@@ -107,18 +106,44 @@ ul.task-list li input[type="checkbox"] {
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Java SE</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lab_se02_1.html" class="sidebar-item-text sidebar-link">Lab#SE02-1: Movie/Review, Model</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./lab_se02_2.html" class="sidebar-item-text sidebar-link">lab_se02_2.html</a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#what-is-java" id="toc-what-is-java" class="nav-link active" data-scroll-target="#what-is-java">What is java?</a></li>
+  <li><a href="#what-is-java" id="toc-what-is-java" class="nav-link active" data-scroll-target="#what-is-java">What is java?</a>
+  <ul class="collapse">
   <li><a href="#java-primitive-data-types" id="toc-java-primitive-data-types" class="nav-link" data-scroll-target="#java-primitive-data-types">Java Primitive Data Types</a></li>
+  </ul></li>
   <li><a href="#java-non-primitive-data-types" id="toc-java-non-primitive-data-types" class="nav-link" data-scroll-target="#java-non-primitive-data-types">Java Non-primitive Data Types</a></li>
   </ul>
 </nav>
@@ -128,7 +153,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Java SE</h1>
+<h1 class="title d-none d-lg-block">Java SE</h1>
 <p class="subtitle lead">Java Fundamentals and concepts</p>
   <div class="quarto-categories">
     <div class="quarto-category">Java SE</div>
@@ -155,15 +180,15 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="what-is-java" class="level2">
+<section id="what-is-java" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="what-is-java">What is java?</h2>
 <p>Java was originally developed by James Gosling. It was released in May 1995.</p>
 <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).</p>
-<p>You can install Java SE for free at: <a href="url">https://www.oracle.com/java/technologies/java-se-glance.html</a></p>
+<p>You can install Java SE for free here:</p>
+<p><a href="url">https://www.oracle.com/java/technologies/java-se-glance.html</a></p>
 <hr>
-</section>
-<section id="java-primitive-data-types" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="java-primitive-data-types">Java Primitive Data Types</h2>
+<section id="java-primitive-data-types" class="level3 page-columns page-full">
+<h3 class="anchored" data-anchor-id="java-primitive-data-types">Java Primitive Data Types</h3>
 <div class="column-page-right">
 <table class="table">
 <colgroup>
@@ -242,6 +267,7 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </div>
+</section>
 </section>
 <section id="java-non-primitive-data-types" class="level1 page-columns page-full">
 <h1>Java Non-primitive Data Types</h1>
@@ -546,5 +572,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
