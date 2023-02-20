@@ -1,10 +1,10 @@
 [
   {
-    "objectID": "lab_se02_1.html",
-    "href": "lab_se02_1.html",
-    "title": "Lab#SE02-1: Movie/Review, Model",
+    "objectID": "javase.html",
+    "href": "javase.html",
+    "title": "Java SE",
     "section": "",
-    "text": "0.1 Goal\nThe goal of this project consist on creating different Java classes to define the Model.\n\n\n0.2 Tasks"
+    "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).\nYou can install Java SE for free here:\nhttps://www.oracle.com/java/technologies/java-se-glance.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata Type\nSize\nDescription\nDeclaration example\n\n\n\n\n\nbyte\n1 byte\nStores whole number from -128 to 127\nbyte variableName = value;\n\n\n\nshort\n2 bytes\nStores whole numbers from -32,768 to 32,767\nshort variableName = value;\n\n\n\nint\n4 bytes\nStores whole numbers from -2,147,483,648 to 2,147,483,647\nint variableName = value;\n\n\n\nlong\n8 bytes\nStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\nlong variableName = value;\n\n\n\nfloat\n4 bytes\nStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\nfloat variableName = number.deciaml\n\n\n\ndouble\n8 bytes\nStores fractional numbers. Sufficient for storing 15 decimal digits\ndouble variableName = number.decimal\n\n\n\nboolean\n1 bit\nStores true or false values\nboolean variableName = true/false\n\n\n\nchar\n2 bytes\nStores a single character/letter or ASCII values\nchar varaibleName = ‘b’ or 98"
   },
   {
     "objectID": "labs.html",
@@ -14,17 +14,24 @@
     "text": "This section will gather different labs from the course."
   },
   {
+    "objectID": "lab_se02_1.html",
+    "href": "lab_se02_1.html",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "",
+    "text": "The goal of this project consist on creating different Java classes to define the Model of a project based on Movie Reviews."
+  },
+  {
+    "objectID": "lab_se02_1.html#tasks",
+    "href": "lab_se02_1.html#tasks",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "2 Tasks",
+    "text": "2 Tasks\n\nCreate a Java SE Project with Maven.\nAdd dependencies: + Junit + Java Faker + Lombok\nCreate the following Java classes:\n\nMovie: represents a movie that is going to be reviewed. Should have this attributes:\n\ntitle\nreviews\nCritic\n\nCritic: is the one who will write reviews. Their attributes:\n\nname\nReview\n\nReview: is written by the critic and belongs to the movie. Theis attributes:\n\nMovie\nCritic\nrating\ncomment\n\n\nCreate unitary tests wit Junit.\nAdd new feature once all the test are passed."
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
     "section": "",
     "text": "This website has two main purposes:\n\nDocumentation for the Web App Developement course.\nUse the website as porftolio.\n\n\nUnder construction\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
-  },
-  {
-    "objectID": "javase.html",
-    "href": "javase.html",
-    "title": "Java SE",
-    "section": "",
-    "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).\nYou can install Java SE for free here:\nhttps://www.oracle.com/java/technologies/java-se-glance.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata Type\nSize\nDescription\nDeclaration example\n\n\n\n\n\nbyte\n1 byte\nStores whole number from -128 to 127\nbyte variableName = value;\n\n\n\nshort\n2 bytes\nStores whole numbers from -32,768 to 32,767\nshort variableName = value;\n\n\n\nint\n4 bytes\nStores whole numbers from -2,147,483,648 to 2,147,483,647\nint variableName = value;\n\n\n\nlong\n8 bytes\nStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\nlong variableName = value;\n\n\n\nfloat\n4 bytes\nStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\nfloat variableName = number.deciaml\n\n\n\ndouble\n8 bytes\nStores fractional numbers. Sufficient for storing 15 decimal digits\ndouble variableName = number.decimal\n\n\n\nboolean\n1 bit\nStores true or false values\nboolean variableName = true/false\n\n\n\nchar\n2 bytes\nStores a single character/letter or ASCII values\nchar varaibleName = ‘b’ or 98"
   }
 ]

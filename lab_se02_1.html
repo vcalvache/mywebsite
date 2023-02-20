@@ -141,8 +141,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#goal" id="toc-goal" class="nav-link active" data-scroll-target="#goal"><span class="toc-section-number">0.1</span>  Goal</a></li>
-  <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks"><span class="toc-section-number">0.2</span>  Tasks</a></li>
+  <li><a href="#goal" id="toc-goal" class="nav-link active" data-scroll-target="#goal"><span class="toc-section-number">1</span>  <strong>Goal</strong></a></li>
+  <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks"><span class="toc-section-number">2</span>  <strong>Tasks</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -187,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">Sunday, February 12, 2023</p>
+      <p class="date-modified">Monday, February 20, 2023</p>
     </div>
   </div>
     
@@ -196,12 +196,41 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="goal" class="level3" data-number="0.1">
-<h3 data-number="0.1" class="anchored" data-anchor-id="goal"><span class="header-section-number">0.1</span> Goal</h3>
-<p>The goal of this project consist on creating different Java classes to define the Model.</p>
+<section id="goal" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="goal"><span class="header-section-number">1</span> <strong>Goal</strong></h2>
+<p>The goal of this project consist on creating different Java classes to define the Model of a project based on Movie Reviews.</p>
+<hr>
 </section>
-<section id="tasks" class="level3" data-number="0.2">
-<h3 data-number="0.2" class="anchored" data-anchor-id="tasks"><span class="header-section-number">0.2</span> Tasks</h3>
+<section id="tasks" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="tasks"><span class="header-section-number">2</span> <strong>Tasks</strong></h2>
+<ul>
+<li><p>Create a Java SE Project with Maven.</p></li>
+<li><p>Add dependencies: + Junit + Java Faker + Lombok</p></li>
+<li><p>Create the following Java classes:</p>
+<ul>
+<li>Movie: represents a movie that is going to be reviewed. Should have this attributes:
+<ul>
+<li>title</li>
+<li>reviews</li>
+<li>Critic</li>
+</ul></li>
+<li>Critic: is the one who will write reviews. Their attributes:
+<ul>
+<li>name</li>
+<li>Review</li>
+</ul></li>
+<li>Review: is written by the critic and belongs to the movie. Theis attributes:
+<ul>
+<li>Movie</li>
+<li>Critic</li>
+<li>rating</li>
+<li>comment</li>
+</ul></li>
+</ul></li>
+<li><p>Create unitary tests wit Junit.</p></li>
+<li><p>Add new feature once all the test are passed.</p></li>
+</ul>
+<hr>
 
 
 </section>
