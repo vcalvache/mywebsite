@@ -13,9 +13,37 @@ format:
   html
 ---
 
-### Goal
+## **Goal**
 
-The goal of this project consist on creating different Java classes to define the Model.
+The goal of this project consist on creating different Java classes to define the Model of a project based on Movie Reviews.
 
-### Tasks
+---
 
+## **Tasks**
+
+- Create a Java SE Project with Maven.
+
+- Add dependencies:
+      + Junit
+      + Java Faker
+      + Lombok
+
+- Create the following Java classes:
+  - Movie: represents a movie that is going to be reviewed. Should have this attributes:
+    - title
+    - reviews
+    - Critic
+  - Critic: is the one who will write reviews. Their attributes:
+    - name
+    - Review
+  - Review: is written by the critic and belongs to the movie. Theis attributes:
+    - Movie
+    - Critic
+    - rating
+    - comment
+
+- Create unitary tests wit Junit.
+
+- Add new feature once all the test are passed.
+
+---
