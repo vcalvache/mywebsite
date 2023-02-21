@@ -281,5 +281,49 @@ ___
 
 ## **Expanding UML and adding new features**
 
-Now that we have our core classes ready and tested, it's time to prive new features. This will change the first UML that worked as some sort of a draft.
+Now that we have our core classes ready and tested, it's time to add new features. This will change the first UML that worked as some sort of a draft.
 
+<div class="mermaidContent">
+```{mermaid}
+%%| fig-width: 5.5
+classDiagram
+  class Movie {
+    - title: String
+    - reviews: ArrayList Review
+    - awards: ArrayList Awards
+  }
+
+  class Review {
+    - movie: Movie
+    - critic: Critic
+    - rating: int
+    - comment: String
+  }
+
+  class Person{
+    - name: String
+  }
+
+  class Director extends Person{
+    - movies: ArrayList Movie
+  }
+
+  class Critic extends Person{
+    - reviews: ArrayList Review
+  }
+
+  class Awards{
+    - oscars: Set Oscar
+  }
+
+  class Oscar extends Awards{
+    - Boolean won
+  }
+  Movie *-- Review : Composition
+  Review o-- Critic extends Person : Aggregation
+  Movie *-- Awards : Composition
+  Awards <|-- Oscar extends Awards : Inheritance
+  Person <|-- Director extends Person : Inheritance
+  Person <|-- Critic extends Person : Inheritance
+```
+</div>
