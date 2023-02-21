@@ -17,7 +17,7 @@ format:
 
 The goal of this project consist on creating different Java classes to define the Model of a project based on Movie Reviews.
 
----
+___
 
 ## **Tasks**
 
@@ -46,7 +46,7 @@ The goal of this project consist on creating different Java classes to define th
 
 - Add new feature once all the test are passed.
 
----
+___
 
 ## **Adding dependencies**
 
@@ -112,3 +112,170 @@ classDiagram
   Review o-- Critic
 ```
 
+___
+
+##  **Creating classes**
+
+Proceeding with the tasks given, now it's time to create the classes as per the UML designed.
+
+The first class to be created is the Movie class. Lombok is used to create two constructors, one will al arguments, and another with no arguments (will allow to create empty objects).
+A third constructor is created. This constructor only needs a String whit the movie name.
+```{.java .code-overflow-wrap filename="Movie.java"}
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Movie {
+    // first approach for Movie class
+    private String movieName;
+    private ArrayList<Review> reviews;
+    private Critic critic;
+
+    public Movie(String movieName){
+        this.movieName = movieName;
+    }
+}
+
+```
+Critic class is the same as the Movie class. Lombok creates two constructors and a third one that will allow creating Critic objects only with the criticName.
+
+```{.java .code-overflow-wrap filename="Critic.java"}
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Critic {
+    //first approach for Critic class
+    private String criticName;
+    private Review review;
+
+    public Critic(String criticName){
+        this.criticName = criticName;
+    }
+}
+```
+The Review class works only with two constructors, with all the arguments or without any. This way Reviews can only be created if i have all the parameters or empty, so it can be setted later in case that all the parameters doesn't exist yet.
+```{.java .code-overflow-wrap filename="Review.java"}
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Review {
+    // First approach for Review class
+    private Movie movie;
+    private Critic critic;
+    private int rating;
+    private String comment;
+}
+```
+___
+## **First tests**
+
+With the classes already created it's time to run the first test.
+
+This first test consists on manually creating a Critic object, sets the name, prints it on screen and using assertEquals and assertNotEquals to compare both results, true and false.
+
+```{.java .code-overflow-wrap filename="CriticTest.java"}
+public class CriticTest {
+
+    @Test
+    public void createCriticObjectTest(){
+      // Manually creating a Critic object.
+      Critic critic = new Critic();
+      critic.setCriticName("Victor");
+      System.out.println(critic.getCriticName());
+      // assertEquals and assertNotEquals testing
+      assertEquals("Victor", critic.getCriticName());
+      assertNotEquals("Paco", critic.getCriticName());
+    }
+}
+```
+
+This second test uses the Faker library. First, a Movie object is created passing the movie name as a parameter when creating. 
+Then, a faker object is created and will be used so declare a String with fake data.
+Then, an assertEquals and assertNotEquals compares are called.
+```{.java .code-overflow-wrap filename="MovieTest.java"}
+public class MovieTests {
+
+    @Test
+    public void createMovieObjectTest(){
+      // Manually creating a movie object.
+      Movie alien = new Movie("Alien");
+      Faker faker = new Faker();
+      String name = faker.twinPeaks().character();
+      // assertEquals and assertNotEquals testing
+      assertEquals("Alien", alien.getMovieName());
+      assertNotEquals("Alien", name);
+    }
+}
+```
+
+The ReviewTest class consist on manually creating a Movie object, a Critic object. 
+When creating a Review object, all parameters are given on the creation of the object.
+Again, assertEquals and assertNotEquals compares the expected output with the actual output.
+```{.java .code-overflow-wrap filename="ReviewTest.java"}
+public class ReviewTest {
+
+    @Test
+    public void createReviewObjectTest(){
+        //Creating a review and set comment manually.
+        Movie alien = new Movie("Alien");
+        Critic victor = new Critic("Victor");
+        Review alienReview = new Review(alien, victor, 5, "Must see");
+        // assertEquals and assertNotEquals testing
+        assertEquals("Must see", alienReview.getComment());
+        assertNotEquals("Predator", alienReview.getMovie().getMovieName());
+    }
+}
+```
+
+This last test is made on the AppTest clases, to test the workflow of our program.
+First, empty objects are created. 
+The next block of code fakes parameters.
+The third block of code sets all the faked parameters created.
+Note that on the setting parameters for the movie object, first we add a Review object to an ArrayList, and then is setted as a parameter.
+
+And lastly, the expected output and the actual output is tested with assertEquals and assertNotEquals testing.
+```{.java .code-overflow-wrap filename="AppTest.java"}
+public class AppTest
+{
+   @Test
+    public void creatingMoviesAndReviewsTest(){
+      // creating empty objects
+       Faker faker = new Faker();
+       Random random = new Random();
+       Critic boyero = new Critic();
+       Movie alien = new Movie();
+       Review alienReview = new Review();
+       ArrayList<Review> allAlienReviews = new ArrayList<>();
+
+       // faking params
+       String criticName= faker.twinPeaks().character();
+       String textOfReview = faker.twinPeaks().quote();
+       String movieName = faker.twinPeaks().location();
+       int rating = random.nextInt(1, 5);
+
+       //setting critic params
+       boyero.setCriticName(criticName);
+       boyero.setReview(alienReview);
+
+       //setting review params
+       alienReview.setCritic(boyedo);
+       alienReview.setComment(textOfReview);
+       alienReview.setRating(rating);
+       alienReview.setMovie(alien);
+
+       //setting movie params
+       allAlienReviews.add(alienReview);
+       alien.setCritic(boyero);
+       alien.setMovieName(movieName);
+       alien.setReviews(allAlienReviews);
+
+       // testing equals and not equals.
+       assertEquals(movieName, alien.getMovieName());
+       assertNotEquals("Gladiator", alien.getMovieName());
+       System.out.println(textOfReview);
+
+       assertEquals(textOfReview, alien.getReviews().get(0).getComment());
+       assertNotEquals("text", alien.getReviews().get(0).getComment());
+   }
+}
+```
+___
