@@ -279,3 +279,8 @@ public class AppTest
 }
 ```
 ___
+
+## **Expanding UML and adding new features**
+
+Now that we have our core classes ready and tested, it's time to prive new features. This will change the first UML that worked as some sort of a draft.
+
