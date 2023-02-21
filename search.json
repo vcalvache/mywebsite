@@ -46,7 +46,7 @@
     "href": "lab_se02_1.html#expanding-uml-and-adding-new-features",
     "title": "Lab#SE02-1: Movie/Review, Model",
     "section": "7 Expanding UML and adding new features",
-    "text": "7 Expanding UML and adding new features\nNow that we have our core classes ready and tested, it’s time to prive new features. This will change the first UML that worked as some sort of a draft."
+    "text": "7 Expanding UML and adding new features\nNow that we have our core classes ready and tested, it’s time to add new features. This will change the first UML that worked as some sort of a draft.\n\n\n\n\n\nclassDiagram\n  class Movie {\n    - title: String\n    - reviews: ArrayList Review\n    - awards: ArrayList Awards\n  }\n\n  class Review {\n    - movie: Movie\n    - critic: Critic\n    - rating: int\n    - comment: String\n  }\n\n  class Person{\n    - name: String\n  }\n\n  class Director extends Person{\n    - movies: ArrayList Movie\n  }\n\n  class Critic extends Person{\n    - reviews: ArrayList Review\n  }\n\n  class Awards{\n    - oscars: Set Oscar\n  }\n\n  class Oscar extends Awards{\n    - Boolean won\n  }\n  Movie *-- Review : Composition\n  Review o-- Critic extends Person : Aggregation\n  Movie *-- Awards : Composition\n  Awards <|-- Oscar extends Awards : Inheritance\n  Person <|-- Director extends Person : Inheritance\n  Person <|-- Critic extends Person : Inheritance"
   },
   {
     "objectID": "labs.html",

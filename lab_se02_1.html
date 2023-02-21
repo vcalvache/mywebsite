@@ -550,7 +550,60 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </section>
 <section id="expanding-uml-and-adding-new-features" class="level2" data-number="7">
 <h2 data-number="7" class="anchored" data-anchor-id="expanding-uml-and-adding-new-features"><span class="header-section-number">7</span> <strong>Expanding UML and adding new features</strong></h2>
-<p>Now that we have our core classes ready and tested, it’s time to prive new features. This will change the first UML that worked as some sort of a draft.</p>
+<p>Now that we have our core classes ready and tested, it’s time to add new features. This will change the first UML that worked as some sort of a draft.</p>
+<div class="mermaidContent">
+<div class="cell" data-fig-width="5.5">
+<div class="cell-output-display">
+<div>
+<p>
+</p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-2">classDiagram
+  class Movie {
+    - title: String
+    - reviews: ArrayList Review
+    - awards: ArrayList Awards
+  }
+
+  class Review {
+    - movie: Movie
+    - critic: Critic
+    - rating: int
+    - comment: String
+  }
+
+  class Person{
+    - name: String
+  }
+
+  class Director extends Person{
+    - movies: ArrayList Movie
+  }
+
+  class Critic extends Person{
+    - reviews: ArrayList Review
+  }
+
+  class Awards{
+    - oscars: Set Oscar
+  }
+
+  class Oscar extends Awards{
+    - Boolean won
+  }
+  Movie *-- Review : Composition
+  Review o-- Critic extends Person : Aggregation
+  Movie *-- Awards : Composition
+  Awards &lt;|-- Oscar extends Awards : Inheritance
+  Person &lt;|-- Director extends Person : Inheritance
+  Person &lt;|-- Critic extends Person : Inheritance
+</pre>
+<div id="mermaid-tooltip-2" class="mermaidTooltip">
+
+</div>
+<p></p>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>
