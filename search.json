@@ -28,6 +28,20 @@
     "text": "2 Tasks\n\nCreate a Java SE Project with Maven.\nAdd dependencies: + Junit + Java Faker + Lombok\nCreate the following Java classes:\n\nMovie: represents a movie that is going to be reviewed. Should have this attributes:\n\ntitle\nreviews\nCritic\n\nCritic: is the one who will write reviews. Their attributes:\n\nname\nReview\n\nReview: is written by the critic and belongs to the movie. Theis attributes:\n\nMovie\nCritic\nrating\ncomment\n\n\nCreate unitary tests wit Junit.\nAdd new feature once all the test are passed."
   },
   {
+    "objectID": "lab_se02_1.html#adding-dependencies",
+    "href": "lab_se02_1.html#adding-dependencies",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "3 Adding dependencies",
+    "text": "3 Adding dependencies\nAfter creating the Maven project, the first step consist in adding the dependencies to the pom.xml project.\nThe desires dependencies can be found on the Maven Repository link:\nOn the code below, Junit, Lombok and Java Faker has been added.\n\n\npom.xml\n\n  <dependencies>\n    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->\n    <dependency>\n      <groupId>org.projectlombok</groupId>\n      <artifactId>lombok</artifactId>\n      <version>1.18.26</version>\n      <scope>provided</scope>\n    </dependency>\n    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->\n    <dependency>\n      <groupId>org.junit.jupiter</groupId>\n      <artifactId>junit-jupiter-api</artifactId>\n      <version>5.9.2</version>\n      <scope>test</scope>\n    </dependency>\n    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->\n    <dependency>\n      <groupId>com.github.javafaker</groupId>\n      <artifactId>javafaker</artifactId>\n      <version>1.0.2</version>\n    </dependency>\n\n  </dependencies>"
+  },
+  {
+    "objectID": "lab_se02_1.html#first-uml",
+    "href": "lab_se02_1.html#first-uml",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "4 First UML",
+    "text": "4 First UML\nAs a first approach to start working on, the UML is based on the following rules:\n\nThe Movie Class is designed where an object movie can has different reviews.\nCritic create objects for the Review class of a movie object.\nThe Review class depends on the Critic class and belongs to a movie object.\n\nOn this design we can see that the Movie class will have a multiplicity with the Critic class (since a movie can be reviewed by different critics). Also, the Critic class will has a multiplicity relationship wit the review class because a critic object can has multiple reviews of different movies.\n\n\n\n\nclassDiagram\n  class Movie {\n    -title: String\n    -reviews: Set<Review>\n  }\n  class Critic {\n    -name: String\n  }\n  class Review {\n    -movie: Movie\n    -critic: Critic\n    -rating: int\n    -comment: String\n  }\n  Movie *-- Review\n  Review o-- Critic"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Home",
