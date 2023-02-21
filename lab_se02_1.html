@@ -211,6 +211,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks"><span class="toc-section-number">2</span>  <strong>Tasks</strong></a></li>
   <li><a href="#adding-dependencies" id="toc-adding-dependencies" class="nav-link" data-scroll-target="#adding-dependencies"><span class="toc-section-number">3</span>  <strong>Adding dependencies</strong></a></li>
   <li><a href="#first-uml" id="toc-first-uml" class="nav-link" data-scroll-target="#first-uml"><span class="toc-section-number">4</span>  <strong>First UML</strong></a></li>
+  <li><a href="#creating-classes" id="toc-creating-classes" class="nav-link" data-scroll-target="#creating-classes"><span class="toc-section-number">5</span>  <strong>Creating classes</strong></a></li>
+  <li><a href="#first-tests" id="toc-first-tests" class="nav-link" data-scroll-target="#first-tests"><span class="toc-section-number">6</span>  <strong>First tests</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -371,6 +373,177 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </div>
+<hr>
+</section>
+<section id="creating-classes" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="creating-classes"><span class="header-section-number">5</span> <strong>Creating classes</strong></h2>
+<p>Proceeding with the tasks given, now it’s time to create the classes as per the UML designed.</p>
+<p>The first class to be created is the Movie class. Lombok is used to create two constructors, one will al arguments, and another with no arguments (will allow to create empty objects). A third constructor is created. This constructor only needs a String whit the movie name.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Movie.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">@AllArgsConstructor</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">@NoArgsConstructor</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> Movie <span class="op">{</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">// first approach for Movie class</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> <span class="bu">String</span> movieName<span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> <span class="bu">ArrayList</span><span class="op">&lt;</span>Review<span class="op">&gt;</span> reviews<span class="op">;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> Critic critic<span class="op">;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="fu">Movie</span><span class="op">(</span><span class="bu">String</span> movieName<span class="op">){</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">.</span><span class="fu">movieName</span> <span class="op">=</span> movieName<span class="op">;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Critic class is the same as the Movie class. Lombok creates two constructors and a third one that will allow creating Critic objects only with the criticName.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Critic.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Data</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="at">@AllArgsConstructor</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="at">@NoArgsConstructor</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> Critic <span class="op">{</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">//first approach for Critic class</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> <span class="bu">String</span> criticName<span class="op">;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> Review review<span class="op">;</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="fu">Critic</span><span class="op">(</span><span class="bu">String</span> criticName<span class="op">){</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">.</span><span class="fu">criticName</span> <span class="op">=</span> criticName<span class="op">;</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The Review class works only with two constructors, with all the arguments or without any. This way Reviews can only be created if i have all the parameters or empty, so it can be setted later in case that all the parameters doesn’t exist yet.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Review.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="at">@AllArgsConstructor</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="at">@NoArgsConstructor</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> Review <span class="op">{</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">// First approach for Review class</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> Movie movie<span class="op">;</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> Critic critic<span class="op">;</span></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> <span class="dt">int</span> rating<span class="op">;</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> <span class="bu">String</span> comment<span class="op">;</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+</section>
+<section id="first-tests" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="first-tests"><span class="header-section-number">6</span> <strong>First tests</strong></h2>
+<p>With the classes already created it’s time to run the first test.</p>
+<p>This first test consists on manually creating a Critic object, sets the name, prints it on screen and using assertEquals and assertNotEquals to compare both results, true and false.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>CriticTest.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> CriticTest <span class="op">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">createCriticObjectTest</span><span class="op">(){</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>      <span class="co">// Manually creating a Critic object.</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>      Critic critic <span class="op">=</span> <span class="kw">new</span> <span class="fu">Critic</span><span class="op">();</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>      critic<span class="op">.</span><span class="fu">setCriticName</span><span class="op">(</span><span class="st">"Victor"</span><span class="op">);</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>      <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span>critic<span class="op">.</span><span class="fu">getCriticName</span><span class="op">());</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>      <span class="co">// assertEquals and assertNotEquals testing</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">assertEquals</span><span class="op">(</span><span class="st">"Victor"</span><span class="op">,</span> critic<span class="op">.</span><span class="fu">getCriticName</span><span class="op">());</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">assertNotEquals</span><span class="op">(</span><span class="st">"Paco"</span><span class="op">,</span> critic<span class="op">.</span><span class="fu">getCriticName</span><span class="op">());</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This second test uses the Faker library. First, a Movie object is created passing the movie name as a parameter when creating. Then, a faker object is created and will be used so declare a String with fake data. Then, an assertEquals and assertNotEquals compares are called.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>MovieTest.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> MovieTests <span class="op">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">createMovieObjectTest</span><span class="op">(){</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>      <span class="co">// Manually creating a movie object.</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>      Movie alien <span class="op">=</span> <span class="kw">new</span> <span class="fu">Movie</span><span class="op">(</span><span class="st">"Alien"</span><span class="op">);</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>      Faker faker <span class="op">=</span> <span class="kw">new</span> <span class="fu">Faker</span><span class="op">();</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>      <span class="bu">String</span> name <span class="op">=</span> faker<span class="op">.</span><span class="fu">twinPeaks</span><span class="op">().</span><span class="fu">character</span><span class="op">();</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>      <span class="co">// assertEquals and assertNotEquals testing</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">assertEquals</span><span class="op">(</span><span class="st">"Alien"</span><span class="op">,</span> alien<span class="op">.</span><span class="fu">getMovieName</span><span class="op">());</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">assertNotEquals</span><span class="op">(</span><span class="st">"Alien"</span><span class="op">,</span> name<span class="op">);</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The ReviewTest class consist on manually creating a Movie object, a Critic object. When creating a Review object, all parameters are given on the creation of the object. Again, assertEquals and assertNotEquals compares the expected output with the actual output.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>ReviewTest.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> ReviewTest <span class="op">{</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">createReviewObjectTest</span><span class="op">(){</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>        <span class="co">//Creating a review and set comment manually.</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>        Movie alien <span class="op">=</span> <span class="kw">new</span> <span class="fu">Movie</span><span class="op">(</span><span class="st">"Alien"</span><span class="op">);</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        Critic victor <span class="op">=</span> <span class="kw">new</span> <span class="fu">Critic</span><span class="op">(</span><span class="st">"Victor"</span><span class="op">);</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>        Review alienReview <span class="op">=</span> <span class="kw">new</span> <span class="fu">Review</span><span class="op">(</span>alien<span class="op">,</span> victor<span class="op">,</span> <span class="dv">5</span><span class="op">,</span> <span class="st">"Must see"</span><span class="op">);</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        <span class="co">// assertEquals and assertNotEquals testing</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span><span class="st">"Must see"</span><span class="op">,</span> alienReview<span class="op">.</span><span class="fu">getComment</span><span class="op">());</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertNotEquals</span><span class="op">(</span><span class="st">"Predator"</span><span class="op">,</span> alienReview<span class="op">.</span><span class="fu">getMovie</span><span class="op">().</span><span class="fu">getMovieName</span><span class="op">());</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>This last test is made on the AppTest clases, to test the workflow of our program. First, empty objects are created. The next block of code fakes parameters. The third block of code sets all the faked parameters created. Note that on the setting parameters for the movie object, first we add a Review object to an ArrayList, and then is setted as a parameter.</p>
+<p>And lastly, the expected output and the actual output is tested with assertEquals and assertNotEquals testing.</p>
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>AppTest.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="kw">class</span> AppTest</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>   <span class="at">@Test</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">creatingMoviesAndReviewsTest</span><span class="op">(){</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>      <span class="co">// creating empty objects</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>       Faker faker <span class="op">=</span> <span class="kw">new</span> <span class="fu">Faker</span><span class="op">();</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>       <span class="bu">Random</span> random <span class="op">=</span> <span class="kw">new</span> <span class="bu">Random</span><span class="op">();</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>       Critic boyero <span class="op">=</span> <span class="kw">new</span> <span class="fu">Critic</span><span class="op">();</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>       Movie alien <span class="op">=</span> <span class="kw">new</span> <span class="fu">Movie</span><span class="op">();</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>       Review alienReview <span class="op">=</span> <span class="kw">new</span> <span class="fu">Review</span><span class="op">();</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>       <span class="bu">ArrayList</span><span class="op">&lt;</span>Review<span class="op">&gt;</span> allAlienReviews <span class="op">=</span> <span class="kw">new</span> <span class="bu">ArrayList</span><span class="op">&lt;&gt;();</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>       <span class="co">// faking params</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>       <span class="bu">String</span> criticName<span class="op">=</span> faker<span class="op">.</span><span class="fu">twinPeaks</span><span class="op">().</span><span class="fu">character</span><span class="op">();</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>       <span class="bu">String</span> textOfReview <span class="op">=</span> faker<span class="op">.</span><span class="fu">twinPeaks</span><span class="op">().</span><span class="fu">quote</span><span class="op">();</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>       <span class="bu">String</span> movieName <span class="op">=</span> faker<span class="op">.</span><span class="fu">twinPeaks</span><span class="op">().</span><span class="fu">location</span><span class="op">();</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>       <span class="dt">int</span> rating <span class="op">=</span> random<span class="op">.</span><span class="fu">nextInt</span><span class="op">(</span><span class="dv">1</span><span class="op">,</span> <span class="dv">5</span><span class="op">);</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>       <span class="co">//setting critic params</span></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>       boyero<span class="op">.</span><span class="fu">setCriticName</span><span class="op">(</span>criticName<span class="op">);</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>       boyero<span class="op">.</span><span class="fu">setReview</span><span class="op">(</span>alienReview<span class="op">);</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>       <span class="co">//setting review params</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>       alienReview<span class="op">.</span><span class="fu">setCritic</span><span class="op">(</span>boyedo<span class="op">);</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>       alienReview<span class="op">.</span><span class="fu">setComment</span><span class="op">(</span>textOfReview<span class="op">);</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>       alienReview<span class="op">.</span><span class="fu">setRating</span><span class="op">(</span>rating<span class="op">);</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>       alienReview<span class="op">.</span><span class="fu">setMovie</span><span class="op">(</span>alien<span class="op">);</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>       <span class="co">//setting movie params</span></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>       allAlienReviews<span class="op">.</span><span class="fu">add</span><span class="op">(</span>alienReview<span class="op">);</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>       alien<span class="op">.</span><span class="fu">setCritic</span><span class="op">(</span>boyero<span class="op">);</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>       alien<span class="op">.</span><span class="fu">setMovieName</span><span class="op">(</span>movieName<span class="op">);</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>       alien<span class="op">.</span><span class="fu">setReviews</span><span class="op">(</span>allAlienReviews<span class="op">);</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>       <span class="co">// testing equals and not equals.</span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a>       <span class="fu">assertEquals</span><span class="op">(</span>movieName<span class="op">,</span> alien<span class="op">.</span><span class="fu">getMovieName</span><span class="op">());</span></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a>       <span class="fu">assertNotEquals</span><span class="op">(</span><span class="st">"Gladiator"</span><span class="op">,</span> alien<span class="op">.</span><span class="fu">getMovieName</span><span class="op">());</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>       <span class="bu">System</span><span class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span>textOfReview<span class="op">);</span></span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>       <span class="fu">assertEquals</span><span class="op">(</span>textOfReview<span class="op">,</span> alien<span class="op">.</span><span class="fu">getReviews</span><span class="op">().</span><span class="fu">get</span><span class="op">(</span><span class="dv">0</span><span class="op">).</span><span class="fu">getComment</span><span class="op">());</span></span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>       <span class="fu">assertNotEquals</span><span class="op">(</span><span class="st">"text"</span><span class="op">,</span> alien<span class="op">.</span><span class="fu">getReviews</span><span class="op">().</span><span class="fu">get</span><span class="op">(</span><span class="dv">0</span><span class="op">).</span><span class="fu">getComment</span><span class="op">());</span></span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>   <span class="op">}</span></span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
 
 
 </section>
