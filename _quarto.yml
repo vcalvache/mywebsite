@@ -13,6 +13,7 @@ format:
 website:
   title: "vcalvache"
   #cookie-consent: true
+  
   navbar:
     background: primary
     search: true
@@ -29,7 +30,6 @@ website:
   sidebar:      
       - title: "Labs"
         style: "docked"
-        collapse-level: 2
         contents:
           - lab_se02_1.qmd
           - lab_se02_2.qmd      
