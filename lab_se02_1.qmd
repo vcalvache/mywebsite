@@ -9,8 +9,7 @@ description:  Java SE Lab 02, part 1 work on the Model
 categories: [javase, lab, composition, model]
 toc: true
 number-sections: true
-format:
-  html
+format: html
 ---
 
 ## **Goal**
@@ -91,13 +90,13 @@ As a first approach to start working on, the UML is based on the following rules
 
 On this design we can see that the Movie class will have a multiplicity with the Critic class (since a movie can be reviewed by different critics). Also, the Critic class will has a multiplicity relationship wit the review class because a critic object can has multiple reviews of different movies.
 
-
-
+<div class="mermaidContent">
 ```{mermaid}
+%%| fig-width: 3
 classDiagram
   class Movie {
     -title: String
-    -reviews: Set<Review>
+    -reviews: ArrayList Review
   }
   class Critic {
     -name: String
@@ -111,7 +110,7 @@ classDiagram
   Movie *-- Review
   Review o-- Critic
 ```
-
+</div>
 ___
 
 ##  **Creating classes**
