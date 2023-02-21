@@ -47,3 +47,68 @@ The goal of this project consist on creating different Java classes to define th
 - Add new feature once all the test are passed.
 
 ---
+
+## **Adding dependencies**
+
+After creating the Maven project, the first step consist in adding the dependencies to the pom.xml project.
+
+The desires dependencies can be found on the ``Maven Repository`` [link](https://mvnrepository.com/){.external}:
+
+On the code below, Junit, Lombok and Java Faker has been added.
+
+```{.java .code-overflow-wrap filename="pom.xml"}
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.26</version>
+      <scope>provided</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+    <dependency>
+      <groupId>org.junit.jupiter</groupId>
+      <artifactId>junit-jupiter-api</artifactId>
+      <version>5.9.2</version>
+      <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+    <dependency>
+      <groupId>com.github.javafaker</groupId>
+      <artifactId>javafaker</artifactId>
+      <version>1.0.2</version>
+    </dependency>
+
+  </dependencies>
+```
+## **First UML**
+
+As a first approach to start working on, the UML is based on the following rules:
+
+- The Movie Class is designed where an object movie can has different reviews.
+- Critic create objects for the Review class of a movie object.
+- The Review class depends on the Critic class and belongs to a movie object.
+
+On this design we can see that the Movie class will have a multiplicity with the Critic class (since a movie can be reviewed by different critics). Also, the Critic class will has a multiplicity relationship wit the review class because a critic object can has multiple reviews of different movies.
+
+
+
+```{mermaid}
+classDiagram
+  class Movie {
+    -title: String
+    -reviews: Set<Review>
+  }
+  class Critic {
+    -name: String
+  }
+  class Review {
+    -movie: Movie
+    -critic: Critic
+    -rating: int
+    -comment: String
+  }
+  Movie *-- Review
+  Review o-- Critic
+```
+
