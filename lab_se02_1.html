@@ -213,6 +213,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#first-uml" id="toc-first-uml" class="nav-link" data-scroll-target="#first-uml"><span class="toc-section-number">4</span>  <strong>First UML</strong></a></li>
   <li><a href="#creating-classes" id="toc-creating-classes" class="nav-link" data-scroll-target="#creating-classes"><span class="toc-section-number">5</span>  <strong>Creating classes</strong></a></li>
   <li><a href="#first-tests" id="toc-first-tests" class="nav-link" data-scroll-target="#first-tests"><span class="toc-section-number">6</span>  <strong>First tests</strong></a></li>
+  <li><a href="#expanding-uml-and-adding-new-features" id="toc-expanding-uml-and-adding-new-features" class="nav-link" data-scroll-target="#expanding-uml-and-adding-new-features"><span class="toc-section-number">7</span>  <strong>Expanding UML and adding new features</strong></a></li>
   </ul>
 </nav>
     </div>
@@ -345,14 +346,15 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>The Review class depends on the Critic class and belongs to a movie object.</li>
 </ul>
 <p>On this design we can see that the Movie class will have a multiplicity with the Critic class (since a movie can be reviewed by different critics). Also, the Critic class will has a multiplicity relationship wit the review class because a critic object can has multiple reviews of different movies.</p>
-<div class="cell">
+<div class="mermaidContent">
+<div class="cell" data-fig-width="3">
 <div class="cell-output-display">
 <div>
 <p>
 </p><pre class="mermaid mermaid-js" data-tooltip-selector="#mermaid-tooltip-1">classDiagram
   class Movie {
     -title: String
-    -reviews: Set&lt;Review&gt;
+    -reviews: ArrayList Review
   }
   class Critic {
     -name: String
@@ -370,6 +372,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 </div>
 <p></p>
+</div>
 </div>
 </div>
 </div>
@@ -544,6 +547,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <hr>
+</section>
+<section id="expanding-uml-and-adding-new-features" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="expanding-uml-and-adding-new-features"><span class="header-section-number">7</span> <strong>Expanding UML and adding new features</strong></h2>
+<p>Now that we have our core classes ready and tested, it’s time to prive new features. This will change the first UML that worked as some sort of a draft.</p>
 
 
 </section>
