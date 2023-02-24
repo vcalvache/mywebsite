@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://vcalvache.github.io/mywebsite/lab_se02_1.html</loc>
-    <lastmod>2023-02-21T18:09:45.493Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vcalvache.github.io/mywebsite/lab_se02_2.html</loc>
-    <lastmod>2023-02-21T18:09:45.801Z</lastmod>
+    <loc>https://vcalvache.github.io/mywebsite/javase.html</loc>
+    <lastmod>2023-02-24T12:34:11.321Z</lastmod>
   </url>
   <url>
     <loc>https://vcalvache.github.io/mywebsite/labs.html</loc>
-    <lastmod>2023-02-21T18:09:46.099Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vcalvache.github.io/mywebsite/index.html</loc>
-    <lastmod>2023-02-21T18:09:46.394Z</lastmod>
-  </url>
-  <url>
-    <loc>https://vcalvache.github.io/mywebsite/javase.html</loc>
-    <lastmod>2023-02-21T18:09:46.835Z</lastmod>
+    <lastmod>2023-02-24T12:34:11.661Z</lastmod>
   </url>
   <url>
     <loc>https://vcalvache.github.io/mywebsite/about.html</loc>
-    <lastmod>2023-02-21T18:09:47.120Z</lastmod>
+    <lastmod>2023-02-24T12:34:11.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vcalvache.github.io/mywebsite/java_labs/lab_se02_2.html</loc>
+    <lastmod>2023-02-24T12:34:12.209Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vcalvache.github.io/mywebsite/java_labs/lab_se02_1.html</loc>
+    <lastmod>2023-02-24T12:34:12.685Z</lastmod>
+  </url>
+  <url>
+    <loc>https://vcalvache.github.io/mywebsite/index.html</loc>
+    <lastmod>2023-02-24T12:34:12.973Z</lastmod>
   </url>
 </urlset>
