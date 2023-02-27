@@ -14,6 +14,13 @@
     "text": "This table lists different laboratories developed during the course.\n\n\n\n\n\n\n\n\n\n\nLab#SE02-1: Movie/Review, Model\n\n\nJava SE Lab 02 part 1\n\n\nJava SE Lab 02, part 1 work on the Model\n\n\n\n\n\n\nOct 2, 2023\n\n\nvcalvache\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About me",
+    "section": "",
+    "text": "Hi! I’m Victor and welcome to my site.\nThis section it’s made with the intentions that you can know me a little bit better. Don’t worry, I’m not gonna to use this only as a resumme. Instead, I’m gonna share things that I think can relate me.\nLet’s start with something I can not live without it. Music!\nWe all have a song that, for any reason, cheers us up. It may remaind you a moment, someone, or maybe only will make you dance.\nOn my case, i have a very good memories of this song, because i remember watching the video on tv when i was a teenager and made me discover sounds that i’ve never heard of. And to this day, i’m really into Rock n’ Roll thanks to that moment.\nTurn the volume up, and press play!\n\n\nUnder construction"
+  },
+  {
     "objectID": "java_labs/lab_se02_1.html",
     "href": "java_labs/lab_se02_1.html",
     "title": "Lab#SE02-1: Movie/Review, Model",
@@ -65,8 +72,8 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Home",
+    "title": "Welcome",
     "section": "",
-    "text": "This website has two main purposes:\n\nDocumentation for the Web App Developement course.\nUse the website as porftolio.\n\n\nUnder construction\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "This site has two main puroposes:\n\nWil be used to build documentation on different projects covered on the Web App Developement course that i’m actually taking clases.\nBuild a portfolio as a developer.\n\nThanks for visiting my site!\n\nUnder construction\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   }
 ]
