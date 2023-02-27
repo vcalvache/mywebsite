@@ -3,3 +3,21 @@ title: "About me"
 sidebar: false
 ---
 
+Hi! I'm Victor and welcome to my site.
+
+This section it's made with the intentions that you can know me a little bit better.
+Don't worry, I'm not gonna to use this only as a resumme. Instead, I'm gonna share things that I think can relate me.
+
+Let's start with something I can not live without it. Music!
+
+We all have a song that, for any reason,  cheers us up. It may remaind you a moment, someone, or maybe only will make you dance.
+
+On my case, i have a very good memories of this song, because i remember watching the video on tv when i was a teenager and made me discover sounds that i've never heard of. And to this day, i'm really into Rock n' Roll thanks to that moment. 
+
+Turn the volume up, and press play!
+
+{{< video https://www.youtube.com/embed/g2X8gLjQzzY >}}
+
+---
+Under construction
+

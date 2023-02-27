@@ -1,12 +1,15 @@
 ---
-title: "Home"
+title: "Welcome"
 sidebar: false
 ---
 
-This website has two main purposes:
+This site has two main puroposes:
 
-- Documentation for the Web App Developement course.
-- Use the website as porftolio.
+* Wil be used to build documentation on different projects covered on the Web App Developement course that i'm actually taking clases.
+* Build a portfolio as a developer.
+
+Thanks for visiting my site!
+
 
 ----
 
