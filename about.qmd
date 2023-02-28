@@ -7,17 +7,29 @@ Hi! I'm Victor and welcome to my site.
 
 This section it's made with the intentions that you can know me a little bit better.
 Don't worry, I'm not gonna to use this only as a resumme. Instead, I'm gonna share things that I think can relate me.
+---
 
-Let's start with something I can not live without it. Music!
+I've got a degree on media studies. I've studied  Blanquerna Universitat Ramon LLul at Barcelona. 
+And the thing i like most about media is video edditing. 
 
-We all have a song that, for any reason,  cheers us up. It may remaind you a moment, someone, or maybe only will make you dance.
+I don't have all my project uploaded online, but if you are curoious about it, you can take a couple of minutes watching this video:
+{{< video https://youtu.be/dufaF11y-SA >}}
+---
 
-On my case, i have a very good memories of this song, because i remember watching the video on tv when i was a teenager and made me discover sounds that i've never heard of. And to this day, i'm really into Rock n' Roll thanks to that moment. 
+Also, as you can imagine i'm in love with cinema. I'm always up to a plan involving movies. I enjoy almost any kind of movies, but if i have to say any movie genere it's gonna bee a 100% sure horror movies.
 
-Turn the volume up, and press play!
+I've seen a lot of horror movies, but if you ask me wich ones are a must see, here's a list:
 
-{{< video https://www.youtube.com/embed/g2X8gLjQzzY >}}
+::: {.callout-caution collapse="true"}
+## Top 5 horror movies
+* [Night of the living dead](https://www.imdb.com/title/tt0063350/?ref_=nv_sr_srsg_7){.external}
+* [Hereditary](https://www.imdb.com/title/tt7784604/?ref_=fn_al_tt_1){.external}
+* [The Exorcist](https://www.imdb.com/title/tt0070047/?ref_=fn_al_tt_2){.external}
+* [The Shining](https://www.imdb.com/title/tt0081505/?ref_=fn_al_tt_1){.external}
+* [Halloween](https://www.imdb.com/title/tt0077651/?ref_=fn_al_tt_1){.external}
+:::
 
+If you want to know wich movies i've watched recelnty, you can click [here](listing.qmd). 
 ---
 Under construction
 

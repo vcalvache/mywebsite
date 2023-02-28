@@ -26,6 +26,8 @@ website:
         file: javase.qmd
       - text: "Labs"
         file: labs.qmd
+      - text: "Listing"
+        file: listing.qmd  
 
   sidebar:      
       - title: "Labs"

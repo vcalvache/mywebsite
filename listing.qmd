@@ -1,0 +1,9 @@
+---
+title: "Latest movies i've seen"
+listing:
+    sort: "date desc"  
+    type: grid
+    contents:
+        - "movies/*.qmd"
+sidebar: false        
+---
