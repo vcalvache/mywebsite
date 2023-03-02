@@ -1,6 +1,7 @@
 ---
 title: "Java SE Laboratories"
 date: 12/19/2022
+sidebar: "Labs"
 ---
 
 Here you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories.
