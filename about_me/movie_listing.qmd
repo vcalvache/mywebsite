@@ -4,6 +4,6 @@ listing:
     sort: "date desc"  
     type: grid
     contents:
-        - "movies/*.qmd"
+        - "/movies/*.qmd"
 sidebar: false        
 ---

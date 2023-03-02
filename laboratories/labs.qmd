@@ -1,0 +1,9 @@
+---
+title: "Laboratories"
+listing:
+    contents:
+        - "java_labs/*.qmd"
+sidebar: false        
+---
+
+Here is a table with all the laboratories made during the Web APP Developement course

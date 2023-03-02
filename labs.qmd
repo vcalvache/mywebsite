@@ -1,8 +1,0 @@
----
-title: "Java Laboratories"
-listing:
-    contents:
-    - "java_labs/*.qmd"
----
-
-This table lists different laboratories developed during the course.

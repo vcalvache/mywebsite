@@ -20,21 +20,21 @@ website:
     right:
       - text: "Home"
         file: index.qmd
-      - text: "About me"
-        file: about.qmd
       - text: "Java SE"
         file: javase.qmd
-      - text: "Labs"
-        file: labs.qmd
-      - text: "Listing"
-        file: listing.qmd  
+      - text: "Laboratories"
+        file: laboratories/labs.qmd
+      - text: "IFCD0210"
+        file: ifcd0210/deliveries.qmd
+      - text: "About me"
+        file: about_me/about.qmd  
 
   sidebar:      
       - title: "Labs"
         style: "docked"
         contents:
-          - lab_se02_1.qmd
-          - lab_se02_2.qmd      
+          - labse02_1.qmd
+  
 
 
 

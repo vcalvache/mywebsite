@@ -6,7 +6,7 @@ sidebar: false
 Hi! I'm Victor and welcome to my site.
 
 This section it's made with the intentions that you can know me a little bit better.
-Don't worry, I'm not gonna to use this only as a resumme. Instead, I'm gonna share things that I think can relate me.
+Don't worry, I'm not gonna to use this only as a resumme. Instead, I'm gonna share things that I think can relate to.
 ---
 
 I've got a degree on media studies. I've studied  Blanquerna Universitat Ramon LLul at Barcelona. 
@@ -14,11 +14,10 @@ And the thing i like most about media is video edditing.
 
 I don't have all my project uploaded online, but if you are curoious about it, you can take a couple of minutes watching this video:
 {{< video https://youtu.be/dufaF11y-SA >}}
+
+Also, as you can imagine i'm in love with cinema. If you want to know wich movies i've watched recelnty, you can click [here](movie_listing.qmd). 
 ---
 
-Also, as you can imagine i'm in love with cinema. I'm always up to a plan involving movies. I enjoy almost any kind of movies, but if i have to say any movie genere it's gonna bee a 100% sure horror movies.
-
-I've seen a lot of horror movies, but if you ask me wich ones are a must see, here's a list:
 
 ::: {.callout-caution collapse="true"}
 ## Top 5 horror movies
@@ -29,7 +28,6 @@ I've seen a lot of horror movies, but if you ask me wich ones are a must see, he
 * [Halloween](https://www.imdb.com/title/tt0077651/?ref_=fn_al_tt_1){.external}
 :::
 
-If you want to know wich movies i've watched recelnty, you can click [here](listing.qmd). 
 ---
 Under construction
 

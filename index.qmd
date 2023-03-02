@@ -11,26 +11,8 @@ This site has two main puroposes:
 Thanks for visiting my site!
 
 
-----
-```{ojs}
-i = {
-  let i = 0;
-  while (true) {
-    yield ++i;
-  }
-}
-```
-
-
-This is an exemple of running a ``script cell`` in Observable JS:
-
-```{ojs}
-i 
-```
-
 ---
 
 Under construction
-
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
