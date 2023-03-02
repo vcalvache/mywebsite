@@ -1,9 +1,19 @@
 [
   {
-    "listing": "/labs.html",
+    "listing": "/about_me/movie_listing.html",
     "items": [
-      "/java_labs/lab_se02_1.html",
-      "/java_labs/lab_se02_2.html"
+      "/about_me/movies/banshees_Inisherin.html",
+      "/about_me/movies/antman_quantumania.html"
+    ]
+  },
+  {
+    "listing": "/laboratories/labs.html",
+    "items": [
+      "/laboratories/mooc.html",
+      "/laboratories/java_labs/java_labs.html",
+      "/laboratories/advanced_features.html",
+      "/laboratories/api_rest_call.html",
+      "/laboratories/observable_js_cell.html"
     ]
   }
 ]

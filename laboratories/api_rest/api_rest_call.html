@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="vcalvache">
 
-<title>vcalvache - Java SE</title>
+<title>vcalvache - API REST call to server and render from JSON</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark.min.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -63,7 +62,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -73,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">vcalvache</span>
     </a>
   </div>
@@ -83,23 +82,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html">
+    <a class="nav-link" href="../../index.html">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./javase.html" aria-current="page">
+    <a class="nav-link" href="../../javase.html">
  <span class="menu-text">Java SE</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./laboratories/labs.html">
+    <a class="nav-link" href="../../laboratories/labs.html">
  <span class="menu-text">Laboratories</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./ifcd0210/deliveries.html">
+    <a class="nav-link" href="../../ifcd0210/deliveries.html">
  <span class="menu-text">IFCD0210</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about_me/about.html">
+    <a class="nav-link" href="../../about_me/about.html">
  <span class="menu-text">About me</span></a>
   </li>  
 </ul>
@@ -116,42 +115,20 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#what-is-java" id="toc-what-is-java" class="nav-link active" data-scroll-target="#what-is-java">What is java?</a>
-  <ul class="collapse">
-  <li><a href="#java-primitive-data-types" id="toc-java-primitive-data-types" class="nav-link" data-scroll-target="#java-primitive-data-types">Java Primitive Data Types</a></li>
-  </ul></li>
-  <li><a href="#java-non-primitive-data-types" id="toc-java-non-primitive-data-types" class="nav-link" data-scroll-target="#java-non-primitive-data-types">Java Non-primitive Data Types</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Java SE</h1>
-<p class="subtitle lead">Java Fundamentals and concepts</p>
-  <div class="quarto-categories">
-    <div class="quarto-category">Java SE</div>
-    <div class="quarto-category">basics</div>
-    <div class="quarto-category">concepts</div>
-  </div>
-  </div>
+<h1 class="title">API REST call to server and render from JSON</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>vcalvache </p>
-          </div>
-  </div>
     
   
     
@@ -160,147 +137,8 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="what-is-java" class="level2 page-columns page-full">
-<h2 class="anchored" data-anchor-id="what-is-java">What is java?</h2>
-<p>Java was originally developed by James Gosling. It was released in May 1995.</p>
-<p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).</p>
-<p>You can install Java SE for free here:</p>
-<p><a href="url">https://www.oracle.com/java/technologies/java-se-glance.html</a></p>
-<hr>
-<section id="java-primitive-data-types" class="level3 page-columns page-full">
-<h3 class="anchored" data-anchor-id="java-primitive-data-types">Java Primitive Data Types</h3>
-<div class="column-page-right">
-<table class="table">
-<colgroup>
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>data Type</th>
-<th>Size</th>
-<th>Description</th>
-<th>Declaration example</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>byte</td>
-<td>1 byte</td>
-<td>Stores whole number from -128 to 127</td>
-<td>byte variableName = value;</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>short</td>
-<td>2 bytes</td>
-<td>Stores whole numbers from -32,768 to 32,767</td>
-<td>short variableName = value;</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>int</td>
-<td>4 bytes</td>
-<td>Stores whole numbers from -2,147,483,648 to 2,147,483,647</td>
-<td>int variableName = value;</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>long</td>
-<td>8 bytes</td>
-<td>Stores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
-<td>long variableName = value;</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>float</td>
-<td>4 bytes</td>
-<td>Stores fractional numbers. Sufficient for storing 6 to 7 decimal digits</td>
-<td>float variableName = number.deciaml</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>double</td>
-<td>8 bytes</td>
-<td>Stores fractional numbers. Sufficient for storing 15 decimal digits</td>
-<td>double variableName = number.decimal</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>boolean</td>
-<td>1 bit</td>
-<td>Stores true or false values</td>
-<td>boolean variableName = true/false</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>char</td>
-<td>2 bytes</td>
-<td>Stores a single character/letter or ASCII values</td>
-<td>char varaibleName = ‘b’ or 98</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-</section>
-<section id="java-non-primitive-data-types" class="level1 page-columns page-full">
-<h1>Java Non-primitive Data Types</h1>
-<div class="column-page-right">
-<table class="table">
-<colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>data Type</th>
-<th>Description</th>
-<th>Declaration example</th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>String</td>
-<td>Contains a collection of characters surrounded by double quotes</td>
-<td>String variabmeName = “Hello”;</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Arrays</td>
-<td>Stores multipe variables of the same type in a single variable.</td>
-<td>variableType[] variableName;</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Clases</td>
-<td>Everything in java is associated with a classes and objects with it’s own attributes and methods</td>
-<td>public class className {}</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Interface</td>
-<td>Is a blueprint of a class. It contains static constants and abstract methods.</td>
-<td>interface &lt;interfaceName&gt;{ }</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</div>
-<hr>
-<p>UNDER CONSTRUCTION</p>
-<hr>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -1,5 +1,47 @@
 [
   {
+    "objectID": "ifcd0210/deliveries.html",
+    "href": "ifcd0210/deliveries.html",
+    "title": "IFCD0210",
+    "section": "",
+    "text": "Here you can read the subjects to be delivered and links to the specified tasks."
+  },
+  {
+    "objectID": "ifcd0210/deliveries.html#subjects",
+    "href": "ifcd0210/deliveries.html#subjects",
+    "title": "IFCD0210",
+    "section": "Subjects",
+    "text": "Subjects\nHere you can read the subjects to be delivered:\n\n\n\nCode\nDate\nDescription\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\nPrototip WebApp Quarto: web multipage, markdwon/HTML, with github repository and gh-pages deployement\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto amb advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto amb Document Listings\n\n\nMF01-0492\n21/02/2023\nProva objectiva i prova pràctica - WebApp Quarto amb Api REST call to server and render the data from JSON, from cloud-external server or Spring Boot local server  - WebApp Quarto amb a Observable JS script cell"
+  },
+  {
+    "objectID": "ifcd0210/deliveries.html#deliveries",
+    "href": "ifcd0210/deliveries.html#deliveries",
+    "title": "IFCD0210",
+    "section": "Deliveries",
+    "text": "Deliveries\n\n\n\n\nCode\nDate\nDelivery\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\nPrototip WebApp Quarto: web multipage, markdwon/HTML, with github repository and gh-pages deployement\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto amb advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto amb Document Listings\n\n\nMF01-0492\n21/02/2023\nProva objectiva i prova pràctica - WebApp Quarto amb [Api REST call to server and render the data from JSON]todo: add link, from cloud-external server or Spring Boot local server  - WebApp Quarto amb a [Observable JS script cell] todo: add link"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "This site has two main puroposes:\n\nWil be used to build documentation on different projects covered on the Web App Developement course that i’m actually taking clases at CIFO La Violeta\nBuild a portfolio as a developer.\n\nThanks for visiting my site!\n\n\nSections\nIf you browse trough the different sections, you will find:\n\nJava SE: A space for describing Java principles, concepts and a sort of tutorials.\nLaboratories: Some exercises that are part of the curriculum of the IFCD0210 course.\nIFCD0210: Subjects and deliveries for the course.\nAbout me: a chance to know me a little bit better!"
+  },
+  {
+    "objectID": "about_me/about.html",
+    "href": "about_me/about.html",
+    "title": "About me",
+    "section": "",
+    "text": "Hi! I’m Victor and welcome to my site.\nThis section it’s made with the intentions that you can know me a little bit better. Don’t worry, I’m not gonna to use this only as a resumme. Instead, I’m gonna share things that I think can relate to.\n\nI’ve got a degree on media studies. I’ve studied Blanquerna Universitat Ramon LLul at Barcelona. And the thing i like most about media is video edditing.\nI don’t have all my project uploaded online, but if you are curoious about it, you can take a couple of minutes watching this video:\n\nAlso, as you can imagine i’m in love with cinema. If you want to know wich movies i’ve watched recelnty, you can click here.\n\n\n\n\n\n\n\nTop 5 horror movies\n\n\n\n\n\n\nNight of the living dead\nHereditary\nThe Exorcist\nThe Shining\nHalloween\n\n\n\n\n\nUnder construction"
+  },
+  {
+    "objectID": "about_me/movie_listing.html",
+    "href": "about_me/movie_listing.html",
+    "title": "Latest movies i’ve seen",
+    "section": "",
+    "text": "The Banshees of Inisherin\n\n\n\n\n\n\n\n\n\nFeb 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnt-man and the Wasp: Quantumanía\n\n\n\n\n\n\n\n\n\nFeb 17, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "javase.html",
     "href": "javase.html",
     "title": "Java SE",
@@ -7,73 +49,73 @@
     "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).\nYou can install Java SE for free here:\nhttps://www.oracle.com/java/technologies/java-se-glance.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata Type\nSize\nDescription\nDeclaration example\n\n\n\n\n\nbyte\n1 byte\nStores whole number from -128 to 127\nbyte variableName = value;\n\n\n\nshort\n2 bytes\nStores whole numbers from -32,768 to 32,767\nshort variableName = value;\n\n\n\nint\n4 bytes\nStores whole numbers from -2,147,483,648 to 2,147,483,647\nint variableName = value;\n\n\n\nlong\n8 bytes\nStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\nlong variableName = value;\n\n\n\nfloat\n4 bytes\nStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\nfloat variableName = number.deciaml\n\n\n\ndouble\n8 bytes\nStores fractional numbers. Sufficient for storing 15 decimal digits\ndouble variableName = number.decimal\n\n\n\nboolean\n1 bit\nStores true or false values\nboolean variableName = true/false\n\n\n\nchar\n2 bytes\nStores a single character/letter or ASCII values\nchar varaibleName = ‘b’ or 98"
   },
   {
-    "objectID": "labs.html",
-    "href": "labs.html",
-    "title": "Java Laboratories",
+    "objectID": "laboratories/mooc.html",
+    "href": "laboratories/mooc.html",
+    "title": "University of Helsinki MOOC center",
     "section": "",
-    "text": "This table lists different laboratories developed during the course.\n\n\n\n\n\n\n\n\n\n\nLab#SE02-1: Movie/Review, Model\n\n\nJava SE Lab 02 part 1\n\n\nJava SE Lab 02, part 1 work on the Model\n\n\n\n\n\n\nOct 2, 2023\n\n\nvcalvache\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\nNo matching items"
+    "text": "As part of the course we have learned the basics of Java practicing some exercises with the MOOC (masive open online course) made by the university of Helsinki.\nYou can acces take this course here: Java Programming\nhere you can see my GitHub repo with the solutions i’ve developed for the MOOC course: Mooc.fi java exercises"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About me",
+    "objectID": "laboratories/labs.html",
+    "href": "laboratories/labs.html",
+    "title": "Laboratories",
     "section": "",
-    "text": "Hi! I’m Victor and welcome to my site.\nThis section it’s made with the intentions that you can know me a little bit better. Don’t worry, I’m not gonna to use this only as a resumme. Instead, I’m gonna share things that I think can relate me.\nLet’s start with something I can not live without it. Music!\nWe all have a song that, for any reason, cheers us up. It may remaind you a moment, someone, or maybe only will make you dance.\nOn my case, i have a very good memories of this song, because i remember watching the video on tv when i was a teenager and made me discover sounds that i’ve never heard of. And to this day, i’m really into Rock n’ Roll thanks to that moment.\nTurn the volume up, and press play!\n\n\nUnder construction"
+    "text": "Here is a table with all the laboratories made during the Web APP Developement course\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Helsinki MOOC center\n\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n\n\n\n\n\n\nJava SE Laboratories\n\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\n\n\n\n\n\n\nAdvanced features\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\n\n\n\n\n\n\nAPI REST call to server and render from JSON\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\n\n\nObservable JS script cell\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "java_labs/lab_se02_1.html",
-    "href": "java_labs/lab_se02_1.html",
+    "objectID": "laboratories/java_labs/java_labs.html",
+    "href": "laboratories/java_labs/java_labs.html",
+    "title": "Java SE Laboratories",
+    "section": "",
+    "text": "Here you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories."
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_1.html",
+    "href": "laboratories/java_labs/labse02_1.html",
     "title": "Lab#SE02-1: Movie/Review, Model",
     "section": "",
     "text": "The goal of this project consist on creating different Java classes to define the Model of a project based on Movie Reviews."
   },
   {
-    "objectID": "java_labs/lab_se02_1.html#tasks",
-    "href": "java_labs/lab_se02_1.html#tasks",
+    "objectID": "laboratories/java_labs/labse02_1.html#tasks",
+    "href": "laboratories/java_labs/labse02_1.html#tasks",
     "title": "Lab#SE02-1: Movie/Review, Model",
     "section": "2 Tasks",
     "text": "2 Tasks\n\nCreate a Java SE Project with Maven.\nAdd dependencies: + Junit + Java Faker + Lombok\nCreate the following Java classes:\n\nMovie: represents a movie that is going to be reviewed. Should have this attributes:\n\ntitle\nreviews\nCritic\n\nCritic: is the one who will write reviews. Their attributes:\n\nname\nReview\n\nReview: is written by the critic and belongs to the movie. Theis attributes:\n\nMovie\nCritic\nrating\ncomment\n\n\nCreate unitary tests wit Junit.\nAdd new feature once all the test are passed."
   },
   {
-    "objectID": "java_labs/lab_se02_1.html#adding-dependencies",
-    "href": "java_labs/lab_se02_1.html#adding-dependencies",
+    "objectID": "laboratories/java_labs/labse02_1.html#adding-dependencies",
+    "href": "laboratories/java_labs/labse02_1.html#adding-dependencies",
     "title": "Lab#SE02-1: Movie/Review, Model",
     "section": "3 Adding dependencies",
     "text": "3 Adding dependencies\nAfter creating the Maven project, the first step consist in adding the dependencies to the pom.xml project.\nThe desires dependencies can be found on the Maven Repository link:\nOn the code below, Junit, Lombok and Java Faker has been added.\n\n\npom.xml\n\n  <dependencies>\n    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->\n    <dependency>\n      <groupId>org.projectlombok</groupId>\n      <artifactId>lombok</artifactId>\n      <version>1.18.26</version>\n      <scope>provided</scope>\n    </dependency>\n    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->\n    <dependency>\n      <groupId>org.junit.jupiter</groupId>\n      <artifactId>junit-jupiter-api</artifactId>\n      <version>5.9.2</version>\n      <scope>test</scope>\n    </dependency>\n    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->\n    <dependency>\n      <groupId>com.github.javafaker</groupId>\n      <artifactId>javafaker</artifactId>\n      <version>1.0.2</version>\n    </dependency>\n\n  </dependencies>"
   },
   {
-    "objectID": "java_labs/lab_se02_1.html#first-uml",
-    "href": "java_labs/lab_se02_1.html#first-uml",
+    "objectID": "laboratories/java_labs/labse02_1.html#first-uml",
+    "href": "laboratories/java_labs/labse02_1.html#first-uml",
     "title": "Lab#SE02-1: Movie/Review, Model",
     "section": "4 First UML",
     "text": "4 First UML\nAs a first approach to start working on, the UML is based on the following rules:\n\nThe Movie Class is designed where an object movie can has different reviews.\nCritic create objects for the Review class of a movie object.\nThe Review class depends on the Critic class and belongs to a movie object.\n\nOn this design we can see that the Movie class will have a multiplicity with the Critic class (since a movie can be reviewed by different critics). Also, the Critic class will has a multiplicity relationship wit the review class because a critic object can has multiple reviews of different movies.\n\n\n\n\n\nclassDiagram\n  class Movie {\n    -title: String\n    -reviews: ArrayList Review\n  }\n  class Critic {\n    -name: String\n  }\n  class Review {\n    -movie: Movie\n    -critic: Critic\n    -rating: int\n    -comment: String\n  }\n  Movie *-- Review\n  Review o-- Critic"
   },
   {
-    "objectID": "java_labs/lab_se02_1.html#creating-classes",
-    "href": "java_labs/lab_se02_1.html#creating-classes",
+    "objectID": "laboratories/java_labs/labse02_1.html#creating-classes",
+    "href": "laboratories/java_labs/labse02_1.html#creating-classes",
     "title": "Lab#SE02-1: Movie/Review, Model",
     "section": "5 Creating classes",
     "text": "5 Creating classes\nProceeding with the tasks given, now it’s time to create the classes as per the UML designed.\nThe first class to be created is the Movie class. Lombok is used to create two constructors, one will al arguments, and another with no arguments (will allow to create empty objects). A third constructor is created. This constructor only needs a String whit the movie name.\n\n\nMovie.java\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Movie {\n    // first approach for Movie class\n    private String movieName;\n    private ArrayList<Review> reviews;\n    private Critic critic;\n\n    public Movie(String movieName){\n        this.movieName = movieName;\n    }\n}\n\nCritic class is the same as the Movie class. Lombok creates two constructors and a third one that will allow creating Critic objects only with the criticName.\n\n\nCritic.java\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Critic {\n    //first approach for Critic class\n    private String criticName;\n    private Review review;\n\n    public Critic(String criticName){\n        this.criticName = criticName;\n    }\n}\n\nThe Review class works only with two constructors, with all the arguments or without any. This way Reviews can only be created if i have all the parameters or empty, so it can be setted later in case that all the parameters doesn’t exist yet.\n\n\nReview.java\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Review {\n    // First approach for Review class\n    private Movie movie;\n    private Critic critic;\n    private int rating;\n    private String comment;\n}"
   },
   {
-    "objectID": "java_labs/lab_se02_1.html#first-tests",
-    "href": "java_labs/lab_se02_1.html#first-tests",
+    "objectID": "laboratories/java_labs/labse02_1.html#first-tests",
+    "href": "laboratories/java_labs/labse02_1.html#first-tests",
     "title": "Lab#SE02-1: Movie/Review, Model",
     "section": "6 First tests",
     "text": "6 First tests\nWith the classes already created it’s time to run the first test.\nThis first test consists on manually creating a Critic object, sets the name, prints it on screen and using assertEquals and assertNotEquals to compare both results, true and false.\n\n\nCriticTest.java\n\npublic class CriticTest {\n\n    @Test\n    public void createCriticObjectTest(){\n      // Manually creating a Critic object.\n      Critic critic = new Critic();\n      critic.setCriticName(\"Victor\");\n      System.out.println(critic.getCriticName());\n      // assertEquals and assertNotEquals testing\n      assertEquals(\"Victor\", critic.getCriticName());\n      assertNotEquals(\"Paco\", critic.getCriticName());\n    }\n}\n\nThis second test uses the Faker library. First, a Movie object is created passing the movie name as a parameter when creating. Then, a faker object is created and will be used so declare a String with fake data. Then, an assertEquals and assertNotEquals compares are called.\n\n\nMovieTest.java\n\npublic class MovieTests {\n\n    @Test\n    public void createMovieObjectTest(){\n      // Manually creating a movie object.\n      Movie alien = new Movie(\"Alien\");\n      Faker faker = new Faker();\n      String name = faker.twinPeaks().character();\n      // assertEquals and assertNotEquals testing\n      assertEquals(\"Alien\", alien.getMovieName());\n      assertNotEquals(\"Alien\", name);\n    }\n}\n\nThe ReviewTest class consist on manually creating a Movie object, a Critic object. When creating a Review object, all parameters are given on the creation of the object. Again, assertEquals and assertNotEquals compares the expected output with the actual output.\n\n\nReviewTest.java\n\npublic class ReviewTest {\n\n    @Test\n    public void createReviewObjectTest(){\n        //Creating a review and set comment manually.\n        Movie alien = new Movie(\"Alien\");\n        Critic victor = new Critic(\"Victor\");\n        Review alienReview = new Review(alien, victor, 5, \"Must see\");\n        // assertEquals and assertNotEquals testing\n        assertEquals(\"Must see\", alienReview.getComment());\n        assertNotEquals(\"Predator\", alienReview.getMovie().getMovieName());\n    }\n}\n\nThis last test is made on the AppTest clases, to test the workflow of our program. First, empty objects are created. The next block of code fakes parameters. The third block of code sets all the faked parameters created. Note that on the setting parameters for the movie object, first we add a Review object to an ArrayList, and then is setted as a parameter.\nAnd lastly, the expected output and the actual output is tested with assertEquals and assertNotEquals testing.\n\n\nAppTest.java\n\npublic class AppTest\n{\n   @Test\n    public void creatingMoviesAndReviewsTest(){\n      // creating empty objects\n       Faker faker = new Faker();\n       Random random = new Random();\n       Critic boyero = new Critic();\n       Movie alien = new Movie();\n       Review alienReview = new Review();\n       ArrayList<Review> allAlienReviews = new ArrayList<>();\n\n       // faking params\n       String criticName= faker.twinPeaks().character();\n       String textOfReview = faker.twinPeaks().quote();\n       String movieName = faker.twinPeaks().location();\n       int rating = random.nextInt(1, 5);\n\n       //setting critic params\n       boyero.setCriticName(criticName);\n       boyero.setReview(alienReview);\n\n       //setting review params\n       alienReview.setCritic(boyedo);\n       alienReview.setComment(textOfReview);\n       alienReview.setRating(rating);\n       alienReview.setMovie(alien);\n\n       //setting movie params\n       allAlienReviews.add(alienReview);\n       alien.setCritic(boyero);\n       alien.setMovieName(movieName);\n       alien.setReviews(allAlienReviews);\n\n       // testing equals and not equals.\n       assertEquals(movieName, alien.getMovieName());\n       assertNotEquals(\"Gladiator\", alien.getMovieName());\n       System.out.println(textOfReview);\n\n       assertEquals(textOfReview, alien.getReviews().get(0).getComment());\n       assertNotEquals(\"text\", alien.getReviews().get(0).getComment());\n   }\n}"
   },
   {
-    "objectID": "java_labs/lab_se02_1.html#expanding-uml",
-    "href": "java_labs/lab_se02_1.html#expanding-uml",
+    "objectID": "laboratories/java_labs/labse02_1.html#expanding-uml",
+    "href": "laboratories/java_labs/labse02_1.html#expanding-uml",
     "title": "Lab#SE02-1: Movie/Review, Model",
     "section": "7 Expanding UML",
     "text": "7 Expanding UML\nNow that we have our core classes ready and tested, it’s time to add new features. This will change the first UML that worked as some sort of a draft.\n\n\n\n\n\nclassDiagram\n  class Movie {\n    - title: String\n    - reviews: ArrayList Review\n    - awards: ArrayList Awards\n  }\n\n  class Review {\n    - movie: Movie\n    - critic: Critic\n    - rating: int\n    - comment: String\n  }\n\n  class Person{\n    - name: String\n  }\n\n  class Director extends Person{\n    - movies: ArrayList Movie\n  }\n\n  class Critic extends Person{\n    - reviews: ArrayList Review\n  }\n\n  class Awards{\n    - oscars: Set Oscar\n  }\n\n  class Oscar extends Awards{\n    - Boolean won\n  }\n  Movie *-- Review : Composition\n  Review o-- Critic extends Person : Aggregation\n  Movie *-- Awards : Composition\n  Awards <|-- Oscar extends Awards : Inheritance\n  Person <|-- Director extends Person : Inheritance\n  Person <|-- Critic extends Person : Inheritance"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "This site has two main puroposes:\n\nWil be used to build documentation on different projects covered on the Web App Developement course that i’m actually taking clases.\nBuild a portfolio as a developer.\n\nThanks for visiting my site!\n\nUnder construction\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   }
 ]
