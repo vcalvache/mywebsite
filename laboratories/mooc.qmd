@@ -1,10 +1,11 @@
 ---
 title: "University of Helsinki MOOC center"
 sidebar: false
+date: 12/12/2022
 ---
 
 As part of the course we have learned the basics of Java practicing some exercises with the MOOC (masive open online course) made by the university of Helsinki. 
 
 You can acces take this course here: [Java Programming](https://java-programming.mooc.fi/)
 
-here you can see my GitHub repo with the solutions i've developed for the MOOC course: [Mooc exercises solved](https://github.com/vcalvache/mooc_helsinki.git)
+here you can see my GitHub repo with the solutions i've developed for the MOOC course: [Mooc.fi java exercises](https://github.com/vcalvache/mooc_helsinki.git)

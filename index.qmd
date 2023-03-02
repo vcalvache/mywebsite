@@ -5,14 +5,18 @@ sidebar: false
 
 This site has two main puroposes:
 
-* Wil be used to build documentation on different projects covered on the Web App Developement course that i'm actually taking clases.
+* Wil be used to build documentation on different projects covered on the Web App Developement course that i'm actually taking clases at [CIFO La Violeta](https://serveiocupacio.gencat.cat/es/soc/com-ens-organitzem/centres-propis-formacio-cifo-cfpa/centres-dinnovacio-i-formacio-ocupacional-cifo/cifo-barcelona-la-violeta/)
 * Build a portfolio as a developer.
 
 Thanks for visiting my site!
 
-
 ---
 
-Under construction
+### Sections
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+If you browse trough the different sections, you will find:
+
+* `Java SE:` A space for describing Java principles, concepts and a sort of tutorials.
+* `Laboratories:` Some exercises that are part of the curriculum of the IFCD0210 course.
+* `IFCD0210:` Subjects and deliveries for the course.
+* `About me:` a chance to know me a little bit better!

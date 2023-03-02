@@ -2,8 +2,15 @@
 title: "Laboratories"
 listing:
     contents:
-        - "java_labs/*.qmd"
+        - "mooc.qmd"
+        - "java_labs/java_labs.qmd"
+        - "advanced_features.qmd"
+        - "api_rest_call.qmd"
+        - "observable_js_cell.qmd"
+    sort: date
+    max-description-length: 1    
 sidebar: false        
 ---
 
 Here is a table with all the laboratories made during the Web APP Developement course
+---
