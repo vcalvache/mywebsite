@@ -3,3 +3,30 @@ title: "Observable JS script cell"
 date: 02/21/2023
 sidebar: false
 ---
+
+## Observable JS Script cells
+
+Infinite loop running on real time
+
+```{ojs}
+i = {
+  let i = 0;
+  while (true) {
+    yield ++i;
+  }
+}
+````
+
+```{ojs}
+i
+```
+---
+
+
+```{ojs}
+x = 10
+```
+
+```{ojs}
+x + 5
+```

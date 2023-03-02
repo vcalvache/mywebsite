@@ -7,7 +7,7 @@ Here you can read the subjects to be delivered and links to the specified tasks.
 
 ---
 
-## Subjects
+## `Subjects`
 
 Here you can read the subjects to be delivered:
 
@@ -19,15 +19,13 @@ Here you can read the subjects to be delivered:
 | UF03-1843 | 20/02/2023  | WebApp Quarto amb [Document Listings](https://quarto.org/docs/websites/website-listings.html){.external} |
 | MF01-0492 | 21/02/2023  | Prova objectiva i prova pràctica</br>  - WebApp Quarto amb [Api REST call to server and render the data from JSON](/markup/markup-quarto-api-rest.qmd), from cloud-external server or Spring Boot local server </br>  - WebApp Quarto amb a [Observable JS script cell](/markup/markup-quarto-code.qmd#observable-js) |
 
----
-
-## Deliveries
+## `Deliveries`
 ---
 
 | Code | Date | Delivery|
 |---|---|---|
 | **MF01-0491**  | **12/12/2022**  | **Front-end** |
-| UF01-1841 | 13/01/2023  | Prototip [WebApp Quarto](/markup/markup-quarto-create.qmd): web multipage, markdwon/HTML, with github repository and gh-pages deployement |
-| UF02-1842 | 10/02/2023  | WebApp Quarto amb [advanced features](/markup/markup-quarto-basics.qmd): markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted   |
-| UF03-1843 | 20/02/2023  | WebApp Quarto amb [Document Listings](https://quarto.org/docs/websites/website-listings.html){.external} |
-| MF01-0492 | 21/02/2023  | Prova objectiva i prova pràctica</br>  - WebApp Quarto amb [Api REST call to server and render the data from JSON]todo: add link, from cloud-external server or Spring Boot local server </br>  - WebApp Quarto amb a [Observable JS script cell] todo: add link |
+| UF01-1841 | 13/01/2023  | - `Website:` [WebApp Quarto]([/markup/markup-quarto-create.qmd](https://vcalvache.github.io/mywebsite/)) </br> - `GitHub repo:` [Repo](https://github.com/vcalvache/mywebsite)|
+| UF02-1842 | 10/02/2023  | WebApp Quarto with [advanced features](/markup/markup-quarto-basics.qmd): markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted   |
+| UF03-1843 | 20/02/2023  | WebApp Quarto with [Document Listings](https://vcalvache.github.io/mywebsite/laboratories/labs.html)|
+| MF01-0492 | 21/02/2023  |  - WebApp Quarto  with [Api REST call to server and render the data from JSON](https://vcalvache.github.io/mywebsite/laboratories/api_rest_call.html) </br>  - WebApp Quarto with [Observable JS script cell](https://vcalvache.github.io/mywebsite/laboratories/observable_js_cell.html) |

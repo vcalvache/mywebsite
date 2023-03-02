@@ -3,3 +3,105 @@ title: "Advanced features"
 date: 02/10/2023
 sidebar: false
 ---
+
+## About Quarto
+
+Quarto is a markdown Pandoc variaton. Markdown is a plain text format designed to be easy to write and easy to read.
+
+---
+
+## Text Formatting 
+
+:::{.callout-note collapse="true"}
+## Formatted text
+*italics text* </br>
+**bold text** </br>
+superscript^2^ </br>
+subscript~2~ </br>
+~~outdated text~~ </br>
+`verbatim text` </br>
+:::
+
+## Headings
+
+:::{.callout-note collapse="true"}
+## All Headings
+# Title 1 </br>
+## Title 2 </br>
+### Title 3 </br>
+#### Title 4 </br>
+##### Title 5 </br>
+###### Title 6 </br>
+:::
+
+## Links & images
+:::{.callout-note collapse="true"}
+### Links
+ `Simple link`<https://media.tenor.com/v-9wvFB5nBEAAAAC/twin-peaks-dance.gif> </br>
+
+`Link with no URL shown` [Agent cooper](https://media.tenor.com/nj4hzSrZV9IAAAAC/twin-peaks-thumbs-up.gif) </br>
+
+Image: </br>
+[![Agent cooper again](https://media.tenor.com/nj4hzSrZV9IAAAAC/twin-peaks-thumbs-up.gif)]</br>
+:::
+
+## Lists
+
+:::{.callout-note collapse="true"}
+## How to make lists
+* No order list
+    + To-Do 1
+    + To-Do 2
+        - To-Do 2.1
+</br>
+
+*   List starts
+
+    and here continues the list with identation
+</br>
+
+1.  First item
+2.  Second item
+    A)  sub-item
+        1)  sub-sub-item
+    B)  second sub-item from Second item 
+</br>
+
+(@) I can start a list of tasks here
+
+break the listing to insert new text
+
+(@) and don't lose the list
+:::
+
+## Tables
+
+| A | B | C | D | E |
+|---|---|---|---|---|
+| 1 | 2 | 3 | 4 | 5 |
+| 6 | 7 | 8 | 9 | 10 |
+
+## Source code
+Quarto allows to show blocks of code and run it!
+
+Source code:
+```{python}
+print("Hello world!")
+``` 
+
+
+Or you can display plain code:
+```{.java}
+public class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello World");
+  }
+}
+```
+## Math
+
+With Quarto you can write math fomulas:
+
+$$
+P(E) = {n \choose k} p^k (2-p)^{n - k}
+$$ 
