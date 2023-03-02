@@ -70,6 +70,34 @@
     "text": "Here you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories."
   },
   {
+    "objectID": "laboratories/java_labs/labse00_1.html",
+    "href": "laboratories/java_labs/labse00_1.html",
+    "title": "Lab#SE00-1: Maven Person",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_3.html",
+    "href": "laboratories/java_labs/labse02_3.html",
+    "title": "Lab#SE02-3: Movie/Review, factory",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_2.html",
+    "href": "laboratories/java_labs/labse02_2.html",
+    "title": "Lab#SE02-2: Movie/Review, CRUD Operations",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_2.html",
+    "href": "laboratories/java_labs/labse00_2.html",
+    "title": "Lab#SE00-2: Maven Clinic",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
     "objectID": "laboratories/java_labs/labse02_1.html",
     "href": "laboratories/java_labs/labse02_1.html",
     "title": "Lab#SE02-1: Movie/Review, Model",
@@ -117,5 +145,68 @@
     "title": "Lab#SE02-1: Movie/Review, Model",
     "section": "7 Expanding UML",
     "text": "7 Expanding UML\nNow that we have our core classes ready and tested, it’s time to add new features. This will change the first UML that worked as some sort of a draft.\n\n\n\n\n\nclassDiagram\n  class Movie {\n    - title: String\n    - reviews: ArrayList Review\n    - awards: ArrayList Awards\n  }\n\n  class Review {\n    - movie: Movie\n    - critic: Critic\n    - rating: int\n    - comment: String\n  }\n\n  class Person{\n    - name: String\n  }\n\n  class Director extends Person{\n    - movies: ArrayList Movie\n  }\n\n  class Critic extends Person{\n    - reviews: ArrayList Review\n  }\n\n  class Awards{\n    - oscars: Set Oscar\n  }\n\n  class Oscar extends Awards{\n    - Boolean won\n  }\n  Movie *-- Review : Composition\n  Review o-- Critic extends Person : Aggregation\n  Movie *-- Awards : Composition\n  Awards <|-- Oscar extends Awards : Inheritance\n  Person <|-- Director extends Person : Inheritance\n  Person <|-- Critic extends Person : Inheritance"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_3.html",
+    "href": "laboratories/java_labs/labse00_3.html",
+    "title": "Lab#SE00-3: Library Model",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_5.html",
+    "href": "laboratories/java_labs/labse02_5.html",
+    "title": "Lab#SE02-5: Movie/Review, simulate interactivity by console",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_4.html",
+    "href": "laboratories/java_labs/labse02_4.html",
+    "title": "Lab#SE02-4: Movie/Review, interactivity and coupling",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_4.html",
+    "href": "laboratories/java_labs/labse00_4.html",
+    "title": "Lab#SE00-4: Abstract/Interface Human",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse01_2.html",
+    "href": "laboratories/java_labs/labse01_2.html",
+    "title": "Lab#SE01-2: Maven/Gradle Person and Account stored in JSON",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse03_1.html",
+    "href": "laboratories/java_labs/labse03_1.html",
+    "title": "Lab#SE03-1: Library/Book, Core-Model",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse03_3.html",
+    "href": "laboratories/java_labs/labse03_3.html",
+    "title": "Lab#SE03-3: Library/Book, Expand Model",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse01_1.html",
+    "href": "laboratories/java_labs/labse01_1.html",
+    "title": "Lab#SE01-1: Maven/Gradle Person and Account",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse03_2.html",
+    "href": "laboratories/java_labs/labse03_2.html",
+    "title": "Lab#SE03-2: Library/Book, Sprint Zero",
+    "section": "",
+    "text": "TO-DO"
   }
 ]
