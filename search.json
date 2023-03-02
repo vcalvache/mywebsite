@@ -32,7 +32,7 @@
     "href": "about_me/about.html",
     "title": "About me",
     "section": "",
-    "text": "Hi! I’m Victor and welcome to my site.\nThis section it’s made with the intentions that you can know me a little bit better. Don’t worry, I’m not gonna to use this only as a resumme. Instead, I’m gonna share things that I think can relate to.\n\nI’ve got a degree on media studies. I’ve studied Blanquerna Universitat Ramon LLul at Barcelona. And the thing i like most about media is video edditing.\nI don’t have all my project uploaded online, but if you are curoious about it, you can take a couple of minutes watching this video:\n\nAlso, as you can imagine i’m in love with cinema. If you want to know wich movies i’ve watched recelnty, you can click here.\n\n\n\n\n\n\n\nTop 5 horror movies\n\n\n\n\n\n\nNight of the living dead\nHereditary\nThe Exorcist\nThe Shining\nHalloween\n\n\n\n\n\nUnder construction"
+    "text": "Hi! I’m Victor and welcome to my site.\nThis section it’s made with the intentions that you can know me a little bit better. Don’t worry, I’m not gonna to use this only as a resumme. Instead, I’m gonna share things that I think can relate to.\n\nI’ve got a degree on media studies. I’ve studied Blanquerna Universitat Ramon LLul at Barcelona. And the thing i like most about media is video edditing.\nI don’t have all my project uploaded online, but if you are curoious about it, you can take a couple of minutes watching this video:\n\nAlso, as you can imagine i’m in love with cinema. If you want to know wich movies i’ve watched recelnty, you can click here.\n\nUnder construction"
   },
   {
     "objectID": "about_me/movie_listing.html",
@@ -81,7 +81,7 @@
     "href": "laboratories/advanced_features.html#links-images",
     "title": "Advanced features",
     "section": "Links & images",
-    "text": "Links & images\n\n\n\n\n\n\nLinks\n\n\n\n\n\nSimple linkhttps://media.tenor.com/v-9wvFB5nBEAAAAC/twin-peaks-dance.gif \nLink with no URL shown Agent cooper \nImage:  []"
+    "text": "Links & images\n\n\n\n\n\n\nLinks\n\n\n\n\n\nSimple linkhttps://media.tenor.com/v-9wvFB5nBEAAAAC/twin-peaks-dance.gif \nLink with no URL shown Agent cooper"
   },
   {
     "objectID": "laboratories/advanced_features.html#lists",
@@ -130,21 +130,21 @@
     "href": "laboratories/labs.html",
     "title": "Laboratories",
     "section": "",
-    "text": "Here is a table with all the laboratories made during the Web APP Developement course\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Helsinki MOOC center\n\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJava SE Laboratories\n\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\n\n\n\n\n  \n\n\n\n\nAdvanced features\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAPI REST call to server and render from JSON\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObservable JS script cell\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Here is a table with all the laboratories made during the Web APP Developement course\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Helsinki MOOC center\n\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n\n\n\n\n\n\nJava SE Laboratories\n\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\n\n\n\n\n\n\nAdvanced features\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\n\n\n\n\n\n\nAPI REST call to server and render from JSON\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\n\n\nObservable JS script cell\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "laboratories/api_rest_call.html",
     "href": "laboratories/api_rest_call.html",
     "title": "API REST call to server and render from JSON",
     "section": "",
-    "text": "API REST call example taken from class:\n\nd3 = require('d3')\n\ncontributors = await d3.json(\n  \"https://api.github.com/repos/albertprofe/wiki/stats/contributors\"\n)\n\ncommits = contributors.map(contributor => {\n  const author = contributor.author;\n  return {\n    name: author.login,\n    title: author.login,\n    group: author.type,\n    value: contributor.total\n  }\n})\n\n\nInputs.table(commits, { sort: \"value\", reverse: true })"
+    "text": "API REST call example taken from class:\n\nd3 = require('d3')\n\ncontributors = await d3.json(\n  \"https://api.github.com/repos/albertprofe/wiki/stats/contributors\"\n)\n\ncommits = contributors.map(contributor => {\n  const author = contributor.author;\n  return {\n    name: author.login,\n    title: author.login,\n    group: author.type,\n    value: contributor.total\n  }\n})\n\n\nInputs.table(commits, { sort: \"value\", reverse: true })\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nd3 = require('d3')\n\nweather = await d3.json(\n  \"http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=8fc354586639c1fc4d03e4bfb7ff71cc\"\n)\n\ncommits = wather.map(contributor => {\n  const temperature = contributor.author;\n  return {\n    name: author.login,\n    title: author.login,\n    group: author.type,\n    value: contributor.total\n  }\n})\n\n\nInputs.table(commits, { sort: \"value\", reverse: true })\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata = null;\nxhr = new XMLHttpRequest();\nxhr.withCredentials = true;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nxhr.addEventListener(\"readystatechange\", function () {\n  if (this.readyState === this.DONE) {\n    console.log(this.responseText);\n  }\n});\n\n\n\n\n\n\n\nxhr.open(\"GET\", \"http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=8fc354586639c1fc4d03e4bfb7ff71cc\");\n\n\n\n\n\n\n\nxhr.setRequestHeader(\"x-rapidapi-host\", \"community-open-weather-map.p.rapidapi.com\");\n\n\n\n\n\n\n\nxhr.setRequestHeader(\"x-rapidapi-key\", \"[your rapidapi key]\");\n\n\n\n\n\n\n\nxhr.send(data);"
   },
   {
     "objectID": "laboratories/java_labs/java_labs.html",
     "href": "laboratories/java_labs/java_labs.html",
     "title": "Java SE Laboratories",
     "section": "",
-    "text": "Here you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories."
+    "text": "Here you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories.\nAt this moment, only Lab#SE02_01 has content."
   },
   {
     "objectID": "laboratories/java_labs/labse00_1.html",
