@@ -8,7 +8,7 @@ listing:
         - "api_rest_call.qmd"
         - "observable_js_cell.qmd"
     sort: date
-    max-description-length: 1    
+    max-description-length: 0    
 sidebar: false        
 ---
 

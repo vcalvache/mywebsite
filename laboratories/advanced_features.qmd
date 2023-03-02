@@ -41,8 +41,6 @@ subscript~2~ </br>
 
 `Link with no URL shown` [Agent cooper](https://media.tenor.com/nj4hzSrZV9IAAAAC/twin-peaks-thumbs-up.gif) </br>
 
-Image: </br>
-[![Agent cooper again](https://media.tenor.com/nj4hzSrZV9IAAAAC/twin-peaks-thumbs-up.gif)]</br>
 :::
 
 ## Lists

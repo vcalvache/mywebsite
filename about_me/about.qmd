@@ -18,16 +18,5 @@ I don't have all my project uploaded online, but if you are curoious about it, y
 Also, as you can imagine i'm in love with cinema. If you want to know wich movies i've watched recelnty, you can click [here](movie_listing.qmd). 
 ---
 
-
-::: {.callout-caution collapse="true"}
-## Top 5 horror movies
-* [Night of the living dead](https://www.imdb.com/title/tt0063350/?ref_=nv_sr_srsg_7){.external}
-* [Hereditary](https://www.imdb.com/title/tt7784604/?ref_=fn_al_tt_1){.external}
-* [The Exorcist](https://www.imdb.com/title/tt0070047/?ref_=fn_al_tt_2){.external}
-* [The Shining](https://www.imdb.com/title/tt0081505/?ref_=fn_al_tt_1){.external}
-* [Halloween](https://www.imdb.com/title/tt0077651/?ref_=fn_al_tt_1){.external}
-:::
-
----
 Under construction
 
