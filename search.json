@@ -18,7 +18,7 @@
     "href": "ifcd0210/deliveries.html#deliveries",
     "title": "IFCD0210",
     "section": "Deliveries",
-    "text": "Deliveries\n\n\n\n\nCode\nDate\nDelivery\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\nPrototip WebApp Quarto: web multipage, markdwon/HTML, with github repository and gh-pages deployement\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto amb advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto amb Document Listings\n\n\nMF01-0492\n21/02/2023\nProva objectiva i prova pràctica - WebApp Quarto amb [Api REST call to server and render the data from JSON]todo: add link, from cloud-external server or Spring Boot local server  - WebApp Quarto amb a [Observable JS script cell] todo: add link"
+    "text": "Deliveries\n\n\n\n\nCode\nDate\nDelivery\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\n- Website: WebApp Quarto  - GitHub repo: Repo\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto with advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto with Document Listings\n\n\nMF01-0492\n21/02/2023\n- WebApp Quarto with Api REST call to server and render the data from JSON  - WebApp Quarto with Observable JS script cell"
   },
   {
     "objectID": "index.html",
@@ -49,6 +49,76 @@
     "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).\nYou can install Java SE for free here:\nhttps://www.oracle.com/java/technologies/java-se-glance.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata Type\nSize\nDescription\nDeclaration example\n\n\n\n\n\nbyte\n1 byte\nStores whole number from -128 to 127\nbyte variableName = value;\n\n\n\nshort\n2 bytes\nStores whole numbers from -32,768 to 32,767\nshort variableName = value;\n\n\n\nint\n4 bytes\nStores whole numbers from -2,147,483,648 to 2,147,483,647\nint variableName = value;\n\n\n\nlong\n8 bytes\nStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\nlong variableName = value;\n\n\n\nfloat\n4 bytes\nStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\nfloat variableName = number.deciaml\n\n\n\ndouble\n8 bytes\nStores fractional numbers. Sufficient for storing 15 decimal digits\ndouble variableName = number.decimal\n\n\n\nboolean\n1 bit\nStores true or false values\nboolean variableName = true/false\n\n\n\nchar\n2 bytes\nStores a single character/letter or ASCII values\nchar varaibleName = ‘b’ or 98"
   },
   {
+    "objectID": "laboratories/advanced_features.html",
+    "href": "laboratories/advanced_features.html",
+    "title": "Advanced features",
+    "section": "",
+    "text": "Quarto is a markdown Pandoc variaton. Markdown is a plain text format designed to be easy to write and easy to read."
+  },
+  {
+    "objectID": "laboratories/advanced_features.html#text-formatting",
+    "href": "laboratories/advanced_features.html#text-formatting",
+    "title": "Advanced features",
+    "section": "Text Formatting",
+    "text": "Text Formatting\n\n\n\n\n\n\nFormatted text\n\n\n\n\n\nitalics text  bold text  superscript2  subscript2  outdated text  verbatim text"
+  },
+  {
+    "objectID": "laboratories/advanced_features.html#headings",
+    "href": "laboratories/advanced_features.html#headings",
+    "title": "Advanced features",
+    "section": "Headings",
+    "text": "Headings\n\n\n\n\n\n\nAll Headings\n\n\n\n\n\nTitle 1 \n\nTitle 2 \n\nTitle 3 \n\nTitle 4 \n\nTitle 5 \n\nTitle 6"
+  },
+  {
+    "objectID": "laboratories/advanced_features.html#title-2",
+    "href": "laboratories/advanced_features.html#title-2",
+    "title": "Advanced features",
+    "section": "Title 2 ",
+    "text": "Title 2 \n\nTitle 3 \n\nTitle 4 \n\nTitle 5 \n\nTitle 6"
+  },
+  {
+    "objectID": "laboratories/advanced_features.html#links-images",
+    "href": "laboratories/advanced_features.html#links-images",
+    "title": "Advanced features",
+    "section": "Links & images",
+    "text": "Links & images\n\n\n\n\n\n\nLinks\n\n\n\n\n\nSimple linkhttps://media.tenor.com/v-9wvFB5nBEAAAAC/twin-peaks-dance.gif \nLink with no URL shown Agent cooper \nImage:  []"
+  },
+  {
+    "objectID": "laboratories/advanced_features.html#lists",
+    "href": "laboratories/advanced_features.html#lists",
+    "title": "Advanced features",
+    "section": "Lists",
+    "text": "Lists\n\n\n\n\n\n\nHow to make lists\n\n\n\n\n\n\nNo order list\n\nTo-Do 1\nTo-Do 2\n\nTo-Do 2.1 \n\n\nList starts\nand here continues the list with identation \n\n\nFirst item\nSecond item\n\nsub-item\n\nsub-sub-item\n\nsecond sub-item from Second item \n\n\n\nI can start a list of tasks here\n\nbreak the listing to insert new text\n\nand don’t lose the list"
+  },
+  {
+    "objectID": "laboratories/advanced_features.html#tables",
+    "href": "laboratories/advanced_features.html#tables",
+    "title": "Advanced features",
+    "section": "Tables",
+    "text": "Tables\n\n\n\nA\nB\nC\nD\nE\n\n\n\n\n1\n2\n3\n4\n5\n\n\n6\n7\n8\n9\n10"
+  },
+  {
+    "objectID": "laboratories/advanced_features.html#source-code",
+    "href": "laboratories/advanced_features.html#source-code",
+    "title": "Advanced features",
+    "section": "Source code",
+    "text": "Source code\nQuarto allows to show blocks of code and run it!\nSource code:\n\nprint(\"Hello world!\")\n\nHello world!\n\n\nOr you can display plain code:\npublic class Main {\n  public static void main(String[] args) {\n    System.out.println(\"Hello World\");\n  }\n}"
+  },
+  {
+    "objectID": "laboratories/advanced_features.html#math",
+    "href": "laboratories/advanced_features.html#math",
+    "title": "Advanced features",
+    "section": "Math",
+    "text": "Math\nWith Quarto you can write math fomulas:\n\\[\nP(E) = {n \\choose k} p^k (2-p)^{n - k}\n\\]"
+  },
+  {
+    "objectID": "laboratories/observable_js_cell.html",
+    "href": "laboratories/observable_js_cell.html",
+    "title": "Observable JS script cell",
+    "section": "",
+    "text": "Infinite loop running on real time\n\ni = {\n  let i = 0;\n  while (true) {\n    yield ++i;\n  }\n}\n\n\n\n\n\n\n\ni\n\n\n\n\n\n\n\n\nx = 10\n\n\n\n\n\n\n\nx + 5"
+  },
+  {
     "objectID": "laboratories/mooc.html",
     "href": "laboratories/mooc.html",
     "title": "University of Helsinki MOOC center",
@@ -60,7 +130,14 @@
     "href": "laboratories/labs.html",
     "title": "Laboratories",
     "section": "",
-    "text": "Here is a table with all the laboratories made during the Web APP Developement course\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Helsinki MOOC center\n\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n\n\n\n\n\n\nJava SE Laboratories\n\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\n\n\n\n\n\n\nAdvanced features\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\n\n\n\n\n\n\nAPI REST call to server and render from JSON\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\n\n\nObservable JS script cell\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Here is a table with all the laboratories made during the Web APP Developement course\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Helsinki MOOC center\n\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJava SE Laboratories\n\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\n\n\n\n\n  \n\n\n\n\nAdvanced features\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAPI REST call to server and render from JSON\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObservable JS script cell\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "laboratories/api_rest_call.html",
+    "href": "laboratories/api_rest_call.html",
+    "title": "API REST call to server and render from JSON",
+    "section": "",
+    "text": "API REST call example taken from class:\n\nd3 = require('d3')\n\ncontributors = await d3.json(\n  \"https://api.github.com/repos/albertprofe/wiki/stats/contributors\"\n)\n\ncommits = contributors.map(contributor => {\n  const author = contributor.author;\n  return {\n    name: author.login,\n    title: author.login,\n    group: author.type,\n    value: contributor.total\n  }\n})\n\n\nInputs.table(commits, { sort: \"value\", reverse: true })"
   },
   {
     "objectID": "laboratories/java_labs/java_labs.html",
