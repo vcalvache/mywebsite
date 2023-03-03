@@ -4,65 +4,18 @@ date: 02/21/2023
 sidebar: false
 ---
 
-API REST call example taken from class:
-
-```{ojs}
-d3 = require('d3')
-
-contributors = await d3.json(
-  "https://api.github.com/repos/albertprofe/wiki/stats/contributors"
-)
-
-commits = contributors.map(contributor => {
-  const author = contributor.author;
-  return {
-    name: author.login,
-    title: author.login,
-    group: author.type,
-    value: contributor.total
-  }
-})
-
-
-Inputs.table(commits, { sort: "value", reverse: true })
-```
-
+API REST call example:
 ---
 
 
 ```{ojs}
 d3 = require('d3')
 
-weather = await d3.json(
+barcelona = await d3.json(
   "http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=8fc354586639c1fc4d03e4bfb7ff71cc"
 )
 
-commits = wather.map(contributor => {
-  const temperature = contributor.author;
-  return {
-    name: author.login,
-    title: author.login,
-    group: author.type,
-    value: contributor.total
-  }
-})
+temperature = [barcelona.main];
 
-
-Inputs.table(commits, { sort: "value", reverse: true })
-```
-
-```{ojs}
-
-data = null;
-xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
-xhr.addEventListener("readystatechange", function () {
-  if (this.readyState === this.DONE) {
-    console.log(this.responseText);
-  }
-});
-xhr.open("GET", "http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=8fc354586639c1fc4d03e4bfb7ff71cc");
-xhr.setRequestHeader("x-rapidapi-host", "community-open-weather-map.p.rapidapi.com");
-xhr.setRequestHeader("x-rapidapi-key", "[your rapidapi key]");
-xhr.send(data);
+Inputs.table(temperature)
 ```
