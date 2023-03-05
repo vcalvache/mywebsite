@@ -2,10 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.335">
+<meta name="generator" content="quarto-1.2.313">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="vcalvache">
+<meta name="description" content="Java SE Lab 02, part 1 work on the Model">
 
 <title>vcalvache - Lab#SE00-1: Maven Person</title>
 <style>
@@ -199,7 +201,14 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#goal" id="toc-goal" class="nav-link active" data-scroll-target="#goal"><span class="toc-section-number">1</span>  <strong>Goal</strong></a></li>
+  <li><a href="#tasks" id="toc-tasks" class="nav-link" data-scroll-target="#tasks"><span class="toc-section-number">2</span>  <strong>Tasks</strong></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -207,23 +216,79 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title d-none d-lg-block">Lab#SE00-1: Maven Person</h1>
-</div>
+<p class="subtitle lead">Java SE Lab 02 part 1</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">javase</div>
+    <div class="quarto-category">lab</div>
+    <div class="quarto-category">composition</div>
+    <div class="quarto-category">model</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Java SE Lab 02, part 1 work on the Model
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>vcalvache </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">Monday, December 19, 2022</p>
+    </div>
+  </div>
   
+    <div>
+    <div class="quarto-title-meta-heading">Modified</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date-modified">Sunday, March 5, 2023</p>
+    </div>
+  </div>
     
   </div>
   
 
 </header>
 
-<p>TO-DO</p>
+<section id="goal" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="goal"><span class="header-section-number">1</span> <strong>Goal</strong></h2>
+<p>The goal of this project consist on creating different Java classes, learn about Composition in Java Classes and testig.</p>
+<hr>
+</section>
+<section id="tasks" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="tasks"><span class="header-section-number">2</span> <strong>Tasks</strong></h2>
+<ul>
+<li><p>Create a Java SE Project with Maven according to a given UML</p></li>
+<li><p>Add dependencies: + Junit + Java Faker + Lombok</p></li>
+<li><p>Refactor: remove any boilerplate code and use Lombok.</p></li>
+<li><p>Create Junit tests to test objects. Use Faker to create objects.</p>
+<ul>
+<li>Test createPerson: check whether the object Person creation works properly.</li>
+<li>Test createCar: check whether the object Car creation works properly.</li>
+<li>Test createBook: check whether the object Book creation works properly.</li>
+<li>Test createStudent: check whether the object Student creation works properly</li>
+<li>Without composition: a Student object without car and books.</li>
+<li>With composition: a Student object with Car object and Book List objects</li>
+</ul></li>
+<li><p>Create Junit to test this operations:</p>
+<ul>
+<li>Test methodsPerson: check that Person methods work properly: becomeOlder(), killVampire(), withFirstName()</li>
+</ul></li>
+<li><p>Improve Car, Book and AUthor classes with two methods each. ___</p></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
