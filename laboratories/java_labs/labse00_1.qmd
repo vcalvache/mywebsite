@@ -1,5 +1,45 @@
 ---
 title: "Lab#SE00-1: Maven Person"
+subtitle: Java SE Lab 02 part 1
+author: vcalvache
+date: "12/19/2022"
+date-modified: last-modified
+date-format: full
+description:  Java SE Lab 02, part 1 work on the Model
+categories: [javase, lab, composition, model]
+toc: true
+number-sections: true
+format: html
 ---
 
-TO-DO
+## **Goal**
+
+The goal of this project consist on creating different Java classes, learn about Composition in Java Classes and testig.
+
+___
+
+## **Tasks**
+
+- Create a Java SE Project with Maven according to a given UML
+
+- Add dependencies:
+      + Junit
+      + Java Faker
+      + Lombok
+
+- Refactor: remove any boilerplate code and use Lombok.
+
+- Create Junit tests to test objects. Use Faker to create objects.
+    * Test createPerson: check whether the object Person creation works properly.
+    * Test createCar: check whether the object Car creation works properly.
+    * Test createBook: check whether the object Book creation works properly.
+    * Test createStudent: check whether the object Student creation works properly
+    * Without composition: a Student object without car and books.
+    * With composition: a Student object with Car object and Book List objects
+
+
+- Create Junit to test this operations: 
+    * Test methodsPerson: check that Person methods work properly: becomeOlder(), killVampire(), withFirstName()
+
+- Improve Car, Book and AUthor classes with two methods each.
+___

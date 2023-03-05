@@ -12,7 +12,7 @@ API REST call example:
 d3 = require('d3')
 
 barcelona = await d3.json(
-  "http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=8fc354586639c1fc4d03e4bfb7ff71cc"
+  "[Api]http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=8fc354586639c1fc4d03e4bfb7ff71cc"
 )
 
 temperature = [barcelona.main];
