@@ -9,37 +9,243 @@ description:  Java SE Lab 02, part 1 work on the Model
 categories: [javase, lab, composition, model]
 toc: true
 number-sections: true
-format: html
+format:
+    html
 ---
 
 ## **Goal**
 
-The goal of this project consist on creating different Java classes, learn about Composition in Java Classes and testig.
+The goal of this project consist on creating different `Java Classes`, learn about `Composition` in Java Classes and `testing`.
 
 ___
 
 ## **Tasks**
 
-- Create a Java SE Project with Maven according to a given UML
+::: {.labs}
+📘 **Java SE Lab#SE00-1: Person**
 
-- Add dependencies:
-      + Junit
-      + Java Faker
-      + Lombok
+1. Create a ``Maven/Gradle`` Java SE Project with the ``UML`` and classes defined below.
 
-- Refactor: remove any boilerplate code and use Lombok.
+2. Add ``Lombok``, ``JUnit`` and ``Faker`` dependencies
 
-- Create Junit tests to test objects. Use Faker to create objects.
-    * Test createPerson: check whether the object Person creation works properly.
-    * Test createCar: check whether the object Car creation works properly.
-    * Test createBook: check whether the object Book creation works properly.
-    * Test createStudent: check whether the object Student creation works properly
-    * Without composition: a Student object without car and books.
-    * With composition: a Student object with Car object and Book List objects
+3. Refactor: remove *boilerplate* code (getters, setters and so on) and work with ``Lombok``
+
+4. Create ``Junit`` tests to test objects. Use ``Faker`` to create objects:
+
+    1. Test ``createPerson``: check whether the object ``Person`` creation works properly. 
+    2. Test ``createCar``: check whether the object ``Car`` creation works properly.
+    3. Test ``createBook``: check whether the object ``Book`` creation works properly.
+    4. Test ``createStudent``: check whether the object ``Student`` creation works properly
+      1. Without **composition**: a ``Student`` object without car and books.
+      1. With **composition**: a ``Student`` object with ``Car`` object and ``Book`` **List** objects
+
+5. Create ``Junit`` tests to test operations:
+
+    1. Test ``methodsPerson``: check that ``Person`` methods work properly: ``becomeOlder()``, ``killVampire()``, ``withFirstName()``
+
+6. Improve ``Car``, ``Book`` and ``Author`` classes with two methods each.
+:::
+
+---
+
+## UML
+
+```{mermaid}
+classDiagram
+class Person {
+  -firstname: String
+  -lastname: String
+  -age: int
+}
+class Student {
+  -university: String
+  -car: Car
+  -books: ArrayList~Book~
+
+}
+class Author {
+  -genre: String
+  -book: Book
+}
+
+class Car{
+    -places: int
+    -color: String
+}
+
+class Book{
+    -title: String
+    -ISBN: String
+    -pages: int
+    -ahutor: Author
+}
+Person --|> Student: Inheritance
+Person --|> Author: Inheritance
+Student *-- Book: Composition
+Book *-- Author: Composition
+Student *-- Car: Composition
+Author *-- Book: Composition
+```
+
+---
+
+## Classes
+
+### Person class
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+
+``` {.java .code-overflow-wrap filename="Person.java"}
+package org.example;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Person {
+    private String firstName;
+    private String lastName;
+    private int age;
+}
+```
+:::
+
+### Student class
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Student.java"}
+package org.example;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import java.util.ArrayList;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Student extends Person{
+    private String university;
+    private Car car;
+    private ArrayList<Book> books;
+
+    public Student(String firstName, String lastName, int age, String university){
+        super(firstName, lastName, age);
+        this.university = university;
+        this.car = new Car();
+        this.books = new ArrayList<>();
+    }
+}    
+```
+:::
+
+### Student class without composition
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="StudentWithoutCompositon.java"}
+package org.example;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class StudentWithoutComposition extends Person{
+    private String university;
+
+    public StudentWithoutComposition(String firstName, String lastName, int age, String university){
+        super(firstName, lastName, age);
+        this.university = university;
+    }
+}
+```
+:::
+
+### Author class
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+
+``` {.java .code-overflow-wrap filename="Author.java"}
+package org.example;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Author extends Person{
+    private String genre;
+    private Book book;
+
+    public Author (String firstName, String lastName, int age, String genere){
+        super(firstName, lastName, age);
+        this.genre = genere;
+        this.book = new Book();
+    }
+}
+```
+:::
+
+### Car class
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Car.java"}
+package org.example;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Car {
+    private int seats;
+    private int doors;
+    private String color;
+
+}
+```
+:::
 
 
-- Create Junit to test this operations: 
-    * Test methodsPerson: check that Person methods work properly: becomeOlder(), killVampire(), withFirstName()
+### Book class
 
-- Improve Car, Book and AUthor classes with two methods each.
-___
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+
+``` {.java .code-overflow-wrap filename="Book.java"}
+package org.example;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Book {
+    private String title;
+    private String ISBN;
+    private int pages;
+    private Author author;
+
+    public Book (String title, String ISBN, int pages){
+        this.title = title;
+        this.ISBN = ISBN;
+        this.pages = pages;
+        this.author = new Author();
+    }
+}    
+```
+:::

@@ -4,8 +4,8 @@ project:
 format:
   html:
     theme:
-      dark: darkly
-      light: cosmo
+      light: spacelab
+      dark: cyborg
     css: styles.css
     toc: true
 
