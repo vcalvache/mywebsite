@@ -2,6 +2,7 @@
   {
     "listing": "/about_me/movie_listing.html",
     "items": [
+      "/about_me/movies/lamb.html",
       "/about_me/movies/banshees_Inisherin.html",
       "/about_me/movies/antman_quantumania.html"
     ]

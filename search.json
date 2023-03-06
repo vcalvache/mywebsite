@@ -1,31 +1,10 @@
 [
   {
-    "objectID": "ifcd0210/deliveries.html",
-    "href": "ifcd0210/deliveries.html",
-    "title": "IFCD0210",
+    "objectID": "about_me/movie_listing.html",
+    "href": "about_me/movie_listing.html",
+    "title": "Latest movies i’ve seen",
     "section": "",
-    "text": "Here you can read the subjects to be delivered and links to the specified tasks."
-  },
-  {
-    "objectID": "ifcd0210/deliveries.html#subjects",
-    "href": "ifcd0210/deliveries.html#subjects",
-    "title": "IFCD0210",
-    "section": "Subjects",
-    "text": "Subjects\nHere you can read the subjects to be delivered:\n\n\n\nCode\nDate\nDescription\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\nPrototip WebApp Quarto: web multipage, markdwon/HTML, with github repository and gh-pages deployement\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto amb advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto amb Document Listings\n\n\nMF01-0492\n21/02/2023\nProva objectiva i prova pràctica - WebApp Quarto amb Api REST call to server and render the data from JSON, from cloud-external server or Spring Boot local server  - WebApp Quarto amb a Observable JS script cell"
-  },
-  {
-    "objectID": "ifcd0210/deliveries.html#deliveries",
-    "href": "ifcd0210/deliveries.html#deliveries",
-    "title": "IFCD0210",
-    "section": "Deliveries",
-    "text": "Deliveries\n\n\n\n\nCode\nDate\nDelivery\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\n- Website: WebApp Quarto  - GitHub repo: Repo\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto with advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto with Document Listings\n\n\nMF01-0492\n21/02/2023\n- WebApp Quarto with Api REST call to server and render the data from JSON  - WebApp Quarto with Observable JS script cell"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "This site has two main puroposes:\n\nWil be used to build documentation on different projects covered on the Web App Developement course that i’m actually taking clases at CIFO La Violeta\nBuild a portfolio as a developer.\n\nThanks for visiting my site!\n\n\nSections\nIf you browse trough the different sections, you will find:\n\nJava SE: A space for describing Java principles, concepts and a sort of tutorials.\nLaboratories: Some exercises that are part of the curriculum of the IFCD0210 course.\nIFCD0210: Subjects and deliveries for the course.\nAbout me: a chance to know me a little bit better!"
+    "text": "Lamb\n\n\n\n\n\n\n\n\n\nMar 4, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Banshees of Inisherin\n\n\n\n\n\n\n\n\n\nFeb 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnt-man and the Wasp: Quantumanía\n\n\n\n\n\n\n\n\n\nFeb 17, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about_me/about.html",
@@ -33,20 +12,6 @@
     "title": "About me",
     "section": "",
     "text": "Hi! I’m Victor and welcome to my site.\nThis section it’s made with the intentions that you can know me a little bit better. Don’t worry, I’m not gonna to use this only as a resumme. Instead, I’m gonna share things that I think can relate to.\n\nI’ve got a degree on media studies. I’ve studied Blanquerna Universitat Ramon LLul at Barcelona. And the thing i like most about media is video edditing.\nI don’t have all my project uploaded online, but if you are curoious about it, you can take a couple of minutes watching this video:\n\nAlso, as you can imagine i’m in love with cinema. If you want to know wich movies i’ve watched recelnty, you can click here.\n\nUnder construction"
-  },
-  {
-    "objectID": "about_me/movie_listing.html",
-    "href": "about_me/movie_listing.html",
-    "title": "Latest movies i’ve seen",
-    "section": "",
-    "text": "The Banshees of Inisherin\n\n\n\n\n\n\n\n\n\nFeb 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnt-man and the Wasp: Quantumanía\n\n\n\n\n\n\n\n\n\nFeb 17, 2023\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "javase.html",
-    "href": "javase.html",
-    "title": "Java SE",
-    "section": "",
-    "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).\nYou can install Java SE for free here:\nhttps://www.oracle.com/java/technologies/java-se-glance.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata Type\nSize\nDescription\nDeclaration example\n\n\n\n\n\nbyte\n1 byte\nStores whole number from -128 to 127\nbyte variableName = value;\n\n\n\nshort\n2 bytes\nStores whole numbers from -32,768 to 32,767\nshort variableName = value;\n\n\n\nint\n4 bytes\nStores whole numbers from -2,147,483,648 to 2,147,483,647\nint variableName = value;\n\n\n\nlong\n8 bytes\nStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\nlong variableName = value;\n\n\n\nfloat\n4 bytes\nStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\nfloat variableName = number.deciaml\n\n\n\ndouble\n8 bytes\nStores fractional numbers. Sufficient for storing 15 decimal digits\ndouble variableName = number.decimal\n\n\n\nboolean\n1 bit\nStores true or false values\nboolean variableName = true/false\n\n\n\nchar\n2 bytes\nStores a single character/letter or ASCII values\nchar varaibleName = ‘b’ or 98"
   },
   {
     "objectID": "laboratories/advanced_features.html",
@@ -112,20 +77,6 @@
     "text": "Math\nWith Quarto you can write math fomulas:\n\\[\nP(E) = {n \\choose k} p^k (2-p)^{n - k}\n\\]"
   },
   {
-    "objectID": "laboratories/observable_js_cell.html",
-    "href": "laboratories/observable_js_cell.html",
-    "title": "Observable JS script cell",
-    "section": "",
-    "text": "Infinite loop running on real time\n\ni = {\n  let i = 0;\n  while (true) {\n    yield ++i;\n  }\n}\n\n\n\n\n\n\n\ni\n\n\n\n\n\n\n\n\nx = 10\n\n\n\n\n\n\n\nx + 5"
-  },
-  {
-    "objectID": "laboratories/mooc.html",
-    "href": "laboratories/mooc.html",
-    "title": "University of Helsinki MOOC center",
-    "section": "",
-    "text": "As part of the course we have learned the basics of Java practicing some exercises with the MOOC (masive open online course) made by the university of Helsinki.\nYou can acces take this course here: Java Programming\nhere you can see my GitHub repo with the solutions i’ve developed for the MOOC course: Mooc.fi java exercises"
-  },
-  {
     "objectID": "laboratories/labs.html",
     "href": "laboratories/labs.html",
     "title": "Laboratories",
@@ -133,18 +84,11 @@
     "text": "Here is a table with all the laboratories made during the Web APP Developement course\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Helsinki MOOC center\n\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n\n\n\n\n\n\nJava SE Laboratories\n\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\n\n\n\n\n\n\nAdvanced features\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\n\n\n\n\n\n\nAPI REST call to server and render from JSON\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\n\n\nObservable JS script cell\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "laboratories/api_rest_call.html",
-    "href": "laboratories/api_rest_call.html",
-    "title": "API REST call to server and render from JSON",
+    "objectID": "laboratories/java_labs/labse03_1.html",
+    "href": "laboratories/java_labs/labse03_1.html",
+    "title": "Lab#SE03-1: Library/Book, Core-Model",
     "section": "",
-    "text": "API REST call example:\n\n\nd3 = require('d3')\n\nbarcelona = await d3.json(\n  \"[Api]http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=8fc354586639c1fc4d03e4bfb7ff71cc\"\n)\n\ntemperature = [barcelona.main];\n\nInputs.table(temperature)"
-  },
-  {
-    "objectID": "laboratories/java_labs/java_labs.html",
-    "href": "laboratories/java_labs/java_labs.html",
-    "title": "Java SE Laboratories",
-    "section": "",
-    "text": "Here you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories.\nAt this moment, only Lab#SE02_01 has content."
+    "text": "TO-DO"
   },
   {
     "objectID": "laboratories/java_labs/labse00_1.html",
@@ -168,16 +112,16 @@
     "text": "TO-DO"
   },
   {
-    "objectID": "laboratories/java_labs/labse02_2.html",
-    "href": "laboratories/java_labs/labse02_2.html",
-    "title": "Lab#SE02-2: Movie/Review, CRUD Operations",
+    "objectID": "laboratories/java_labs/labse02_5.html",
+    "href": "laboratories/java_labs/labse02_5.html",
+    "title": "Lab#SE02-5: Movie/Review, simulate interactivity by console",
     "section": "",
     "text": "TO-DO"
   },
   {
-    "objectID": "laboratories/java_labs/labse00_2.html",
-    "href": "laboratories/java_labs/labse00_2.html",
-    "title": "Lab#SE00-2: Maven Clinic",
+    "objectID": "laboratories/java_labs/labse02_4.html",
+    "href": "laboratories/java_labs/labse02_4.html",
+    "title": "Lab#SE02-4: Movie/Review, interactivity and coupling",
     "section": "",
     "text": "TO-DO"
   },
@@ -231,27 +175,6 @@
     "text": "7 Expanding UML\nNow that we have our core classes ready and tested, it’s time to add new features. This will change the first UML that worked as some sort of a draft.\n\n\n\n\n\nclassDiagram\n  class Movie {\n    - title: String\n    - reviews: ArrayList Review\n    - awards: ArrayList Awards\n  }\n\n  class Review {\n    - movie: Movie\n    - critic: Critic\n    - rating: int\n    - comment: String\n  }\n\n  class Person{\n    - name: String\n  }\n\n  class Director extends Person{\n    - movies: ArrayList Movie\n  }\n\n  class Critic extends Person{\n    - reviews: ArrayList Review\n  }\n\n  class Awards{\n    - oscars: Set Oscar\n  }\n\n  class Oscar extends Awards{\n    - Boolean won\n  }\n  Movie *-- Review : Composition\n  Review o-- Critic extends Person : Aggregation\n  Movie *-- Awards : Composition\n  Awards <|-- Oscar extends Awards : Inheritance\n  Person <|-- Director extends Person : Inheritance\n  Person <|-- Critic extends Person : Inheritance"
   },
   {
-    "objectID": "laboratories/java_labs/labse00_3.html",
-    "href": "laboratories/java_labs/labse00_3.html",
-    "title": "Lab#SE00-3: Library Model",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_5.html",
-    "href": "laboratories/java_labs/labse02_5.html",
-    "title": "Lab#SE02-5: Movie/Review, simulate interactivity by console",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_4.html",
-    "href": "laboratories/java_labs/labse02_4.html",
-    "title": "Lab#SE02-4: Movie/Review, interactivity and coupling",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
     "objectID": "laboratories/java_labs/labse00_4.html",
     "href": "laboratories/java_labs/labse00_4.html",
     "title": "Lab#SE00-4: Abstract/Interface Human",
@@ -259,16 +182,37 @@
     "text": "TO-DO"
   },
   {
-    "objectID": "laboratories/java_labs/labse01_2.html",
-    "href": "laboratories/java_labs/labse01_2.html",
-    "title": "Lab#SE01-2: Maven/Gradle Person and Account stored in JSON",
+    "objectID": "laboratories/java_labs/java_labs.html",
+    "href": "laboratories/java_labs/java_labs.html",
+    "title": "Java SE Laboratories",
+    "section": "",
+    "text": "Here you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories.\nAt this moment, only Lab#SE02_01 has content."
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_2.html",
+    "href": "laboratories/java_labs/labse00_2.html",
+    "title": "Lab#SE00-2: Maven Clinic",
     "section": "",
     "text": "TO-DO"
   },
   {
-    "objectID": "laboratories/java_labs/labse03_1.html",
-    "href": "laboratories/java_labs/labse03_1.html",
-    "title": "Lab#SE03-1: Library/Book, Core-Model",
+    "objectID": "laboratories/java_labs/labse02_2.html",
+    "href": "laboratories/java_labs/labse02_2.html",
+    "title": "Lab#SE02-2: Movie/Review, CRUD Operations",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_3.html",
+    "href": "laboratories/java_labs/labse00_3.html",
+    "title": "Lab#SE00-3: Library Model",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse01_2.html",
+    "href": "laboratories/java_labs/labse01_2.html",
+    "title": "Lab#SE01-2: Maven/Gradle Person and Account stored in JSON",
     "section": "",
     "text": "TO-DO"
   },
@@ -292,5 +236,61 @@
     "title": "Lab#SE03-2: Library/Book, Sprint Zero",
     "section": "",
     "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/api_rest_call.html",
+    "href": "laboratories/api_rest_call.html",
+    "title": "API REST call to server and render from JSON",
+    "section": "",
+    "text": "API REST call example:\n\n\nd3 = require('d3')\n\nbarcelona = await d3.json(\n  \"[Api]http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=8fc354586639c1fc4d03e4bfb7ff71cc\"\n)\n\ntemperature = [barcelona.main];\n\nInputs.table(temperature)"
+  },
+  {
+    "objectID": "laboratories/mooc.html",
+    "href": "laboratories/mooc.html",
+    "title": "University of Helsinki MOOC center",
+    "section": "",
+    "text": "As part of the course we have learned the basics of Java practicing some exercises with the MOOC (masive open online course) made by the university of Helsinki.\nYou can acces take this course here: Java Programming\nhere you can see my GitHub repo with the solutions i’ve developed for the MOOC course: Mooc.fi java exercises"
+  },
+  {
+    "objectID": "laboratories/observable_js_cell.html",
+    "href": "laboratories/observable_js_cell.html",
+    "title": "Observable JS script cell",
+    "section": "",
+    "text": "Infinite loop running on real time\n\ni = {\n  let i = 0;\n  while (true) {\n    yield ++i;\n  }\n}\n\n\n\n\n\n\n\ni\n\n\n\n\n\n\n\n\nx = 10\n\n\n\n\n\n\n\nx + 5"
+  },
+  {
+    "objectID": "javase.html",
+    "href": "javase.html",
+    "title": "Java SE",
+    "section": "",
+    "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).\nYou can install Java SE for free here:\nhttps://www.oracle.com/java/technologies/java-se-glance.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata Type\nSize\nDescription\nDeclaration example\n\n\n\n\n\nbyte\n1 byte\nStores whole number from -128 to 127\nbyte variableName = value;\n\n\n\nshort\n2 bytes\nStores whole numbers from -32,768 to 32,767\nshort variableName = value;\n\n\n\nint\n4 bytes\nStores whole numbers from -2,147,483,648 to 2,147,483,647\nint variableName = value;\n\n\n\nlong\n8 bytes\nStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\nlong variableName = value;\n\n\n\nfloat\n4 bytes\nStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\nfloat variableName = number.deciaml\n\n\n\ndouble\n8 bytes\nStores fractional numbers. Sufficient for storing 15 decimal digits\ndouble variableName = number.decimal\n\n\n\nboolean\n1 bit\nStores true or false values\nboolean variableName = true/false\n\n\n\nchar\n2 bytes\nStores a single character/letter or ASCII values\nchar varaibleName = ‘b’ or 98"
+  },
+  {
+    "objectID": "ifcd0210/deliveries.html",
+    "href": "ifcd0210/deliveries.html",
+    "title": "IFCD0210",
+    "section": "",
+    "text": "Here you can read the subjects to be delivered and links to the specified tasks."
+  },
+  {
+    "objectID": "ifcd0210/deliveries.html#subjects",
+    "href": "ifcd0210/deliveries.html#subjects",
+    "title": "IFCD0210",
+    "section": "Subjects",
+    "text": "Subjects\nHere you can read the subjects to be delivered:\n\n\n\nCode\nDate\nDescription\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\nPrototip WebApp Quarto: web multipage, markdwon/HTML, with github repository and gh-pages deployement\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto amb advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto amb Document Listings\n\n\nMF01-0492\n21/02/2023\nProva objectiva i prova pràctica - WebApp Quarto amb Api REST call to server and render the data from JSON, from cloud-external server or Spring Boot local server  - WebApp Quarto amb a Observable JS script cell"
+  },
+  {
+    "objectID": "ifcd0210/deliveries.html#deliveries",
+    "href": "ifcd0210/deliveries.html#deliveries",
+    "title": "IFCD0210",
+    "section": "Deliveries",
+    "text": "Deliveries\n\n\n\n\nCode\nDate\nDelivery\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\n- Website: WebApp Quarto  - GitHub repo: Repo\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto with advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto with Document Listings\n\n\nMF01-0492\n21/02/2023\n- WebApp Quarto with Api REST call to server and render the data from JSON  - WebApp Quarto with Observable JS script cell"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "This site has two main puroposes:\n\nWil be used to build documentation on different projects covered on the Web App Developement course that i’m actually taking clases at CIFO La Violeta\nBuild a portfolio as a developer.\n\nThanks for visiting my site!\n\n\nSections\nIf you browse trough the different sections, you will find:\n\nJava SE: A space for describing Java principles, concepts and a sort of tutorials.\nLaboratories: Some exercises that are part of the curriculum of the IFCD0210 course.\nIFCD0210: Subjects and deliveries for the course.\nAbout me: a chance to know me a little bit better!"
   }
 ]
