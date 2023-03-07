@@ -756,7 +756,7 @@ Expand to reveal code
 <div class="callout-body-container callout-body">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
-<pre><strong>PersonTest.java</strong></pre>
+<pre><strong>PersonClassTest.java</strong></pre>
 </div>
 <div class="sourceCode" id="cb8"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Test</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">becomeOlderTest</span><span class="op">(){</span></span>
@@ -818,18 +818,26 @@ Expand to reveal code
 <div class="code-with-filename-file">
 <pre><strong>car.java</strong></pre>
 </div>
-<div class="sourceCode" id="cb9"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">void</span> <span class="fu">getInTheCar</span><span class="op">()</span> <span class="op">{</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>passengers <span class="op">&lt;</span> seats<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>            <span class="kw">this</span><span class="op">.</span><span class="fu">passengers</span><span class="op">++;</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="bu">String</span> <span class="fu">startTheCar</span><span class="op">(){</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span>passengers <span class="op">==</span> seats<span class="op">){</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="st">"Let's drive!"</span><span class="op">;</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="st">"The car must be full to start driving"</span><span class="op">;</span></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
 <section id="testing-car-class-methods" class="level4" data-number="5.2.1">
 <h4 data-number="5.2.1" class="anchored" data-anchor-id="testing-car-class-methods"><span class="header-section-number">5.2.1</span> Testing Car Class methods</h4>
-<p>TO-DO</p>
-</section>
-</section>
-<section id="new-methods-for-book-class" class="level3" data-number="5.3">
-<h3 data-number="5.3" class="anchored" data-anchor-id="new-methods-for-book-class"><span class="header-section-number">5.3</span> New methods for Book class</h3>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -844,20 +852,48 @@ Expand to reveal code
 <div class="callout-body-container callout-body">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
-<pre><strong>Book.java</strong></pre>
+<pre><strong>CarClassTest.java</strong></pre>
 </div>
-<div class="sourceCode" id="cb10"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Test</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">getInTheCarTest</span><span class="op">()</span> <span class="op">{</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>        <span class="co">// Creating a new person object and passing all parameters</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>        Car fakeCar <span class="op">=</span> <span class="kw">new</span> <span class="fu">Car</span><span class="op">(</span><span class="dv">4</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="st">"Red"</span><span class="op">);</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span><span class="dv">0</span><span class="op">,</span> fakeCar<span class="op">.</span><span class="fu">getPassengers</span><span class="op">());</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>        fakeCar<span class="op">.</span><span class="fu">getInTheCar</span><span class="op">();</span></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span><span class="dv">1</span><span class="op">,</span> fakeCar<span class="op">.</span><span class="fu">getPassengers</span><span class="op">());</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>        fakeCar<span class="op">.</span><span class="fu">getInTheCar</span><span class="op">();</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span><span class="dv">2</span><span class="op">,</span> fakeCar<span class="op">.</span><span class="fu">getPassengers</span><span class="op">());</span></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>        fakeCar<span class="op">.</span><span class="fu">getInTheCar</span><span class="op">();</span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span><span class="dv">3</span><span class="op">,</span> fakeCar<span class="op">.</span><span class="fu">getPassengers</span><span class="op">());</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>        fakeCar<span class="op">.</span><span class="fu">getInTheCar</span><span class="op">();</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span><span class="dv">4</span><span class="op">,</span> fakeCar<span class="op">.</span><span class="fu">getPassengers</span><span class="op">());</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>        fakeCar<span class="op">.</span><span class="fu">getInTheCar</span><span class="op">();</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertNotEquals</span><span class="op">(</span><span class="dv">5</span><span class="op">,</span> fakeCar<span class="op">.</span><span class="fu">getPassengers</span><span class="op">());</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">startTheCarTest</span><span class="op">(){</span></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a>        Car fakeCar <span class="op">=</span> <span class="kw">new</span> <span class="fu">Car</span><span class="op">(</span><span class="dv">4</span><span class="op">,</span> <span class="dv">3</span><span class="op">,</span> <span class="st">"Red"</span><span class="op">);</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> <span class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span class="op">;</span> i <span class="op">&lt;</span> fakeCar<span class="op">.</span><span class="fu">getSeats</span><span class="op">();</span> i<span class="op">++){</span></span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a>            fakeCar<span class="op">.</span><span class="fu">getInTheCar</span><span class="op">();</span></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a>        <span class="bu">String</span> isTheCarReady <span class="op">=</span> fakeCar<span class="op">.</span><span class="fu">startTheCar</span><span class="op">();</span></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span>isTheCarReady<span class="op">,</span> fakeCar<span class="op">.</span><span class="fu">startTheCar</span><span class="op">());</span></span>
+<span id="cb10-31"><a href="#cb10-31" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb10-32"><a href="#cb10-32" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
-<section id="testing-book-class-methods" class="level4" data-number="5.3.1">
-<h4 data-number="5.3.1" class="anchored" data-anchor-id="testing-book-class-methods"><span class="header-section-number">5.3.1</span> Testing Book Class methods</h4>
-<p>TO-DO</p>
 </section>
 </section>
-<section id="new-methods-for-author-class" class="level3" data-number="5.4">
-<h3 data-number="5.4" class="anchored" data-anchor-id="new-methods-for-author-class"><span class="header-section-number">5.4</span> New methods for Author class</h3>
+<section id="new-methods-for-book-class" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="new-methods-for-book-class"><span class="header-section-number">5.3</span> New methods for Book class</h3>
 <div class="callout-note callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -872,9 +908,37 @@ Expand to reveal code
 <div class="callout-body-container callout-body">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
-<pre><strong>Author.java</strong></pre>
+<pre><strong>Book.java</strong></pre>
 </div>
 <div class="sourceCode" id="cb11"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<section id="testing-book-class-methods" class="level4" data-number="5.3.1">
+<h4 data-number="5.3.1" class="anchored" data-anchor-id="testing-book-class-methods"><span class="header-section-number">5.3.1</span> Testing Book Class methods</h4>
+<p>TO-DO</p>
+</section>
+</section>
+<section id="new-methods-for-author-class" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="new-methods-for-author-class"><span class="header-section-number">5.4</span> New methods for Author class</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Expand to reveal code
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Author.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
