@@ -3,7 +3,8 @@ title: "Java SE Laboratories"
 date: 12/19/2022
 sidebar: "Labs"
 ---
-
+![Java SE Laboratories](../../imgs/lava_logo.png){.preview-image}
+---
 Here you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories.
 
 At this moment, only [Lab#SE02_01](https://vcalvache.github.io/mywebsite/laboratories/java_labs/labse02_1.html) has content.
