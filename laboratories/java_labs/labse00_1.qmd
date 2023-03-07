@@ -307,7 +307,7 @@ public class Book {
 ::: {.callout-note collapse="true"}
 ### Expand to reveal code
 
-``` {.java .code-overflow-wrap filename="PersonTest.java"}
+``` {.java .code-overflow-wrap filename="PersonClassTest.java"}
 @Test
     public void becomeOlderTest(){
         Faker fake = new Faker();
@@ -353,12 +353,65 @@ public class Book {
 ### Expand to reveal code
 
 ``` {.java .code-overflow-wrap filename="car.java"}
+public void getInTheCar() {
+        if (passengers < seats) {
+            this.passengers++;
+        }
+    }
+
+    public String startTheCar(){
+        if (passengers == seats){
+            return "Let's drive!";
+        } else {
+            return "The car must be full to start driving";
+        }
+    }
  
 ```
 :::
 
 #### Testing Car Class methods
-TO-DO
+
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+
+``` {.java .code-overflow-wrap filename="CarClassTest.java"}
+@Test
+    public void getInTheCarTest() {
+
+        // Creating a new person object and passing all parameters
+        Car fakeCar = new Car(4, 3, "Red");
+
+        assertEquals(0, fakeCar.getPassengers());
+        fakeCar.getInTheCar();
+        assertEquals(1, fakeCar.getPassengers());
+        fakeCar.getInTheCar();
+        assertEquals(2, fakeCar.getPassengers());
+        fakeCar.getInTheCar();
+        assertEquals(3, fakeCar.getPassengers());
+        fakeCar.getInTheCar();
+        assertEquals(4, fakeCar.getPassengers());
+        fakeCar.getInTheCar();
+        assertNotEquals(5, fakeCar.getPassengers());
+
+    }
+
+    @Test
+    public void startTheCarTest(){
+        Car fakeCar = new Car(4, 3, "Red");
+
+        for (int i = 0; i < fakeCar.getSeats(); i++){
+            fakeCar.getInTheCar();
+        }
+
+        String isTheCarReady = fakeCar.startTheCar();
+        assertEquals(isTheCarReady, fakeCar.startTheCar());
+    }
+ 
+```
+:::
+
 
 ### New methods for Book class
 
