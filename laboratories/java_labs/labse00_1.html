@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.313">
+<meta name="generator" content="quarto-1.2.335">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -283,6 +283,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <li><a href="#car-class" id="toc-car-class" class="nav-link" data-scroll-target="#car-class"><span class="toc-section-number">4.5</span>  Car class</a></li>
   <li><a href="#book-class" id="toc-book-class" class="nav-link" data-scroll-target="#book-class"><span class="toc-section-number">4.6</span>  Book class</a></li>
   </ul></li>
+  <li><a href="#new-methods-and-testing" id="toc-new-methods-and-testing" class="nav-link" data-scroll-target="#new-methods-and-testing"><span class="toc-section-number">5</span>  New methods and testing</a>
+  <ul class="collapse">
+  <li><a href="#methods-for-person-class" id="toc-methods-for-person-class" class="nav-link" data-scroll-target="#methods-for-person-class"><span class="toc-section-number">5.1</span>  Methods for Person class</a></li>
+  <li><a href="#new-methods-for-car-class" id="toc-new-methods-for-car-class" class="nav-link" data-scroll-target="#new-methods-for-car-class"><span class="toc-section-number">5.2</span>  New methods for Car class</a></li>
+  <li><a href="#new-methods-for-book-class" id="toc-new-methods-for-book-class" class="nav-link" data-scroll-target="#new-methods-for-book-class"><span class="toc-section-number">5.3</span>  New methods for Book class</a></li>
+  <li><a href="#new-methods-for-author-class" id="toc-new-methods-for-author-class" class="nav-link" data-scroll-target="#new-methods-for-author-class"><span class="toc-section-number">5.4</span>  New methods for Author class</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -327,7 +334,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     <div>
     <div class="quarto-title-meta-heading">Modified</div>
     <div class="quarto-title-meta-contents">
-      <p class="date-modified">Monday, March 6, 2023</p>
+      <p class="date-modified">Tuesday, March 7, 2023</p>
     </div>
   </div>
     
@@ -450,7 +457,19 @@ Expand to reveal code
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> <span class="bu">String</span> firstName<span class="op">;</span></span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> <span class="bu">String</span> lastName<span class="op">;</span></span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> <span class="dt">int</span> age<span class="op">;</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">private</span> <span class="dt">boolean</span> isVampire <span class="op">=</span> <span class="kw">false</span><span class="op">;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="fu">Person</span> <span class="op">(</span><span class="bu">String</span> firstName<span class="op">,</span> <span class="bu">String</span> lastName<span class="op">){</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">.</span><span class="fu">firstName</span> <span class="op">=</span> firstName<span class="op">;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">.</span><span class="fu">lastName</span> <span class="op">=</span> lastName<span class="op">;</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="fu">Person</span> <span class="op">(</span><span class="bu">String</span> firstName<span class="op">,</span> <span class="bu">String</span> lastName<span class="op">,</span> <span class="dt">int</span> age<span class="op">){</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">.</span><span class="fu">firstName</span> <span class="op">=</span> firstName<span class="op">;</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">.</span><span class="fu">lastName</span> <span class="op">=</span> lastName<span class="op">;</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">.</span><span class="fu">age</span> <span class="op">=</span> age<span class="op">;</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
@@ -665,8 +684,207 @@ Expand to reveal code
 </div>
 </div>
 </div>
+</section>
+</section>
+<section id="new-methods-and-testing" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="new-methods-and-testing"><span class="header-section-number">5</span> New methods and testing</h2>
+<section id="methods-for-person-class" class="level3" data-number="5.1">
+<h3 data-number="5.1" class="anchored" data-anchor-id="methods-for-person-class"><span class="header-section-number">5.1</span> Methods for Person class</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Expand to reveal code
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Person.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>   <span class="kw">public</span> Person <span class="fu">withFirstName</span><span class="op">(</span><span class="bu">String</span> firstName<span class="op">){</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">new</span> <span class="fu">Person</span><span class="op">(</span>firstName<span class="op">,</span> lastName<span class="op">);</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> Person <span class="fu">witLastName</span><span class="op">(</span><span class="bu">String</span> lastName<span class="op">){</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="kw">new</span> <span class="fu">Person</span><span class="op">(</span>firstName<span class="op">,</span> lastName<span class="op">);</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">becomeOlder</span><span class="op">(){</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>        <span class="kw">this</span><span class="op">.</span><span class="fu">age</span> <span class="op">+=</span> <span class="dv">5</span><span class="op">;</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span><span class="kw">this</span><span class="op">.</span><span class="fu">age</span> <span class="op">&gt;=</span> <span class="dv">138</span><span class="op">){</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>            <span class="kw">this</span><span class="op">.</span><span class="fu">isVampire</span> <span class="op">=</span> <span class="kw">true</span><span class="op">;</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="bu">String</span> <span class="fu">askIfVampire</span><span class="op">(){</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span><span class="kw">this</span><span class="op">.</span><span class="fu">isVampire</span> <span class="op">==</span> <span class="kw">true</span><span class="op">){</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="st">"This person is a vampire!"</span><span class="op">;</span></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span> <span class="cf">else</span> <span class="op">{</span></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>            <span class="cf">return</span> <span class="st">"This is not a vampire"</span><span class="op">;</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">killVampire</span><span class="op">(</span>Person person<span class="op">){</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="op">(</span><span class="kw">this</span><span class="op">.</span><span class="fu">isVampire</span> <span class="op">==</span> <span class="kw">true</span><span class="op">){</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>            <span class="kw">this</span><span class="op">.</span><span class="fu">age</span> <span class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>        <span class="op">}</span></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<section id="testing-person-class-methods" class="level4" data-number="5.1.1">
+<h4 data-number="5.1.1" class="anchored" data-anchor-id="testing-person-class-methods"><span class="header-section-number">5.1.1</span> Testing Person class methods</h4>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Expand to reveal code
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>PersonTest.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="at">@Test</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">becomeOlderTest</span><span class="op">(){</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>        Faker fake <span class="op">=</span> <span class="kw">new</span> <span class="fu">Faker</span><span class="op">();</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>        Person fakePerson <span class="op">=</span> <span class="kw">new</span> <span class="fu">Person</span><span class="op">(</span>fake<span class="op">.</span><span class="fu">name</span><span class="op">().</span><span class="fu">firstName</span><span class="op">(),</span> fake<span class="op">.</span><span class="fu">name</span><span class="op">().</span><span class="fu">lastName</span><span class="op">(),</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>                fake<span class="op">.</span><span class="fu">number</span><span class="op">().</span><span class="fu">numberBetween</span><span class="op">(</span><span class="dv">1</span><span class="op">,</span> <span class="dv">15</span><span class="op">));</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> originalAge <span class="op">=</span> fakePerson<span class="op">.</span><span class="fu">getAge</span><span class="op">();</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span>originalAge<span class="op">,</span> fakePerson<span class="op">.</span><span class="fu">getAge</span><span class="op">());</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>        fakePerson<span class="op">.</span><span class="fu">becomeOlder</span><span class="op">();</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>        fakePerson<span class="op">.</span><span class="fu">becomeOlder</span><span class="op">();</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>        fakePerson<span class="op">.</span><span class="fu">becomeOlder</span><span class="op">();</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>        <span class="dt">int</span> newAge <span class="op">=</span> originalAge <span class="op">+</span> <span class="op">(</span><span class="dv">5</span> <span class="op">*</span> <span class="dv">3</span><span class="op">);</span></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span>newAge<span class="op">,</span> fakePerson<span class="op">.</span><span class="fu">getAge</span><span class="op">());</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">askIfVampireTest</span><span class="op">(){</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>        Faker fake <span class="op">=</span> <span class="kw">new</span> <span class="fu">Faker</span><span class="op">();</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>        Person fakeVampire <span class="op">=</span> <span class="kw">new</span> <span class="fu">Person</span><span class="op">(</span>fake<span class="op">.</span><span class="fu">name</span><span class="op">().</span><span class="fu">firstName</span><span class="op">(),</span> fake<span class="op">.</span><span class="fu">name</span><span class="op">().</span><span class="fu">lastName</span><span class="op">(),</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>                fake<span class="op">.</span><span class="fu">number</span><span class="op">().</span><span class="fu">numberBetween</span><span class="op">(</span><span class="dv">150</span><span class="op">,</span> <span class="dv">200</span><span class="op">));</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>        fakeVampire<span class="op">.</span><span class="fu">becomeOlder</span><span class="op">();</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span><span class="st">"This person is a vampire!"</span><span class="op">,</span> fakeVampire<span class="op">.</span><span class="fu">askIfVampire</span><span class="op">());</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">@Test</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>    <span class="kw">public</span> <span class="dt">void</span> <span class="fu">killVampireTest</span><span class="op">(){</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>        Faker fake <span class="op">=</span> <span class="kw">new</span> <span class="fu">Faker</span><span class="op">();</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>        Person fakeVampire <span class="op">=</span> <span class="kw">new</span> <span class="fu">Person</span><span class="op">(</span>fake<span class="op">.</span><span class="fu">name</span><span class="op">().</span><span class="fu">firstName</span><span class="op">(),</span> fake<span class="op">.</span><span class="fu">name</span><span class="op">().</span><span class="fu">lastName</span><span class="op">(),</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>                fake<span class="op">.</span><span class="fu">number</span><span class="op">().</span><span class="fu">numberBetween</span><span class="op">(</span><span class="dv">150</span><span class="op">,</span> <span class="dv">200</span><span class="op">));</span></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>        fakeVampire<span class="op">.</span><span class="fu">becomeOlder</span><span class="op">();</span></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>        fakeVampire<span class="op">.</span><span class="fu">killVampire</span><span class="op">();</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>        <span class="fu">assertEquals</span><span class="op">(</span><span class="dv">0</span><span class="op">,</span> fakeVampire<span class="op">.</span><span class="fu">getAge</span><span class="op">());</span></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>    <span class="op">}</span></span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="new-methods-for-car-class" class="level3" data-number="5.2">
+<h3 data-number="5.2" class="anchored" data-anchor-id="new-methods-for-car-class"><span class="header-section-number">5.2</span> New methods for Car class</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Expand to reveal code
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>car.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<section id="testing-car-class-methods" class="level4" data-number="5.2.1">
+<h4 data-number="5.2.1" class="anchored" data-anchor-id="testing-car-class-methods"><span class="header-section-number">5.2.1</span> Testing Car Class methods</h4>
+<p>TO-DO</p>
+</section>
+</section>
+<section id="new-methods-for-book-class" class="level3" data-number="5.3">
+<h3 data-number="5.3" class="anchored" data-anchor-id="new-methods-for-book-class"><span class="header-section-number">5.3</span> New methods for Book class</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Expand to reveal code
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Book.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<section id="testing-book-class-methods" class="level4" data-number="5.3.1">
+<h4 data-number="5.3.1" class="anchored" data-anchor-id="testing-book-class-methods"><span class="header-section-number">5.3.1</span> Testing Book Class methods</h4>
+<p>TO-DO</p>
+</section>
+</section>
+<section id="new-methods-for-author-class" class="level3" data-number="5.4">
+<h3 data-number="5.4" class="anchored" data-anchor-id="new-methods-for-author-class"><span class="header-section-number">5.4</span> New methods for Author class</h3>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Expand to reveal code
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>Author.java</strong></pre>
+</div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode java code-overflow-wrap code-with-copy"><code class="sourceCode java"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a> </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<section id="testing-author-class-methods" class="level4" data-number="5.4.1">
+<h4 data-number="5.4.1" class="anchored" data-anchor-id="testing-author-class-methods"><span class="header-section-number">5.4.1</span> Testing Author Class methods</h4>
+<p>TO-DO</p>
 
 
+</section>
 </section>
 </section>
 
