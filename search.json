@@ -121,16 +121,16 @@
   {
     "objectID": "laboratories/mooc.html",
     "href": "laboratories/mooc.html",
-    "title": "University of Helsinki MOOC center",
+    "title": "University of Helsinki MOOC",
     "section": "",
-    "text": "As part of the course we have learned the basics of Java practicing some exercises with the MOOC (masive open online course) made by the university of Helsinki.\nYou can acces take this course here: Java Programming\nhere you can see my GitHub repo with the solutions i’ve developed for the MOOC course: Mooc.fi java exercises"
+    "text": "Helsinki free MOOC\n\n\n\nAs part of the course we have learned the basics of Java practicing some exercises with the MOOC (masive open online course) made by the university of Helsinki.\nYou can acces take this free course here: Java Programming\nhere you can see my GitHub repo with the solutions i’ve developed for the MOOC course:\nJava Programming I\nJava ProgrammingII"
   },
   {
     "objectID": "laboratories/labs.html",
     "href": "laboratories/labs.html",
     "title": "Laboratories",
     "section": "",
-    "text": "Here is a table with all the laboratories made during the Web APP Developement course\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Helsinki MOOC center\n\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n\n\n\n\n\n\nJava SE Laboratories\n\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\n\n\n\n\n\n\nAdvanced features\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\n\n\n\n\n\n\nAPI REST call to server and render from JSON\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\n\n\nObservable JS script cell\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Here is a table with all the laboratories made during the Web APP Developement course\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Helsinki MOOC\n\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n\n\n\n\n\n\nJava SE Laboratories\n\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\n\n\n\n\n\n\nAdvanced features\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\n\n\n\n\n\n\nAPI REST call to server and render from JSON\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\n\n\nObservable JS script cell\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "laboratories/api_rest_call.html",
@@ -144,7 +144,7 @@
     "href": "laboratories/java_labs/java_labs.html",
     "title": "Java SE Laboratories",
     "section": "",
-    "text": "Here you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories.\nAt this moment, only Lab#SE02_01 has content."
+    "text": "Java SE Laboratories\n\n\n\nHere you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories.\nAt this moment, only Lab#SE02_01 has content."
   },
   {
     "objectID": "laboratories/java_labs/labse00_1.html",
