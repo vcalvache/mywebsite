@@ -24,8 +24,59 @@ Run the application and test the web and REST controllers.
 
 Initializing project at the [Spring initializer tool](https://start.spring.io/){.external}
 
-- Choosing settings for this project:
+- Choosing settings  and adding dependencies for this project:
 
 **TO-DO: Insert img**
+
+## Importing project to Intellij Idea
+
+**TO-DO: Insert img**
+
+## Creating web controller
+
+- Create a new Java Class.
+
+In the previosuly created class add @Controller anotation to the class.
+
+Create a Java method with the @RequestMapping anotation.
+This controller will return an hmtl file.
+
+**TO-DO: Insert img**
+
+## Building a HTML page
+
+Now it's time to build the html file that the controller will return.
+
+On templates folder, create a new html file.
+
+**TO-DO: Insert img**
+
+## Creating REST controller
+
+It's time to write the rest controller. It's quite similar to the creation of the web controller, but this time use the @Restcontroller and @GetMapping annotations.
+
+
+**TO-DO: Insert img**
+
+Now, the project tree looks like this:
+
+**TO-DO: Insert img**
+
+## Running out application
+
+Now the project is to start running.
+
+**TO-DO: Insert img**
+
+and there are the responses 
+ * web controller
+ **TO-DO: Insert img**
+ * rest controller
+ **TO-DO: Insert img**
+
+ Note the urls on the top. There are two different responses.
+
+ **TO-DO: add github repo link**
+
 
 
