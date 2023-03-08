@@ -1,0 +1,31 @@
+---
+title: "Spring Boot Laboratories"
+date: 03/08/2023
+sidebar: false
+---
+
+
+:::
+📘 Create a Spring Boot Project
+
+Go to start.spring.io to create a new project with desired settings (Maven, Java, Spring Boot version, etc.).
+
+Add required dependencies such as Spring Web.
+
+Download the generated ZIP file and import it into IntelliJ IDEA.
+
+Create web and REST controllers by creating new Java classes and defining the desired endpoint methods.
+
+Run the application and test the web and REST controllers.
+
+:::
+
+## Project Initialization
+
+Initializing project at the [Spring initializer tool](https://start.spring.io/){.external}
+
+- Choosing settings for this project:
+
+**TO-DO: Insert img**
+
+

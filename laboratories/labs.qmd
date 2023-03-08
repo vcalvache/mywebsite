@@ -7,6 +7,7 @@ listing:
         - "advanced_features.qmd"
         - "api_rest_call.qmd"
         - "observable_js_cell.qmd"
+        - "spring_boot.qmd"
     sort: date
     max-description-length: 0    
 sidebar: false        

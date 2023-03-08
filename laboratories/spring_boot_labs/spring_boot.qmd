@@ -1,0 +1,7 @@
+title: "Spring Boot Laboratories"
+date: 03/08/2023
+sidebar: false
+---
+
+TO-DO: add a description about the content of this site. 
+Will need a left navbar with all the projects listed
