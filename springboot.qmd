@@ -1,0 +1,56 @@
+---
+title: "Spring Boot"
+date: 28/03/2023
+sidebar: false
+---
+
+### Spring & Spring Boot
+
+Spring and Spring Boot are both frameworks used to build aplications
+
+### Spring
+
+You can use Spring to build an aplications.  we will use Spring MVC for the web application, Spring Data for data access, and Spring Security for authentication and authorization.
+
+### Spring Boot
+
+Spring Boot makes easier to work with spring. It cames with some pre-configurated settings that allows to build apps instead of building everything from scratch.
+
+Spring Boot allows to configure how and when dependencies are provided to your application at runtime. This puts you in control of how your application operates in different scenarios.
+Injection Dependencies will be used to connect and use different technologies in our project, wih some pre-build packages that will make easier to interact between each technology used in our application.
+
+### Spring Initializr
+
+The best option to start using Spring Boot is using the online initializer.
+Link: https://start.spring.io/
+
+### API Contracts
+
+API contract is a formal agreement between the software provider and the consumer. This contract defines how the provider and the consumer interact, what data exchanges will be made and how to communicate in both succesful and failure cases.
+
+IMPORTANT: provider and consumer don't need to share the same programming languaje.
+
+
+API contracts are important because they communicate the behavior of a REST API. 
+They provide details about the data being serialized for each command and parameter being exchanged. 
+The API contracts are written in a way that can be easily translated into API provider and consumer functionalitys.
+
+### JSON
+
+JSON (Javascript Object Notation) provides a data interchange format that represents the particular information of an object in a format that you can easily read and understand. We'll use JSON as our data interchange format for the Family Cash Card API.
+
+Here's the example we used above:
+
+{
+  "id": 99,
+  "amount": 123.45
+}
+Other popular data formats include YAML (Yet Another Markup Language) and XML (Extensible Markup Language). When compared to XML, JSON reads and writes quicker, is easier to use, and takes up less space. You can use JSON with most modern programming languages and on all major platforms. It also works seamlessly with Javascript-based applications.
+
+For these reasons, JSON has largely superseded XML as the most widely used format for APIs used by Web apps, including REST APIs.
+
+
+### Summary
+API contracts are a popular means for API providers and consumers to agree upon how an API will behave. API contracts can be as simple as shared documentation to sophisticated contract management and validation frameworks. Combined with JSON, the most popular data interchange format for modern web-based applications, contracts can be a powerful means to help API providers and consumers develop and test APIs.
+
+You'll implement automated testing and verification of API contracts later in this course.
