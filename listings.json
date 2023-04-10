@@ -2,6 +2,10 @@
   {
     "listing": "/about_me/movie_listing.html",
     "items": [
+      "/about_me/movies/unbearable_weight.html",
+      "/about_me/movies/the_silence.html",
+      "/about_me/movies/luther.html",
+      "/about_me/movies/memories_murder.html",
       "/about_me/movies/lamb.html",
       "/about_me/movies/banshees_Inisherin.html",
       "/about_me/movies/antman_quantumania.html"
