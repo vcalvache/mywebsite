@@ -55,3 +55,11 @@ UNDER CONSTRUCTION
 
 ---
 
+Split method:
+
+You can split a string with the split function.
+
+First you need to declare a List of string. Then, use the .split method with the desired separator to split the string.
+
+Example:
+String [] list = stringName.split("desired character");

@@ -3,3 +3,11 @@ title: "Lab#SE03-1: Library/Book, Core-Model"
 ---
 
 TO-DO
+
+## Creating Core classes
+
+Person:
+Using lombok wih all and no parameters as cosntructors. Person only has two parametes.
+
+Member:
+member inherits Person. Has new parameters. There is a userID parameter made static, so each new object created of the Member class will have a unique ID.
