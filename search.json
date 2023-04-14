@@ -1,40 +1,5 @@
 [
   {
-    "objectID": "ifcd0210/deliveries.html",
-    "href": "ifcd0210/deliveries.html",
-    "title": "IFCD0210",
-    "section": "",
-    "text": "Here you can read the subjects to be delivered and links to the specified tasks."
-  },
-  {
-    "objectID": "ifcd0210/deliveries.html#subjects",
-    "href": "ifcd0210/deliveries.html#subjects",
-    "title": "IFCD0210",
-    "section": "Subjects",
-    "text": "Subjects\nHere you can read the subjects to be delivered:\n\nFront-End\n\n\n\nCode\nDate\nDescription\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\nPrototip WebApp Quarto: web multipage, markdwon/HTML, with github repository and gh-pages deployement\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto amb advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto amb Document Listings\n\n\nMF01-0492\n21/02/2023\nProva objectiva i prova pràctica - WebApp Quarto amb Api REST call to server and render the data from JSON, from cloud-external server or Spring Boot local server  - WebApp Quarto amb a Observable JS script cell\n\n\n\n\n\nBack-End\n\n\n\n\n\n\n\n\nCode\nDate\nDescription\n\n\n\n\nMF02-0492\n21/02/2022\nBack-end\n\n\nUF01-1844\n20/03/2023\nLaboratori app MVC amb Spring Boot Thyemeleaf (alternatiu Rest) un objecte amb totes les operacions CRUD\n\n\nUF02-1845\n19/04/2023\nLaboratori app Spring Boot Thyemeleaf (opcional Rest) amb H2 JPA (alternatiu objectes amb Composition/Inherence)\n\n\nUF03-1846\n09/05/2023\nLaboratori app web amb React Hooks\n\n\nMF02-0492\n10/05/2023\nProva objectiva i prova pràctica (triar una opció) - Laboratori app Spring Boot amb React  - Laboratori Spring Boot Server-Data API Rest amb Spring Boot Client-Web-Thymeleaf  - Laboratori app Spring Boot Thynmeleaf deployat a AWS  - Laboratori app web amb React Hooks amb Data API Rest"
-  },
-  {
-    "objectID": "ifcd0210/deliveries.html#deliveries",
-    "href": "ifcd0210/deliveries.html#deliveries",
-    "title": "IFCD0210",
-    "section": "Deliveries",
-    "text": "Deliveries\n\n\n\n\nCode\nDate\nDelivery\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\n- Website: WebApp Quarto  - GitHub repo: Repo\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto with advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto with Document Listings\n\n\nMF01-0492\n21/02/2023\n- WebApp Quarto with Api REST call to server and render the data from JSON  - WebApp Quarto with Observable JS script cell"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome",
-    "section": "",
-    "text": "This site has two main puroposes:\n\nWil be used to build documentation on different projects covered on the Web App Developement course that i’m actually taking clases at CIFO La Violeta\nBuild a portfolio as a developer.\n\nThanks for visiting my site!\n\n\nSections\nIf you browse trough the different sections, you will find:\n\nJava SE: A space for describing Java principles, concepts and a sort of tutorials.\nLaboratories: Some exercises that are part of the curriculum of the IFCD0210 course.\nIFCD0210: Subjects and deliveries for the course.\nAbout me: a chance to know me a little bit better!"
-  },
-  {
-    "objectID": "about_me/about.html",
-    "href": "about_me/about.html",
-    "title": "About me",
-    "section": "",
-    "text": "Hi! I’m Victor and welcome to my site.\nThis section it’s made with the intentions that you can know me a little bit better. Don’t worry, I’m not gonna to use this only as a resumme. Instead, I’m gonna share things that I think can relate to.\n\nI’ve got a degree on media studies. I’ve studied Blanquerna Universitat Ramon LLul at Barcelona. And the thing i like most about media is video edditing.\nI don’t have all my project uploaded online, but if you are curoious about it, you can take a couple of minutes watching this video:\n\nAlso, as you can imagine i’m in love with cinema. If you want to know wich movies i’ve watched recelnty, you can click here.\n\nUnder construction"
-  },
-  {
     "objectID": "about_me/movie_listing.html",
     "href": "about_me/movie_listing.html",
     "title": "Latest movies i’ve seen",
@@ -42,18 +7,11 @@
     "text": "The Unbearable Weight of Massive Talent\n\n\n\n\n\n\n\n\n\nApr 9, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Silence\n\n\n\n\n\n\n\n\n\nApr 8, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLuther The Fallen Sun\n\n\n\n\n\n\n\n\n\nApr 7, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMemories of Murder (Salinui chueok)\n\n\n\n\n\n\n\n\n\nMar 25, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLamb\n\n\n\n\n\n\n\n\n\nMar 3, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Banshees of Inisherin\n\n\n\n\n\n\n\n\n\nFeb 27, 2023\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnt-man and the Wasp: Quantumanía\n\n\n\n\n\n\n\n\n\nFeb 17, 2023\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "javase.html",
-    "href": "javase.html",
-    "title": "Java SE",
+    "objectID": "about_me/about.html",
+    "href": "about_me/about.html",
+    "title": "About me",
     "section": "",
-    "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).\nYou can install Java SE for free here:\nhttps://www.oracle.com/java/technologies/java-se-glance.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata Type\nSize\nDescription\nDeclaration example\n\n\n\n\n\nbyte\n1 byte\nStores whole number from -128 to 127\nbyte variableName = value;\n\n\n\nshort\n2 bytes\nStores whole numbers from -32,768 to 32,767\nshort variableName = value;\n\n\n\nint\n4 bytes\nStores whole numbers from -2,147,483,648 to 2,147,483,647\nint variableName = value;\n\n\n\nlong\n8 bytes\nStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\nlong variableName = value;\n\n\n\nfloat\n4 bytes\nStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\nfloat variableName = number.deciaml\n\n\n\ndouble\n8 bytes\nStores fractional numbers. Sufficient for storing 15 decimal digits\ndouble variableName = number.decimal\n\n\n\nboolean\n1 bit\nStores true or false values\nboolean variableName = true/false\n\n\n\nchar\n2 bytes\nStores a single character/letter or ASCII values\nchar varaibleName = ‘b’ or 98"
-  },
-  {
-    "objectID": "springboot.html",
-    "href": "springboot.html",
-    "title": "Spring Boot",
-    "section": "",
-    "text": "Spring & Spring Boot\nSpring and Spring Boot are both frameworks used to build aplications\n\n\nSpring\nYou can use Spring to build an aplications. we will use Spring MVC for the web application, Spring Data for data access, and Spring Security for authentication and authorization.\n\n\nSpring Boot\nSpring Boot makes easier to work with spring. It cames with some pre-configurated settings that allows to build apps instead of building everything from scratch.\nSpring Boot allows to configure how and when dependencies are provided to your application at runtime. This puts you in control of how your application operates in different scenarios. Injection Dependencies will be used to connect and use different technologies in our project, wih some pre-build packages that will make easier to interact between each technology used in our application.\n\n\nSpring Initializr\nThe best option to start using Spring Boot is using the online initializer. Link: https://start.spring.io/\n\n\nAPI Contracts\nAPI contract is a formal agreement between the software provider and the consumer. This contract defines how the provider and the consumer interact, what data exchanges will be made and how to communicate in both succesful and failure cases.\nIMPORTANT: provider and consumer don’t need to share the same programming languaje.\nAPI contracts are important because they communicate the behavior of a REST API. They provide details about the data being serialized for each command and parameter being exchanged. The API contracts are written in a way that can be easily translated into API provider and consumer functionalitys.\n\n\nJSON\nJSON (Javascript Object Notation) provides a data interchange format that represents the particular information of an object in a format that you can easily read and understand. We’ll use JSON as our data interchange format for the Family Cash Card API.\nHere’s the example we used above:\n{ “id”: 99, “amount”: 123.45 } Other popular data formats include YAML (Yet Another Markup Language) and XML (Extensible Markup Language). When compared to XML, JSON reads and writes quicker, is easier to use, and takes up less space. You can use JSON with most modern programming languages and on all major platforms. It also works seamlessly with Javascript-based applications.\nFor these reasons, JSON has largely superseded XML as the most widely used format for APIs used by Web apps, including REST APIs.\n\n\nSummary\nAPI contracts are a popular means for API providers and consumers to agree upon how an API will behave. API contracts can be as simple as shared documentation to sophisticated contract management and validation frameworks. Combined with JSON, the most popular data interchange format for modern web-based applications, contracts can be a powerful means to help API providers and consumers develop and test APIs.\nYou’ll implement automated testing and verification of API contracts later in this course."
+    "text": "Hi! I’m Victor and welcome to my site.\nThis section it’s made with the intentions that you can know me a little bit better. Don’t worry, I’m not gonna to use this only as a resumme. Instead, I’m gonna share things that I think can relate to.\n\nI’ve got a degree on media studies. I’ve studied Blanquerna Universitat Ramon LLul at Barcelona. And the thing i like most about media is video edditing.\nI don’t have all my project uploaded online, but if you are curoious about it, you can take a couple of minutes watching this video:\n\nAlso, as you can imagine i’m in love with cinema. If you want to know wich movies i’ve watched recelnty, you can click here.\n\nUnder construction"
   },
   {
     "objectID": "laboratories/advanced_features.html",
@@ -119,20 +77,6 @@
     "text": "Math\nWith Quarto you can write math fomulas:\n\\[\nP(E) = {n \\choose k} p^k (2-p)^{n - k}\n\\]"
   },
   {
-    "objectID": "laboratories/observable_js_cell.html",
-    "href": "laboratories/observable_js_cell.html",
-    "title": "Observable JS script cell",
-    "section": "",
-    "text": "Infinite loop running on real time\n\ni = {\n  let i = 0;\n  while (true) {\n    yield ++i;\n  }\n}\n\n\n\n\n\n\n\ni\n\n\n\n\n\n\n\n\nx = 10\n\n\n\n\n\n\n\nx + 5"
-  },
-  {
-    "objectID": "laboratories/mooc.html",
-    "href": "laboratories/mooc.html",
-    "title": "University of Helsinki MOOC",
-    "section": "",
-    "text": "Helsinki free MOOC\n\n\n\nAs part of the course we have learned the basics of Java practicing some exercises with the MOOC (masive open online course) made by the university of Helsinki.\nYou can acces take this free course here: Java Programming\nhere you can see my GitHub repo with the solutions i’ve developed for the MOOC course:\nJava Programming I\nJava ProgrammingII"
-  },
-  {
     "objectID": "laboratories/labs.html",
     "href": "laboratories/labs.html",
     "title": "Laboratories",
@@ -140,11 +84,207 @@
     "text": "Here is a table with all the laboratories made during the Web APP Developement course\n\n\n\n\n\n\n\n\n\n\n\nUniversity of Helsinki MOOC\n\n\n\n\n\n\n\n\n\n\n\n\nDec 12, 2022\n\n\n\n\n\n\n\n\nJava SE Laboratories\n\n\n\n\n\n\n\n\n\n\n\n\nDec 19, 2022\n\n\n\n\n\n\n\n\nAdvanced features\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 10, 2023\n\n\n\n\n\n\n\n\nAPI REST call to server and render from JSON\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\n\n\nObservable JS script cell\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 21, 2023\n\n\n\n\n\n\n\n\nSpring Boot Laboratories\n\n\n\n\n\n\n\n\n\n\n\n\nMar 8, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "laboratories/java_labs/labse03_1.html",
+    "href": "laboratories/java_labs/labse03_1.html",
+    "title": "Lab#SE03-1: Library/Book, Core-Model",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse03_1.html#creating-core-classes",
+    "href": "laboratories/java_labs/labse03_1.html#creating-core-classes",
+    "title": "Lab#SE03-1: Library/Book, Core-Model",
+    "section": "Creating Core classes",
+    "text": "Creating Core classes\nPerson: Using lombok wih all and no parameters as cosntructors. Person only has two parametes.\nMember: member inherits Person. Has new parameters. There is a userID parameter made static, so each new object created of the Member class will have a unique ID."
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_1.html",
+    "href": "laboratories/java_labs/labse00_1.html",
+    "title": "Lab#SE00-1: Maven Person",
+    "section": "",
+    "text": "The goal of this project consist on creating different Java Classes, learn about Composition in Java Classes and testing."
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_1.html#tasks",
+    "href": "laboratories/java_labs/labse00_1.html#tasks",
+    "title": "Lab#SE00-1: Maven Person",
+    "section": "2 Tasks",
+    "text": "2 Tasks\n\n📘 Java SE Lab#SE00-1: Person\n\nCreate a Maven/Gradle Java SE Project with the UML and classes defined below.\nAdd Lombok, JUnit and Faker dependencies\nRefactor: remove boilerplate code (getters, setters and so on) and work with Lombok\nCreate Junit tests to test objects. Use Faker to create objects:\n\nTest createPerson: check whether the object Person creation works properly.\nTest createCar: check whether the object Car creation works properly.\nTest createBook: check whether the object Book creation works properly.\nTest createStudent: check whether the object Student creation works properly\nWithout composition: a Student object without car and books.\nWith composition: a Student object with Car object and Book List objects\n\nCreate Junit tests to test operations:\n\nTest methodsPerson: check that Person methods work properly: becomeOlder(), killVampire(), withFirstName()\n\nImprove Car, Book and Author classes with two methods each."
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_1.html#uml",
+    "href": "laboratories/java_labs/labse00_1.html#uml",
+    "title": "Lab#SE00-1: Maven Person",
+    "section": "3 UML",
+    "text": "3 UML\n\n\n\n\nclassDiagram\nclass Person {\n  -firstname: String\n  -lastname: String\n  -age: int\n}\nclass Student {\n  -university: String\n  -car: Car\n  -books: ArrayList~Book~\n\n}\nclass Author {\n  -genre: String\n  -book: Book\n}\n\nclass Car{\n    -places: int\n    -color: String\n}\n\nclass Book{\n    -title: String\n    -ISBN: String\n    -pages: int\n    -ahutor: Author\n}\nPerson --|> Student: Inheritance\nPerson --|> Author: Inheritance\nStudent *-- Book: Composition\nBook *-- Author: Composition\nStudent *-- Car: Composition\nAuthor *-- Book: Composition"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_1.html#classes",
+    "href": "laboratories/java_labs/labse00_1.html#classes",
+    "title": "Lab#SE00-1: Maven Person",
+    "section": "4 Classes",
+    "text": "4 Classes\n\n4.1 Person class\nPerson class with Lombok constructors and two custom constructors.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nPerson.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Person {\n    private String firstName;\n    private String lastName;\n    private int age;\n\n    private boolean isVampire = false;\n\n    public Person (String firstName, String lastName){\n        this.firstName = firstName;\n        this.lastName = lastName;\n    }\n\n    public Person (String firstName, String lastName, int age){\n        this.firstName = firstName;\n        this.lastName = lastName;\n        this.age = age;\n    }\n\n\n\n\n\n\n4.2 Student class\nStudent class with Lombok constructor and one custom constructorr calling the Person super class.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nStudent.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\nimport java.util.ArrayList;\n\n@Data\n@NoArgsConstructor\n@AllArgsConstructor\npublic class Student extends Person{\n    private String university;\n    private Car car;\n    private ArrayList<Book> books;\n\n    public Student(String firstName, String lastName, int age, String university){\n        super(firstName, lastName, age, false);\n        this.university = university;\n        this.car = new Car();\n        this.books = new ArrayList<>();\n    }\n\n\n\n\n\n\n4.3 Student class without composition\nStudent class with Lombok constructor and one custom constructor calling the Person super class. No compisiton with car and book class.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nStudentWithoutCompositon.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\n\n@Data\n@NoArgsConstructor\n@AllArgsConstructor\npublic class StudentNoComposition extends Person{\n    private String university;\n\n    public StudentNoComposition(String firstName, String lastName, int age, String university){\n        super(firstName, lastName, age, false);\n        this.university = university;\n    }\n\n\n\n\n\n\n4.4 Author class\nAuthor class with Lombok constructor and one custom constructor calling the Person super class.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nAuthor.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Author extends Person{\n    private String genre;\n    private Book book;\n    private ArrayList<Book> bookList;\n\n    public Author (String firstName, String lastName, int age, String genre){\n        super(firstName, lastName, age, false);\n        this.genre = genre;\n        this.book = new Book();\n        this.bookList = new ArrayList<>();\n    }\n\n\n\n\n\n\n4.5 Car class\nCar class with Lombok constructors.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nCar.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\n\n@Data\n@NoArgsConstructor\n@AllArgsConstructor\npublic class Car {\n    private int seats;\n    private int doors;\n    private String color;\n    private int passengers;\n\n    public Car(int seats, int doors, String color) {\n        this.seats = seats;\n        this.doors = doors;\n        this.color = color;\n        this.passengers = 0;\n    }\n\n\n\n\n\n\n4.6 Book class\nBook class with Lombok constructors and a custom constructor.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nBook.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\n\n@Data\n@NoArgsConstructor\n@AllArgsConstructor\npublic class Book {\n    private String title;\n    private String ISBN;\n    private int pages;\n    private Author author;\n    private int readPages;\n    private boolean bookRead;\n\n    public Book (String title, String ISBN, int pages){\n        this.title = title;\n        this.ISBN = ISBN;\n        this.pages = pages;\n        this.author = new Author();\n        this.bookRead = false;\n        this.readPages = 0;\n    }"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_1.html#new-methods-and-testing",
+    "href": "laboratories/java_labs/labse00_1.html#new-methods-and-testing",
+    "title": "Lab#SE00-1: Maven Person",
+    "section": "5 New methods and testing",
+    "text": "5 New methods and testing\n\n5.1 Methods for Person class\nPerson class has new methods:\n- withFirstName() returns a new Person object with firstName as parameter and a null lastName.\n- withLastName() returns a new Person object with lastName as parameter and a null firstName.\n- becomeOlder() adds 5 to age value and turns a person in a vampire ir age reaches 138 value.\n- askIfVampore() checks if a person is a vampire.\n- killVampire() recives a person object and kills vampire if is a vampire.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nPerson.java\n\n\n    @Test\n    public void becomeOlderTest(){\n        Faker fake = new Faker();\n\n        Person fakePerson = new Person(fake.name().firstName(), fake.name().lastName(),\n                fake.number().numberBetween(1, 15));\n        int originalAge = fakePerson.getAge();\n        assertEquals(originalAge, fakePerson.getAge());\n        fakePerson.becomeOlder();\n        fakePerson.becomeOlder();\n        fakePerson.becomeOlder();\n        int newAge = originalAge + (5 * 3);\n        assertEquals(newAge, fakePerson.getAge());\n    }\n\n    @Test\n    public void withFirstNameTest(){\n        Faker faker = new Faker();\n        String firstName= faker.name().firstName();\n        Person person = new Person();\n        person = person.withFirstName(firstName);\n        assertEquals(firstName, person.getFirstName());\n    }\n\n    @Test\n    public void withLastNameTest(){\n        Faker faker = new Faker();\n        String lastName = faker.name().lastName();\n\n        Person person = new Person();\n        person = person.witLastName(lastName);\n        assertEquals(lastName, person.getLastName());\n    }\n\n    @Test\n    public void askIfVampireTest(){\n        Faker fake = new Faker();\n\n        Person fakeVampire = new Person(fake.name().firstName(), fake.name().lastName(),\n                fake.number().numberBetween(150, 200));\n        fakeVampire.becomeOlder();\n        assertEquals(\"This person is a vampire!\", fakeVampire.askIfVampire());\n    }\n\n    @Test\n    public void killVampireTest(){\n        Faker fake = new Faker();\n\n        Person fakeVampire = new Person(fake.name().firstName(), fake.name().lastName(),\n                fake.number().numberBetween(150, 200));\n        fakeVampire.becomeOlder();\n        fakeVampire.killVampire();\n        assertEquals(0, fakeVampire.getAge());\n    }\n\n\n\n\n\n\n5.2 New methods for Student class\nStudent class has new methods:\n- changesUniversity() recives a String and changes university of the student.\n- buyBook() recives a  Book object and add the book to the booksList\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nStudent.java\n\n    public void changesUniversity(String university){\n        this.university = university;\n    }\n    \n    public void buyBook(Book book){\n        this.books.add(book);\n    }\n \n\n\n\n\n\n5.2.1 Testing Studen Class methods\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nStudentClassTest.java\n\n  @Test\n    public void changesUniversityTest(){\n        Faker faker = new Faker();\n\n        Student fakeStudent = new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(1, 100),\n                faker.university().name());\n\n        String originalUniversity = fakeStudent.getUniversity();\n\n        String newUniversity = faker.university().name();\n        fakeStudent.changesUniversity(newUniversity);\n        assertNotEquals(originalUniversity, fakeStudent.getUniversity());\n    }\n\n    @Test\n    public void buyBook(){\n        Faker faker = new Faker();\n\n        Student fakeStudent = new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(1, 100),\n                faker.university().name());\n\n        Book fakeBook = new Book(faker.book().title(), \"12345NB\", faker.number().numberBetween(0, 500));\n\n        fakeStudent.buyBook(fakeBook);\n        assertEquals(fakeBook.toString(), fakeStudent.getBooks().get(0).toString());\n    }\n \n\n\n\n\n\n\n\n5.3 New methods for Author class\nAuthor class has new methods:\n- authorWritesNewBook() recives parameters and returns a new book.\n- addBooksToList() recives a  Book object and add the book to the booksList.\n- getOneBook() finds a book of the author that matches the bookTitle.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nAuthor.java\n\n    public Book authorWritesNewBook(String title, String ISBN, int pages){\n        return new Book(title, ISBN, pages);\n    }\n\n    public void addBooksToList(Book book){\n        this.bookList.add(book);\n    }\n\n    public Book getOneBook(String title){\n        for (Book book: this.bookList){\n            if (book.getTitle().equals(title)){\n                return book;\n            }\n        }\n        return null;\n    }\n\n\n\n\n\n5.3.1 Testing Author Class methods\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nAuthorClassTest.java\n\n    @Test\n    public void authorWritesNewBookTest(){\n        Faker faker = new Faker();\n        Author fakeAuthor = new Author(faker.name().firstName(), faker.name().lastName(), faker.number().randomDigit(),\n                faker.book().genre());\n        String bookTitle = faker.book().title();\n        String ISBN = faker.idNumber().toString();\n        int pages = faker.number().randomDigit();\n\n        Book book = new Book(bookTitle, ISBN, pages);\n        Book newBookByAuthor = fakeAuthor.authorWritesNewBook(bookTitle, ISBN, pages);\n        assertEquals(book.getTitle(), newBookByAuthor.getTitle());\n        assertEquals(book.getISBN(), newBookByAuthor.getISBN());\n        assertEquals(book.getPages(), newBookByAuthor.getPages());\n    }\n\n    @Test\n    public void getOneBookTest(){\n\n        Faker faker = new Faker();\n        Author fakeAuthor = new Author(faker.name().firstName(), faker.name().lastName(), faker.number().randomDigit(),\n                faker.book().genre());\n\n        for (int i = 0; i < 10; i++){\n             Book fakeBook = new Book(faker.book().title(), \"12345NB\", faker.number().numberBetween(100, 500));\n             fakeAuthor.addBooksToList(fakeBook);\n        }\n        Book toFind= fakeAuthor.getBookList().get(5);\n        assertEquals(toFind, fakeAuthor.getOneBook(toFind.getTitle()));\n    }\n\n\n\n\n\n\n\n5.4 New methods for Car class\nCar class has two new methods:\n- getInTheCa() checks if there's seat or not to enter the car.\n- startTheCar() if all the seats are occupied, the car start.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\ncar.java\n\n    public void getInTheCar() {\n        if (passengers < seats) {\n            this.passengers++;\n        }\n    }\n\n    public String startTheCar(){\n        if (passengers == seats){\n            return \"Let's drive!\";\n        } else {\n            return \"The car must be full to start driving\";\n        }\n    }\n\n\n\n\n\n5.4.1 Testing Car Class methods\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nCarClassTest.java\n\n    @Test\n    public void getInTheCarTest() {\n\n        // Creating a new person object and passing all parameters\n        Car fakeCar = new Car(4, 3, \"Red\");\n\n        assertEquals(0, fakeCar.getPassengers());\n        fakeCar.getInTheCar();\n        assertEquals(1, fakeCar.getPassengers());\n        fakeCar.getInTheCar();\n        assertEquals(2, fakeCar.getPassengers());\n        fakeCar.getInTheCar();\n        assertEquals(3, fakeCar.getPassengers());\n        fakeCar.getInTheCar();\n        assertEquals(4, fakeCar.getPassengers());\n        fakeCar.getInTheCar();\n        assertNotEquals(5, fakeCar.getPassengers());\n\n    }\n\n    @Test\n    public void startTheCarTest(){\n        Car fakeCar = new Car(4, 3, \"Red\");\n\n        for (int i = 0; i < fakeCar.getSeats(); i++){\n            fakeCar.getInTheCar();\n        }\n\n        String isTheCarReady = fakeCar.startTheCar();\n        assertEquals(isTheCarReady, fakeCar.startTheCar());\n    }\n\n\n\n\n\n\n\n5.5 New methods for Book class\nBook class has new methods:\n- readBook() counts how many pages of the book has been read.\n- finishedBook() checks if a book is finished or not.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nBook.java\n\n    public String  readBook(int pages){\n        this.readPages += pages;\n\n        return (readPages- pages) + \" remaining to finish the book\";\n    }\n\n    public Boolean finishedBook(){\n        if (readPages >= pages){\n             this.bookRead = true;\n        } else {\n            this.bookRead = false;\n        }\n        return bookRead;\n    }\n\n\n\n\n\n5.5.1 Testing Book Class methods\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nBookClassTest.java\n\n  @Test\n    public void readTBookTest(){\n        Faker faker = new Faker();\n\n        Book fakeBook = new Book(faker.book().title(), \"12345NB\", faker.number().numberBetween(0, 500));\n        int initialReadPages = fakeBook.getReadPages();\n        fakeBook.readBook(50);\n        assertEquals((initialReadPages + 50), fakeBook.getReadPages());\n\n    }\n\n    @Test\n    public void finishedBookTest(){\n        Faker faker = new Faker();\n\n        Book fakeBook = new Book(faker.book().title(), \"12345NB\", faker.number().numberBetween(0, 500));\n        fakeBook.readBook(600);\n        assertEquals(true, fakeBook.finishedBook());\n    }"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_1.html#github-repository",
+    "href": "laboratories/java_labs/labse00_1.html#github-repository",
+    "title": "Lab#SE00-1: Maven Person",
+    "section": "6 GitHub repository",
+    "text": "6 GitHub repository\nYou can read, fork and test the code on my GitHub repo"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_3.html",
+    "href": "laboratories/java_labs/labse02_3.html",
+    "title": "Lab#SE02-3: Movie/Review, factory",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_5.html",
+    "href": "laboratories/java_labs/labse02_5.html",
+    "title": "Lab#SE02-5: Movie/Review, simulate interactivity by console",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_4.html",
+    "href": "laboratories/java_labs/labse02_4.html",
+    "title": "Lab#SE02-4: Movie/Review, interactivity and coupling",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_1.html",
+    "href": "laboratories/java_labs/labse02_1.html",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "",
+    "text": "The goal of this project consist on creating different Java classes to define the Model of a project based on Movie Reviews."
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_1.html#tasks",
+    "href": "laboratories/java_labs/labse02_1.html#tasks",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "2 Tasks",
+    "text": "2 Tasks\n\nCreate a Java SE Project with Maven.\nAdd dependencies: + Junit + Java Faker + Lombok\nCreate the following Java classes:\n\nMovie: represents a movie that is going to be reviewed. Should have this attributes:\n\ntitle\nreviews\nCritic\n\nCritic: is the one who will write reviews. Their attributes:\n\nname\nReview\n\nReview: is written by the critic and belongs to the movie. Theis attributes:\n\nMovie\nCritic\nrating\ncomment\n\n\nCreate unitary tests wit Junit.\nAdd new feature once all the test are passed."
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_1.html#adding-dependencies",
+    "href": "laboratories/java_labs/labse02_1.html#adding-dependencies",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "3 Adding dependencies",
+    "text": "3 Adding dependencies\nAfter creating the Maven project, the first step consist in adding the dependencies to the pom.xml project.\nThe desires dependencies can be found on the Maven Repository link:\nOn the code below, Junit, Lombok and Java Faker has been added.\n\n\npom.xml\n\n  <dependencies>\n    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->\n    <dependency>\n      <groupId>org.projectlombok</groupId>\n      <artifactId>lombok</artifactId>\n      <version>1.18.26</version>\n      <scope>provided</scope>\n    </dependency>\n    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->\n    <dependency>\n      <groupId>org.junit.jupiter</groupId>\n      <artifactId>junit-jupiter-api</artifactId>\n      <version>5.9.2</version>\n      <scope>test</scope>\n    </dependency>\n    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->\n    <dependency>\n      <groupId>com.github.javafaker</groupId>\n      <artifactId>javafaker</artifactId>\n      <version>1.0.2</version>\n    </dependency>\n\n  </dependencies>"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_1.html#first-uml",
+    "href": "laboratories/java_labs/labse02_1.html#first-uml",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "4 First UML",
+    "text": "4 First UML\nAs a first approach to start working on, the UML is based on the following rules:\n\nThe Movie Class is designed where an object movie can has different reviews.\nCritic create objects for the Review class of a movie object.\nThe Review class depends on the Critic class and belongs to a movie object.\n\nOn this design we can see that the Movie class will have a multiplicity with the Critic class (since a movie can be reviewed by different critics). Also, the Critic class will has a multiplicity relationship wit the review class because a critic object can has multiple reviews of different movies.\n\n\n\n\n\nclassDiagram\n  class Movie {\n    -title: String\n    -reviews: ArrayList Review\n  }\n  class Critic {\n    -name: String\n  }\n  class Review {\n    -movie: Movie\n    -critic: Critic\n    -rating: int\n    -comment: String\n  }\n  Movie *-- Review\n  Review o-- Critic"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_1.html#creating-classes",
+    "href": "laboratories/java_labs/labse02_1.html#creating-classes",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "5 Creating classes",
+    "text": "5 Creating classes\nProceeding with the tasks given, now it’s time to create the classes as per the UML designed.\nThe first class to be created is the Movie class. Lombok is used to create two constructors, one will al arguments, and another with no arguments (will allow to create empty objects). A third constructor is created. This constructor only needs a String whit the movie name.\n\n\nMovie.java\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Movie {\n    // first approach for Movie class\n    private String movieName;\n    private ArrayList<Review> reviews;\n    private Critic critic;\n\n    public Movie(String movieName){\n        this.movieName = movieName;\n    }\n}\n\nCritic class is the same as the Movie class. Lombok creates two constructors and a third one that will allow creating Critic objects only with the criticName.\n\n\nCritic.java\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Critic {\n    //first approach for Critic class\n    private String criticName;\n    private Review review;\n\n    public Critic(String criticName){\n        this.criticName = criticName;\n    }\n}\n\nThe Review class works only with two constructors, with all the arguments or without any. This way Reviews can only be created if i have all the parameters or empty, so it can be setted later in case that all the parameters doesn’t exist yet.\n\n\nReview.java\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Review {\n    // First approach for Review class\n    private Movie movie;\n    private Critic critic;\n    private int rating;\n    private String comment;\n}"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_1.html#first-tests",
+    "href": "laboratories/java_labs/labse02_1.html#first-tests",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "6 First tests",
+    "text": "6 First tests\nWith the classes already created it’s time to run the first test.\nThis first test consists on manually creating a Critic object, sets the name, prints it on screen and using assertEquals and assertNotEquals to compare both results, true and false.\n\n\nCriticTest.java\n\npublic class CriticTest {\n\n    @Test\n    public void createCriticObjectTest(){\n      // Manually creating a Critic object.\n      Critic critic = new Critic();\n      critic.setCriticName(\"Victor\");\n      System.out.println(critic.getCriticName());\n      // assertEquals and assertNotEquals testing\n      assertEquals(\"Victor\", critic.getCriticName());\n      assertNotEquals(\"Paco\", critic.getCriticName());\n    }\n}\n\nThis second test uses the Faker library. First, a Movie object is created passing the movie name as a parameter when creating. Then, a faker object is created and will be used so declare a String with fake data. Then, an assertEquals and assertNotEquals compares are called.\n\n\nMovieTest.java\n\npublic class MovieTests {\n\n    @Test\n    public void createMovieObjectTest(){\n      // Manually creating a movie object.\n      Movie alien = new Movie(\"Alien\");\n      Faker faker = new Faker();\n      String name = faker.twinPeaks().character();\n      // assertEquals and assertNotEquals testing\n      assertEquals(\"Alien\", alien.getMovieName());\n      assertNotEquals(\"Alien\", name);\n    }\n}\n\nThe ReviewTest class consist on manually creating a Movie object, a Critic object. When creating a Review object, all parameters are given on the creation of the object. Again, assertEquals and assertNotEquals compares the expected output with the actual output.\n\n\nReviewTest.java\n\npublic class ReviewTest {\n\n    @Test\n    public void createReviewObjectTest(){\n        //Creating a review and set comment manually.\n        Movie alien = new Movie(\"Alien\");\n        Critic victor = new Critic(\"Victor\");\n        Review alienReview = new Review(alien, victor, 5, \"Must see\");\n        // assertEquals and assertNotEquals testing\n        assertEquals(\"Must see\", alienReview.getComment());\n        assertNotEquals(\"Predator\", alienReview.getMovie().getMovieName());\n    }\n}\n\nThis last test is made on the AppTest clases, to test the workflow of our program. First, empty objects are created. The next block of code fakes parameters. The third block of code sets all the faked parameters created. Note that on the setting parameters for the movie object, first we add a Review object to an ArrayList, and then is setted as a parameter.\nAnd lastly, the expected output and the actual output is tested with assertEquals and assertNotEquals testing.\n\n\nAppTest.java\n\npublic class AppTest\n{\n   @Test\n    public void creatingMoviesAndReviewsTest(){\n      // creating empty objects\n       Faker faker = new Faker();\n       Random random = new Random();\n       Critic boyero = new Critic();\n       Movie alien = new Movie();\n       Review alienReview = new Review();\n       ArrayList<Review> allAlienReviews = new ArrayList<>();\n\n       // faking params\n       String criticName= faker.twinPeaks().character();\n       String textOfReview = faker.twinPeaks().quote();\n       String movieName = faker.twinPeaks().location();\n       int rating = random.nextInt(1, 5);\n\n       //setting critic params\n       boyero.setCriticName(criticName);\n       boyero.setReview(alienReview);\n\n       //setting review params\n       alienReview.setCritic(boyedo);\n       alienReview.setComment(textOfReview);\n       alienReview.setRating(rating);\n       alienReview.setMovie(alien);\n\n       //setting movie params\n       allAlienReviews.add(alienReview);\n       alien.setCritic(boyero);\n       alien.setMovieName(movieName);\n       alien.setReviews(allAlienReviews);\n\n       // testing equals and not equals.\n       assertEquals(movieName, alien.getMovieName());\n       assertNotEquals(\"Gladiator\", alien.getMovieName());\n       System.out.println(textOfReview);\n\n       assertEquals(textOfReview, alien.getReviews().get(0).getComment());\n       assertNotEquals(\"text\", alien.getReviews().get(0).getComment());\n   }\n}"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_1.html#expanding-uml",
+    "href": "laboratories/java_labs/labse02_1.html#expanding-uml",
+    "title": "Lab#SE02-1: Movie/Review, Model",
+    "section": "7 Expanding UML",
+    "text": "7 Expanding UML\nNow that we have our core classes ready and tested, it’s time to add new features. This will change the first UML that worked as some sort of a draft.\n\n\n\n\n\nclassDiagram\n  class Movie {\n    - title: String\n    - reviews: ArrayList Review\n    - awards: ArrayList Awards\n  }\n\n  class Review {\n    - movie: Movie\n    - critic: Critic\n    - rating: int\n    - comment: String\n  }\n\n  class Person{\n    - name: String\n  }\n\n  class Director extends Person{\n    - movies: ArrayList Movie\n  }\n\n  class Critic extends Person{\n    - reviews: ArrayList Review\n  }\n\n  class Awards{\n    - oscars: Set Oscar\n  }\n\n  class Oscar extends Awards{\n    - Boolean won\n  }\n  Movie *-- Review : Composition\n  Review o-- Critic extends Person : Aggregation\n  Movie *-- Awards : Composition\n  Awards <|-- Oscar extends Awards : Inheritance\n  Person <|-- Director extends Person : Inheritance\n  Person <|-- Critic extends Person : Inheritance"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_4.html",
+    "href": "laboratories/java_labs/labse00_4.html",
+    "title": "Lab#SE00-4: Abstract/Interface Human",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/java_labs.html",
+    "href": "laboratories/java_labs/java_labs.html",
+    "title": "Java SE Laboratories",
+    "section": "",
+    "text": "Java SE Laboratories\n\n\n\nHere you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories.\nAt this moment, only Lab#SE02_01 has content."
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_2.html",
+    "href": "laboratories/java_labs/labse00_2.html",
+    "title": "Lab#SE00-2: Maven Clinic",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse02_2.html",
+    "href": "laboratories/java_labs/labse02_2.html",
+    "title": "Lab#SE02-2: Movie/Review, CRUD Operations",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse00_3.html",
+    "href": "laboratories/java_labs/labse00_3.html",
+    "title": "Lab#SE00-3: Library Model",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse01_2.html",
+    "href": "laboratories/java_labs/labse01_2.html",
+    "title": "Lab#SE01-2: Maven/Gradle Person and Account stored in JSON",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse03_3.html",
+    "href": "laboratories/java_labs/labse03_3.html",
+    "title": "Lab#SE03-3: Library/Book, Expand Model",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse01_1.html",
+    "href": "laboratories/java_labs/labse01_1.html",
+    "title": "Lab#SE01-1: Maven/Gradle Person and Account",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
+    "objectID": "laboratories/java_labs/labse03_2.html",
+    "href": "laboratories/java_labs/labse03_2.html",
+    "title": "Lab#SE03-2: Library/Book, Sprint Zero",
+    "section": "",
+    "text": "TO-DO"
+  },
+  {
     "objectID": "laboratories/api_rest_call.html",
     "href": "laboratories/api_rest_call.html",
     "title": "API REST call to server and render from JSON",
     "section": "",
     "text": "API REST call example:\n\n\nd3 = require('d3')\n\nbarcelona = await d3.json(\n  \"[Api]http://api.openweathermap.org/data/2.5/weather?q=Barcelona&appid=8fc354586639c1fc4d03e4bfb7ff71cc\"\n)\n\ntemperature = [barcelona.main];\n\nInputs.table(temperature)"
+  },
+  {
+    "objectID": "laboratories/spring_boot_labs/h2_db_and_thy.html",
+    "href": "laboratories/spring_boot_labs/h2_db_and_thy.html",
+    "title": "Spring Boot: H2 DB and Thymeleaf",
+    "section": "",
+    "text": "::: 📘 Create a Spring Boot Project\nCreate a Maven Spring Project Install H2 DB Define Application.properties Create Model: @Entity Book and JPA @Repository Create @Controller and @Service Create HTML template with Thymeleaf :::"
   },
   {
     "objectID": "laboratories/spring_boot_labs/spring_boot.html",
@@ -203,199 +343,59 @@
     "text": "Running out application\nNow the project is to start running.\nTO-DO: Insert img\nand there are the responses * web controller TO-DO: Insert img * rest controller TO-DO: Insert img\nNote the urls on the top. There are two different responses.\nTO-DO: add github repo link"
   },
   {
-    "objectID": "laboratories/spring_boot_labs/h2_db_and_thy.html",
-    "href": "laboratories/spring_boot_labs/h2_db_and_thy.html",
-    "title": "Spring Boot: H2 DB and Thymeleaf",
+    "objectID": "laboratories/mooc.html",
+    "href": "laboratories/mooc.html",
+    "title": "University of Helsinki MOOC",
     "section": "",
-    "text": "::: 📘 Create a Spring Boot Project\nCreate a Maven Spring Project Install H2 DB Define Application.properties Create Model: @Entity Book and JPA @Repository Create @Controller and @Service Create HTML template with Thymeleaf :::"
+    "text": "Helsinki free MOOC\n\n\n\nAs part of the course we have learned the basics of Java practicing some exercises with the MOOC (masive open online course) made by the university of Helsinki.\nYou can acces take this free course here: Java Programming\nhere you can see my GitHub repo with the solutions i’ve developed for the MOOC course:\nJava Programming I\nJava ProgrammingII"
   },
   {
-    "objectID": "laboratories/java_labs/java_labs.html",
-    "href": "laboratories/java_labs/java_labs.html",
-    "title": "Java SE Laboratories",
+    "objectID": "laboratories/observable_js_cell.html",
+    "href": "laboratories/observable_js_cell.html",
+    "title": "Observable JS script cell",
     "section": "",
-    "text": "Java SE Laboratories\n\n\n\nHere you will find all the Java SE Laboratories. On the left bar, you can browse trouth all the laboratories.\nAt this moment, only Lab#SE02_01 has content."
+    "text": "Infinite loop running on real time\n\ni = {\n  let i = 0;\n  while (true) {\n    yield ++i;\n  }\n}\n\n\n\n\n\n\n\ni\n\n\n\n\n\n\n\n\nx = 10\n\n\n\n\n\n\n\nx + 5"
   },
   {
-    "objectID": "laboratories/java_labs/labse00_1.html",
-    "href": "laboratories/java_labs/labse00_1.html",
-    "title": "Lab#SE00-1: Maven Person",
+    "objectID": "javase.html",
+    "href": "javase.html",
+    "title": "Java SE",
     "section": "",
-    "text": "The goal of this project consist on creating different Java Classes, learn about Composition in Java Classes and testing."
+    "text": "Java was originally developed by James Gosling. It was released in May 1995.\nJava is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let programmers write once, run anywhere (WORA).\nYou can install Java SE for free here:\nhttps://www.oracle.com/java/technologies/java-se-glance.html\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ndata Type\nSize\nDescription\nDeclaration example\n\n\n\n\n\nbyte\n1 byte\nStores whole number from -128 to 127\nbyte variableName = value;\n\n\n\nshort\n2 bytes\nStores whole numbers from -32,768 to 32,767\nshort variableName = value;\n\n\n\nint\n4 bytes\nStores whole numbers from -2,147,483,648 to 2,147,483,647\nint variableName = value;\n\n\n\nlong\n8 bytes\nStores whole numbers from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807\nlong variableName = value;\n\n\n\nfloat\n4 bytes\nStores fractional numbers. Sufficient for storing 6 to 7 decimal digits\nfloat variableName = number.deciaml\n\n\n\ndouble\n8 bytes\nStores fractional numbers. Sufficient for storing 15 decimal digits\ndouble variableName = number.decimal\n\n\n\nboolean\n1 bit\nStores true or false values\nboolean variableName = true/false\n\n\n\nchar\n2 bytes\nStores a single character/letter or ASCII values\nchar varaibleName = ‘b’ or 98"
   },
   {
-    "objectID": "laboratories/java_labs/labse00_1.html#tasks",
-    "href": "laboratories/java_labs/labse00_1.html#tasks",
-    "title": "Lab#SE00-1: Maven Person",
-    "section": "2 Tasks",
-    "text": "2 Tasks\n\n📘 Java SE Lab#SE00-1: Person\n\nCreate a Maven/Gradle Java SE Project with the UML and classes defined below.\nAdd Lombok, JUnit and Faker dependencies\nRefactor: remove boilerplate code (getters, setters and so on) and work with Lombok\nCreate Junit tests to test objects. Use Faker to create objects:\n\nTest createPerson: check whether the object Person creation works properly.\nTest createCar: check whether the object Car creation works properly.\nTest createBook: check whether the object Book creation works properly.\nTest createStudent: check whether the object Student creation works properly\nWithout composition: a Student object without car and books.\nWith composition: a Student object with Car object and Book List objects\n\nCreate Junit tests to test operations:\n\nTest methodsPerson: check that Person methods work properly: becomeOlder(), killVampire(), withFirstName()\n\nImprove Car, Book and Author classes with two methods each."
-  },
-  {
-    "objectID": "laboratories/java_labs/labse00_1.html#uml",
-    "href": "laboratories/java_labs/labse00_1.html#uml",
-    "title": "Lab#SE00-1: Maven Person",
-    "section": "3 UML",
-    "text": "3 UML\n\n\n\n\nclassDiagram\nclass Person {\n  -firstname: String\n  -lastname: String\n  -age: int\n}\nclass Student {\n  -university: String\n  -car: Car\n  -books: ArrayList~Book~\n\n}\nclass Author {\n  -genre: String\n  -book: Book\n}\n\nclass Car{\n    -places: int\n    -color: String\n}\n\nclass Book{\n    -title: String\n    -ISBN: String\n    -pages: int\n    -ahutor: Author\n}\nPerson --|> Student: Inheritance\nPerson --|> Author: Inheritance\nStudent *-- Book: Composition\nBook *-- Author: Composition\nStudent *-- Car: Composition\nAuthor *-- Book: Composition"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse00_1.html#classes",
-    "href": "laboratories/java_labs/labse00_1.html#classes",
-    "title": "Lab#SE00-1: Maven Person",
-    "section": "4 Classes",
-    "text": "4 Classes\n\n4.1 Person class\nPerson class with Lombok constructors and two custom constructors.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nPerson.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Person {\n    private String firstName;\n    private String lastName;\n    private int age;\n\n    private boolean isVampire = false;\n\n    public Person (String firstName, String lastName){\n        this.firstName = firstName;\n        this.lastName = lastName;\n    }\n\n    public Person (String firstName, String lastName, int age){\n        this.firstName = firstName;\n        this.lastName = lastName;\n        this.age = age;\n    }\n\n\n\n\n\n\n4.2 Student class\nStudent class with Lombok constructor and one custom constructorr calling the Person super class.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nStudent.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\nimport java.util.ArrayList;\n\n@Data\n@NoArgsConstructor\n@AllArgsConstructor\npublic class Student extends Person{\n    private String university;\n    private Car car;\n    private ArrayList<Book> books;\n\n    public Student(String firstName, String lastName, int age, String university){\n        super(firstName, lastName, age, false);\n        this.university = university;\n        this.car = new Car();\n        this.books = new ArrayList<>();\n    }\n\n\n\n\n\n\n4.3 Student class without composition\nStudent class with Lombok constructor and one custom constructor calling the Person super class. No compisiton with car and book class.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nStudentWithoutCompositon.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\n\n@Data\n@NoArgsConstructor\n@AllArgsConstructor\npublic class StudentNoComposition extends Person{\n    private String university;\n\n    public StudentNoComposition(String firstName, String lastName, int age, String university){\n        super(firstName, lastName, age, false);\n        this.university = university;\n    }\n\n\n\n\n\n\n4.4 Author class\nAuthor class with Lombok constructor and one custom constructor calling the Person super class.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nAuthor.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Author extends Person{\n    private String genre;\n    private Book book;\n    private ArrayList<Book> bookList;\n\n    public Author (String firstName, String lastName, int age, String genre){\n        super(firstName, lastName, age, false);\n        this.genre = genre;\n        this.book = new Book();\n        this.bookList = new ArrayList<>();\n    }\n\n\n\n\n\n\n4.5 Car class\nCar class with Lombok constructors.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nCar.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\n\n@Data\n@NoArgsConstructor\n@AllArgsConstructor\npublic class Car {\n    private int seats;\n    private int doors;\n    private String color;\n    private int passengers;\n\n    public Car(int seats, int doors, String color) {\n        this.seats = seats;\n        this.doors = doors;\n        this.color = color;\n        this.passengers = 0;\n    }\n\n\n\n\n\n\n4.6 Book class\nBook class with Lombok constructors and a custom constructor.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nBook.java\n\npackage org.example;\n\nimport lombok.AllArgsConstructor;\nimport lombok.Data;\nimport lombok.NoArgsConstructor;\n\n@Data\n@NoArgsConstructor\n@AllArgsConstructor\npublic class Book {\n    private String title;\n    private String ISBN;\n    private int pages;\n    private Author author;\n    private int readPages;\n    private boolean bookRead;\n\n    public Book (String title, String ISBN, int pages){\n        this.title = title;\n        this.ISBN = ISBN;\n        this.pages = pages;\n        this.author = new Author();\n        this.bookRead = false;\n        this.readPages = 0;\n    }"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse00_1.html#new-methods-and-testing",
-    "href": "laboratories/java_labs/labse00_1.html#new-methods-and-testing",
-    "title": "Lab#SE00-1: Maven Person",
-    "section": "5 New methods and testing",
-    "text": "5 New methods and testing\n\n5.1 Methods for Person class\nPerson class has new methods:\n- withFirstName() returns a new Person object with firstName as parameter and a null lastName.\n- withLastName() returns a new Person object with lastName as parameter and a null firstName.\n- becomeOlder() adds 5 to age value and turns a person in a vampire ir age reaches 138 value.\n- askIfVampore() checks if a person is a vampire.\n- killVampire() recives a person object and kills vampire if is a vampire.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nPerson.java\n\n\n    @Test\n    public void becomeOlderTest(){\n        Faker fake = new Faker();\n\n        Person fakePerson = new Person(fake.name().firstName(), fake.name().lastName(),\n                fake.number().numberBetween(1, 15));\n        int originalAge = fakePerson.getAge();\n        assertEquals(originalAge, fakePerson.getAge());\n        fakePerson.becomeOlder();\n        fakePerson.becomeOlder();\n        fakePerson.becomeOlder();\n        int newAge = originalAge + (5 * 3);\n        assertEquals(newAge, fakePerson.getAge());\n    }\n\n    @Test\n    public void withFirstNameTest(){\n        Faker faker = new Faker();\n        String firstName= faker.name().firstName();\n        Person person = new Person();\n        person = person.withFirstName(firstName);\n        assertEquals(firstName, person.getFirstName());\n    }\n\n    @Test\n    public void withLastNameTest(){\n        Faker faker = new Faker();\n        String lastName = faker.name().lastName();\n\n        Person person = new Person();\n        person = person.witLastName(lastName);\n        assertEquals(lastName, person.getLastName());\n    }\n\n    @Test\n    public void askIfVampireTest(){\n        Faker fake = new Faker();\n\n        Person fakeVampire = new Person(fake.name().firstName(), fake.name().lastName(),\n                fake.number().numberBetween(150, 200));\n        fakeVampire.becomeOlder();\n        assertEquals(\"This person is a vampire!\", fakeVampire.askIfVampire());\n    }\n\n    @Test\n    public void killVampireTest(){\n        Faker fake = new Faker();\n\n        Person fakeVampire = new Person(fake.name().firstName(), fake.name().lastName(),\n                fake.number().numberBetween(150, 200));\n        fakeVampire.becomeOlder();\n        fakeVampire.killVampire();\n        assertEquals(0, fakeVampire.getAge());\n    }\n\n\n\n\n\n\n5.2 New methods for Student class\nStudent class has new methods:\n- changesUniversity() recives a String and changes university of the student.\n- buyBook() recives a  Book object and add the book to the booksList\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nStudent.java\n\n    public void changesUniversity(String university){\n        this.university = university;\n    }\n    \n    public void buyBook(Book book){\n        this.books.add(book);\n    }\n \n\n\n\n\n\n5.2.1 Testing Studen Class methods\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nStudentClassTest.java\n\n  @Test\n    public void changesUniversityTest(){\n        Faker faker = new Faker();\n\n        Student fakeStudent = new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(1, 100),\n                faker.university().name());\n\n        String originalUniversity = fakeStudent.getUniversity();\n\n        String newUniversity = faker.university().name();\n        fakeStudent.changesUniversity(newUniversity);\n        assertNotEquals(originalUniversity, fakeStudent.getUniversity());\n    }\n\n    @Test\n    public void buyBook(){\n        Faker faker = new Faker();\n\n        Student fakeStudent = new Student(faker.name().firstName(), faker.name().lastName(), faker.number().numberBetween(1, 100),\n                faker.university().name());\n\n        Book fakeBook = new Book(faker.book().title(), \"12345NB\", faker.number().numberBetween(0, 500));\n\n        fakeStudent.buyBook(fakeBook);\n        assertEquals(fakeBook.toString(), fakeStudent.getBooks().get(0).toString());\n    }\n \n\n\n\n\n\n\n\n5.3 New methods for Author class\nAuthor class has new methods:\n- authorWritesNewBook() recives parameters and returns a new book.\n- addBooksToList() recives a  Book object and add the book to the booksList.\n- getOneBook() finds a book of the author that matches the bookTitle.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nAuthor.java\n\n    public Book authorWritesNewBook(String title, String ISBN, int pages){\n        return new Book(title, ISBN, pages);\n    }\n\n    public void addBooksToList(Book book){\n        this.bookList.add(book);\n    }\n\n    public Book getOneBook(String title){\n        for (Book book: this.bookList){\n            if (book.getTitle().equals(title)){\n                return book;\n            }\n        }\n        return null;\n    }\n\n\n\n\n\n5.3.1 Testing Author Class methods\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nAuthorClassTest.java\n\n    @Test\n    public void authorWritesNewBookTest(){\n        Faker faker = new Faker();\n        Author fakeAuthor = new Author(faker.name().firstName(), faker.name().lastName(), faker.number().randomDigit(),\n                faker.book().genre());\n        String bookTitle = faker.book().title();\n        String ISBN = faker.idNumber().toString();\n        int pages = faker.number().randomDigit();\n\n        Book book = new Book(bookTitle, ISBN, pages);\n        Book newBookByAuthor = fakeAuthor.authorWritesNewBook(bookTitle, ISBN, pages);\n        assertEquals(book.getTitle(), newBookByAuthor.getTitle());\n        assertEquals(book.getISBN(), newBookByAuthor.getISBN());\n        assertEquals(book.getPages(), newBookByAuthor.getPages());\n    }\n\n    @Test\n    public void getOneBookTest(){\n\n        Faker faker = new Faker();\n        Author fakeAuthor = new Author(faker.name().firstName(), faker.name().lastName(), faker.number().randomDigit(),\n                faker.book().genre());\n\n        for (int i = 0; i < 10; i++){\n             Book fakeBook = new Book(faker.book().title(), \"12345NB\", faker.number().numberBetween(100, 500));\n             fakeAuthor.addBooksToList(fakeBook);\n        }\n        Book toFind= fakeAuthor.getBookList().get(5);\n        assertEquals(toFind, fakeAuthor.getOneBook(toFind.getTitle()));\n    }\n\n\n\n\n\n\n\n5.4 New methods for Car class\nCar class has two new methods:\n- getInTheCa() checks if there's seat or not to enter the car.\n- startTheCar() if all the seats are occupied, the car start.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\ncar.java\n\n    public void getInTheCar() {\n        if (passengers < seats) {\n            this.passengers++;\n        }\n    }\n\n    public String startTheCar(){\n        if (passengers == seats){\n            return \"Let's drive!\";\n        } else {\n            return \"The car must be full to start driving\";\n        }\n    }\n\n\n\n\n\n5.4.1 Testing Car Class methods\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nCarClassTest.java\n\n    @Test\n    public void getInTheCarTest() {\n\n        // Creating a new person object and passing all parameters\n        Car fakeCar = new Car(4, 3, \"Red\");\n\n        assertEquals(0, fakeCar.getPassengers());\n        fakeCar.getInTheCar();\n        assertEquals(1, fakeCar.getPassengers());\n        fakeCar.getInTheCar();\n        assertEquals(2, fakeCar.getPassengers());\n        fakeCar.getInTheCar();\n        assertEquals(3, fakeCar.getPassengers());\n        fakeCar.getInTheCar();\n        assertEquals(4, fakeCar.getPassengers());\n        fakeCar.getInTheCar();\n        assertNotEquals(5, fakeCar.getPassengers());\n\n    }\n\n    @Test\n    public void startTheCarTest(){\n        Car fakeCar = new Car(4, 3, \"Red\");\n\n        for (int i = 0; i < fakeCar.getSeats(); i++){\n            fakeCar.getInTheCar();\n        }\n\n        String isTheCarReady = fakeCar.startTheCar();\n        assertEquals(isTheCarReady, fakeCar.startTheCar());\n    }\n\n\n\n\n\n\n\n5.5 New methods for Book class\nBook class has new methods:\n- readBook() counts how many pages of the book has been read.\n- finishedBook() checks if a book is finished or not.\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nBook.java\n\n    public String  readBook(int pages){\n        this.readPages += pages;\n\n        return (readPages- pages) + \" remaining to finish the book\";\n    }\n\n    public Boolean finishedBook(){\n        if (readPages >= pages){\n             this.bookRead = true;\n        } else {\n            this.bookRead = false;\n        }\n        return bookRead;\n    }\n\n\n\n\n\n5.5.1 Testing Book Class methods\n\n\n\n\n\n\nExpand to reveal code\n\n\n\n\n\n\n\nBookClassTest.java\n\n  @Test\n    public void readTBookTest(){\n        Faker faker = new Faker();\n\n        Book fakeBook = new Book(faker.book().title(), \"12345NB\", faker.number().numberBetween(0, 500));\n        int initialReadPages = fakeBook.getReadPages();\n        fakeBook.readBook(50);\n        assertEquals((initialReadPages + 50), fakeBook.getReadPages());\n\n    }\n\n    @Test\n    public void finishedBookTest(){\n        Faker faker = new Faker();\n\n        Book fakeBook = new Book(faker.book().title(), \"12345NB\", faker.number().numberBetween(0, 500));\n        fakeBook.readBook(600);\n        assertEquals(true, fakeBook.finishedBook());\n    }"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse00_1.html#github-repository",
-    "href": "laboratories/java_labs/labse00_1.html#github-repository",
-    "title": "Lab#SE00-1: Maven Person",
-    "section": "6 GitHub repository",
-    "text": "6 GitHub repository\nYou can read, fork and test the code on my GitHub repo"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_3.html",
-    "href": "laboratories/java_labs/labse02_3.html",
-    "title": "Lab#SE02-3: Movie/Review, factory",
+    "objectID": "ifcd0210/deliveries.html",
+    "href": "ifcd0210/deliveries.html",
+    "title": "IFCD0210",
     "section": "",
-    "text": "TO-DO"
+    "text": "Here you can read the subjects to be delivered and links to the specified tasks."
   },
   {
-    "objectID": "laboratories/java_labs/labse02_2.html",
-    "href": "laboratories/java_labs/labse02_2.html",
-    "title": "Lab#SE02-2: Movie/Review, CRUD Operations",
+    "objectID": "ifcd0210/deliveries.html#subjects",
+    "href": "ifcd0210/deliveries.html#subjects",
+    "title": "IFCD0210",
+    "section": "Subjects",
+    "text": "Subjects\nHere you can read the subjects to be delivered:\n\nFront-End\n\n\n\nCode\nDate\nDescription\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\nPrototip WebApp Quarto: web multipage, markdwon/HTML, with github repository and gh-pages deployement\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto amb advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto amb Document Listings\n\n\nMF01-0492\n21/02/2023\nProva objectiva i prova pràctica - WebApp Quarto amb Api REST call to server and render the data from JSON, from cloud-external server or Spring Boot local server  - WebApp Quarto amb a Observable JS script cell\n\n\n\n\n\nBack-End\n\n\n\n\n\n\n\n\nCode\nDate\nDescription\n\n\n\n\nMF02-0492\n21/02/2022\nBack-end\n\n\nUF01-1844\n20/03/2023\nLaboratori app MVC amb Spring Boot Thyemeleaf (alternatiu Rest) un objecte amb totes les operacions CRUD\n\n\nUF02-1845\n19/04/2023\nLaboratori app Spring Boot Thyemeleaf (opcional Rest) amb H2 JPA (alternatiu objectes amb Composition/Inherence)\n\n\nUF03-1846\n09/05/2023\nLaboratori app web amb React Hooks\n\n\nMF02-0492\n10/05/2023\nProva objectiva i prova pràctica (triar una opció) - Laboratori app Spring Boot amb React  - Laboratori Spring Boot Server-Data API Rest amb Spring Boot Client-Web-Thymeleaf  - Laboratori app Spring Boot Thynmeleaf deployat a AWS  - Laboratori app web amb React Hooks amb Data API Rest"
+  },
+  {
+    "objectID": "ifcd0210/deliveries.html#deliveries",
+    "href": "ifcd0210/deliveries.html#deliveries",
+    "title": "IFCD0210",
+    "section": "Deliveries",
+    "text": "Deliveries\n\n\n\n\nCode\nDate\nDelivery\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\n- Website: WebApp Quarto  - GitHub repo: Repo\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto with advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto with Document Listings\n\n\nMF01-0492\n21/02/2023\n- WebApp Quarto with Api REST call to server and render the data from JSON  - WebApp Quarto with Observable JS script cell"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
     "section": "",
-    "text": "TO-DO"
+    "text": "This site has two main puroposes:\n\nWil be used to build documentation on different projects covered on the Web App Developement course that i’m actually taking clases at CIFO La Violeta\nBuild a portfolio as a developer.\n\nThanks for visiting my site!\n\n\nSections\nIf you browse trough the different sections, you will find:\n\nJava SE: A space for describing Java principles, concepts and a sort of tutorials.\nLaboratories: Some exercises that are part of the curriculum of the IFCD0210 course.\nIFCD0210: Subjects and deliveries for the course.\nAbout me: a chance to know me a little bit better!"
   },
   {
-    "objectID": "laboratories/java_labs/labse00_2.html",
-    "href": "laboratories/java_labs/labse00_2.html",
-    "title": "Lab#SE00-2: Maven Clinic",
+    "objectID": "springboot.html",
+    "href": "springboot.html",
+    "title": "Spring Boot",
     "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_1.html",
-    "href": "laboratories/java_labs/labse02_1.html",
-    "title": "Lab#SE02-1: Movie/Review, Model",
-    "section": "",
-    "text": "The goal of this project consist on creating different Java classes to define the Model of a project based on Movie Reviews."
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_1.html#tasks",
-    "href": "laboratories/java_labs/labse02_1.html#tasks",
-    "title": "Lab#SE02-1: Movie/Review, Model",
-    "section": "2 Tasks",
-    "text": "2 Tasks\n\nCreate a Java SE Project with Maven.\nAdd dependencies: + Junit + Java Faker + Lombok\nCreate the following Java classes:\n\nMovie: represents a movie that is going to be reviewed. Should have this attributes:\n\ntitle\nreviews\nCritic\n\nCritic: is the one who will write reviews. Their attributes:\n\nname\nReview\n\nReview: is written by the critic and belongs to the movie. Theis attributes:\n\nMovie\nCritic\nrating\ncomment\n\n\nCreate unitary tests wit Junit.\nAdd new feature once all the test are passed."
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_1.html#adding-dependencies",
-    "href": "laboratories/java_labs/labse02_1.html#adding-dependencies",
-    "title": "Lab#SE02-1: Movie/Review, Model",
-    "section": "3 Adding dependencies",
-    "text": "3 Adding dependencies\nAfter creating the Maven project, the first step consist in adding the dependencies to the pom.xml project.\nThe desires dependencies can be found on the Maven Repository link:\nOn the code below, Junit, Lombok and Java Faker has been added.\n\n\npom.xml\n\n  <dependencies>\n    <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->\n    <dependency>\n      <groupId>org.projectlombok</groupId>\n      <artifactId>lombok</artifactId>\n      <version>1.18.26</version>\n      <scope>provided</scope>\n    </dependency>\n    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->\n    <dependency>\n      <groupId>org.junit.jupiter</groupId>\n      <artifactId>junit-jupiter-api</artifactId>\n      <version>5.9.2</version>\n      <scope>test</scope>\n    </dependency>\n    <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->\n    <dependency>\n      <groupId>com.github.javafaker</groupId>\n      <artifactId>javafaker</artifactId>\n      <version>1.0.2</version>\n    </dependency>\n\n  </dependencies>"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_1.html#first-uml",
-    "href": "laboratories/java_labs/labse02_1.html#first-uml",
-    "title": "Lab#SE02-1: Movie/Review, Model",
-    "section": "4 First UML",
-    "text": "4 First UML\nAs a first approach to start working on, the UML is based on the following rules:\n\nThe Movie Class is designed where an object movie can has different reviews.\nCritic create objects for the Review class of a movie object.\nThe Review class depends on the Critic class and belongs to a movie object.\n\nOn this design we can see that the Movie class will have a multiplicity with the Critic class (since a movie can be reviewed by different critics). Also, the Critic class will has a multiplicity relationship wit the review class because a critic object can has multiple reviews of different movies.\n\n\n\n\n\nclassDiagram\n  class Movie {\n    -title: String\n    -reviews: ArrayList Review\n  }\n  class Critic {\n    -name: String\n  }\n  class Review {\n    -movie: Movie\n    -critic: Critic\n    -rating: int\n    -comment: String\n  }\n  Movie *-- Review\n  Review o-- Critic"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_1.html#creating-classes",
-    "href": "laboratories/java_labs/labse02_1.html#creating-classes",
-    "title": "Lab#SE02-1: Movie/Review, Model",
-    "section": "5 Creating classes",
-    "text": "5 Creating classes\nProceeding with the tasks given, now it’s time to create the classes as per the UML designed.\nThe first class to be created is the Movie class. Lombok is used to create two constructors, one will al arguments, and another with no arguments (will allow to create empty objects). A third constructor is created. This constructor only needs a String whit the movie name.\n\n\nMovie.java\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Movie {\n    // first approach for Movie class\n    private String movieName;\n    private ArrayList<Review> reviews;\n    private Critic critic;\n\n    public Movie(String movieName){\n        this.movieName = movieName;\n    }\n}\n\nCritic class is the same as the Movie class. Lombok creates two constructors and a third one that will allow creating Critic objects only with the criticName.\n\n\nCritic.java\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Critic {\n    //first approach for Critic class\n    private String criticName;\n    private Review review;\n\n    public Critic(String criticName){\n        this.criticName = criticName;\n    }\n}\n\nThe Review class works only with two constructors, with all the arguments or without any. This way Reviews can only be created if i have all the parameters or empty, so it can be setted later in case that all the parameters doesn’t exist yet.\n\n\nReview.java\n\n@Data\n@AllArgsConstructor\n@NoArgsConstructor\npublic class Review {\n    // First approach for Review class\n    private Movie movie;\n    private Critic critic;\n    private int rating;\n    private String comment;\n}"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_1.html#first-tests",
-    "href": "laboratories/java_labs/labse02_1.html#first-tests",
-    "title": "Lab#SE02-1: Movie/Review, Model",
-    "section": "6 First tests",
-    "text": "6 First tests\nWith the classes already created it’s time to run the first test.\nThis first test consists on manually creating a Critic object, sets the name, prints it on screen and using assertEquals and assertNotEquals to compare both results, true and false.\n\n\nCriticTest.java\n\npublic class CriticTest {\n\n    @Test\n    public void createCriticObjectTest(){\n      // Manually creating a Critic object.\n      Critic critic = new Critic();\n      critic.setCriticName(\"Victor\");\n      System.out.println(critic.getCriticName());\n      // assertEquals and assertNotEquals testing\n      assertEquals(\"Victor\", critic.getCriticName());\n      assertNotEquals(\"Paco\", critic.getCriticName());\n    }\n}\n\nThis second test uses the Faker library. First, a Movie object is created passing the movie name as a parameter when creating. Then, a faker object is created and will be used so declare a String with fake data. Then, an assertEquals and assertNotEquals compares are called.\n\n\nMovieTest.java\n\npublic class MovieTests {\n\n    @Test\n    public void createMovieObjectTest(){\n      // Manually creating a movie object.\n      Movie alien = new Movie(\"Alien\");\n      Faker faker = new Faker();\n      String name = faker.twinPeaks().character();\n      // assertEquals and assertNotEquals testing\n      assertEquals(\"Alien\", alien.getMovieName());\n      assertNotEquals(\"Alien\", name);\n    }\n}\n\nThe ReviewTest class consist on manually creating a Movie object, a Critic object. When creating a Review object, all parameters are given on the creation of the object. Again, assertEquals and assertNotEquals compares the expected output with the actual output.\n\n\nReviewTest.java\n\npublic class ReviewTest {\n\n    @Test\n    public void createReviewObjectTest(){\n        //Creating a review and set comment manually.\n        Movie alien = new Movie(\"Alien\");\n        Critic victor = new Critic(\"Victor\");\n        Review alienReview = new Review(alien, victor, 5, \"Must see\");\n        // assertEquals and assertNotEquals testing\n        assertEquals(\"Must see\", alienReview.getComment());\n        assertNotEquals(\"Predator\", alienReview.getMovie().getMovieName());\n    }\n}\n\nThis last test is made on the AppTest clases, to test the workflow of our program. First, empty objects are created. The next block of code fakes parameters. The third block of code sets all the faked parameters created. Note that on the setting parameters for the movie object, first we add a Review object to an ArrayList, and then is setted as a parameter.\nAnd lastly, the expected output and the actual output is tested with assertEquals and assertNotEquals testing.\n\n\nAppTest.java\n\npublic class AppTest\n{\n   @Test\n    public void creatingMoviesAndReviewsTest(){\n      // creating empty objects\n       Faker faker = new Faker();\n       Random random = new Random();\n       Critic boyero = new Critic();\n       Movie alien = new Movie();\n       Review alienReview = new Review();\n       ArrayList<Review> allAlienReviews = new ArrayList<>();\n\n       // faking params\n       String criticName= faker.twinPeaks().character();\n       String textOfReview = faker.twinPeaks().quote();\n       String movieName = faker.twinPeaks().location();\n       int rating = random.nextInt(1, 5);\n\n       //setting critic params\n       boyero.setCriticName(criticName);\n       boyero.setReview(alienReview);\n\n       //setting review params\n       alienReview.setCritic(boyedo);\n       alienReview.setComment(textOfReview);\n       alienReview.setRating(rating);\n       alienReview.setMovie(alien);\n\n       //setting movie params\n       allAlienReviews.add(alienReview);\n       alien.setCritic(boyero);\n       alien.setMovieName(movieName);\n       alien.setReviews(allAlienReviews);\n\n       // testing equals and not equals.\n       assertEquals(movieName, alien.getMovieName());\n       assertNotEquals(\"Gladiator\", alien.getMovieName());\n       System.out.println(textOfReview);\n\n       assertEquals(textOfReview, alien.getReviews().get(0).getComment());\n       assertNotEquals(\"text\", alien.getReviews().get(0).getComment());\n   }\n}"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_1.html#expanding-uml",
-    "href": "laboratories/java_labs/labse02_1.html#expanding-uml",
-    "title": "Lab#SE02-1: Movie/Review, Model",
-    "section": "7 Expanding UML",
-    "text": "7 Expanding UML\nNow that we have our core classes ready and tested, it’s time to add new features. This will change the first UML that worked as some sort of a draft.\n\n\n\n\n\nclassDiagram\n  class Movie {\n    - title: String\n    - reviews: ArrayList Review\n    - awards: ArrayList Awards\n  }\n\n  class Review {\n    - movie: Movie\n    - critic: Critic\n    - rating: int\n    - comment: String\n  }\n\n  class Person{\n    - name: String\n  }\n\n  class Director extends Person{\n    - movies: ArrayList Movie\n  }\n\n  class Critic extends Person{\n    - reviews: ArrayList Review\n  }\n\n  class Awards{\n    - oscars: Set Oscar\n  }\n\n  class Oscar extends Awards{\n    - Boolean won\n  }\n  Movie *-- Review : Composition\n  Review o-- Critic extends Person : Aggregation\n  Movie *-- Awards : Composition\n  Awards <|-- Oscar extends Awards : Inheritance\n  Person <|-- Director extends Person : Inheritance\n  Person <|-- Critic extends Person : Inheritance"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse00_3.html",
-    "href": "laboratories/java_labs/labse00_3.html",
-    "title": "Lab#SE00-3: Library Model",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_5.html",
-    "href": "laboratories/java_labs/labse02_5.html",
-    "title": "Lab#SE02-5: Movie/Review, simulate interactivity by console",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse02_4.html",
-    "href": "laboratories/java_labs/labse02_4.html",
-    "title": "Lab#SE02-4: Movie/Review, interactivity and coupling",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse00_4.html",
-    "href": "laboratories/java_labs/labse00_4.html",
-    "title": "Lab#SE00-4: Abstract/Interface Human",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse01_2.html",
-    "href": "laboratories/java_labs/labse01_2.html",
-    "title": "Lab#SE01-2: Maven/Gradle Person and Account stored in JSON",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse03_1.html",
-    "href": "laboratories/java_labs/labse03_1.html",
-    "title": "Lab#SE03-1: Library/Book, Core-Model",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse03_1.html#creating-core-classes",
-    "href": "laboratories/java_labs/labse03_1.html#creating-core-classes",
-    "title": "Lab#SE03-1: Library/Book, Core-Model",
-    "section": "Creating Core classes",
-    "text": "Creating Core classes\nPerson: Using lombok wih all and no parameters as cosntructors. Person only has two parametes.\nMember: member inherits Person. Has new parameters. There is a userID parameter made static, so each new object created of the Member class will have a unique ID."
-  },
-  {
-    "objectID": "laboratories/java_labs/labse03_3.html",
-    "href": "laboratories/java_labs/labse03_3.html",
-    "title": "Lab#SE03-3: Library/Book, Expand Model",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse01_1.html",
-    "href": "laboratories/java_labs/labse01_1.html",
-    "title": "Lab#SE01-1: Maven/Gradle Person and Account",
-    "section": "",
-    "text": "TO-DO"
-  },
-  {
-    "objectID": "laboratories/java_labs/labse03_2.html",
-    "href": "laboratories/java_labs/labse03_2.html",
-    "title": "Lab#SE03-2: Library/Book, Sprint Zero",
-    "section": "",
-    "text": "TO-DO"
+    "text": "Spring & Spring Boot\nSpring and Spring Boot are both frameworks used to build aplications\n\n\nSpring\nYou can use Spring to build an aplications. we will use Spring MVC for the web application, Spring Data for data access, and Spring Security for authentication and authorization.\n\n\nSpring Boot\nSpring Boot makes easier to work with spring. It cames with some pre-configurated settings that allows to build apps instead of building everything from scratch.\nSpring Boot allows to configure how and when dependencies are provided to your application at runtime. This puts you in control of how your application operates in different scenarios. Injection Dependencies will be used to connect and use different technologies in our project, wih some pre-build packages that will make easier to interact between each technology used in our application.\n\n\nSpring Initializr\nThe best option to start using Spring Boot is using the online initializer. Link: https://start.spring.io/\n\n\nAPI Contracts\nAPI contract is a formal agreement between the software provider and the consumer. This contract defines how the provider and the consumer interact, what data exchanges will be made and how to communicate in both succesful and failure cases.\nIMPORTANT: provider and consumer don’t need to share the same programming languaje.\nAPI contracts are important because they communicate the behavior of a REST API. They provide details about the data being serialized for each command and parameter being exchanged. The API contracts are written in a way that can be easily translated into API provider and consumer functionalitys.\n\n\nJSON\nJSON (Javascript Object Notation) provides a data interchange format that represents the particular information of an object in a format that you can easily read and understand. We’ll use JSON as our data interchange format for the Family Cash Card API.\nHere’s the example we used above:\n{ “id”: 99, “amount”: 123.45 } Other popular data formats include YAML (Yet Another Markup Language) and XML (Extensible Markup Language). When compared to XML, JSON reads and writes quicker, is easier to use, and takes up less space. You can use JSON with most modern programming languages and on all major platforms. It also works seamlessly with Javascript-based applications.\nFor these reasons, JSON has largely superseded XML as the most widely used format for APIs used by Web apps, including REST APIs.\n\n\nSummary\nAPI contracts are a popular means for API providers and consumers to agree upon how an API will behave. API contracts can be as simple as shared documentation to sophisticated contract management and validation frameworks. Combined with JSON, the most popular data interchange format for modern web-based applications, contracts can be a powerful means to help API providers and consumers develop and test APIs.\nYou’ll implement automated testing and verification of API contracts later in this course."
   }
 ]
