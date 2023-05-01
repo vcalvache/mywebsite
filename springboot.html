@@ -127,6 +127,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#api-contracts" id="toc-api-contracts" class="nav-link" data-scroll-target="#api-contracts">API Contracts</a></li>
   <li><a href="#json" id="toc-json" class="nav-link" data-scroll-target="#json">JSON</a></li>
   <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#rest" id="toc-rest" class="nav-link" data-scroll-target="#rest">REST</a></li>
+  <li><a href="#elements-of-the-request" id="toc-elements-of-the-request" class="nav-link" data-scroll-target="#elements-of-the-request">Elements of the request</a></li>
   </ul>
 </nav>
     </div>
@@ -167,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="spring-boot" class="level3">
 <h3 class="anchored" data-anchor-id="spring-boot">Spring Boot</h3>
 <p>Spring Boot makes easier to work with spring. It cames with some pre-configurated settings that allows to build apps instead of building everything from scratch.</p>
-<p>Spring Boot allows to configure how and when dependencies are provided to your application at runtime. This puts you in control of how your application operates in different scenarios. Injection Dependencies will be used to connect and use different technologies in our project, wih some pre-build packages that will make easier to interact between each technology used in our application.</p>
+<p>Spring Boot allows to configure how and when dependencies are provided to your application at runtime. This puts you in control of how your applqication operates in different scenarios. Injection Dependencies will be used to connect and use different technologies in our project, wih some pre-build packages that will make easier to interact between each technology used in our application.</p>
 </section>
 <section id="spring-initializr" class="level3">
 <h3 class="anchored" data-anchor-id="spring-initializr">Spring Initializr</h3>
@@ -190,6 +192,31 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="summary">Summary</h3>
 <p>API contracts are a popular means for API providers and consumers to agree upon how an API will behave. API contracts can be as simple as shared documentation to sophisticated contract management and validation frameworks. Combined with JSON, the most popular data interchange format for modern web-based applications, contracts can be a powerful means to help API providers and consumers develop and test APIs.</p>
 <p>You’ll implement automated testing and verification of API contracts later in this course.</p>
+</section>
+<section id="rest" class="level3">
+<h3 class="anchored" data-anchor-id="rest">REST</h3>
+<p>REST means Representational State Transfer. In a RESTful system, data objects are called Resource Representations. API REST purpose is to manage the state (values) of those resources (or objects).</p>
+<p>The most common REST operations are CRUD (Create, Read, Update, Delete), operations.</p>
+<p>REST request are made via HTTP. A caller send a request to a URL. The web server recives the request and route it to a request handler. The handler creates a repons and send it back to the caller.</p>
+</section>
+<section id="elements-of-the-request" class="level3">
+<h3 class="anchored" data-anchor-id="elements-of-the-request">Elements of the request</h3>
+<p>Request</p>
+<ul>
+<li>Method (also called Verb)</li>
+<li>URI (also called Endpoint)</li>
+<li>Body</li>
+</ul>
+<p>Response</p>
+<ul>
+<li>Status Code</li>
+<li>Body</li>
+</ul>
+<p>For CRUD operations the API request are:</p>
+<pre><code>For CREATE: use HTTP method POST.
+For READ: use HTTP method GET.
+For UPDATE: use HTTP method PUT.
+For DELETE: use HTTP method DELETE.</code></pre>
 
 
 </section>
