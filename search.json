@@ -39,7 +39,7 @@
     "href": "ifcd0210/deliveries.html#deliveries",
     "title": "IFCD0210",
     "section": "Deliveries",
-    "text": "Deliveries\n\n\n\n\nCode\nDate\nDelivery\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\n- Website: WebApp Quarto  - GitHub repo: Repo\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto with advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto with Document Listings\n\n\nMF01-0492\n21/02/2023\n- WebApp Quarto with Api REST call to server and render the data from JSON  - WebApp Quarto with Observable JS script cell"
+    "text": "Deliveries\n\n\n\n\nCode\nDate\nDelivery\n\n\n\n\nMF01-0491\n12/12/2022\nFront-end\n\n\nUF01-1841\n13/01/2023\n- Website: WebApp Quarto  - GitHub repo: Repo\n\n\nUF02-1842\n10/02/2023\nWebApp Quarto with advanced features: markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted\n\n\nUF03-1843\n20/02/2023\nWebApp Quarto with Document Listings\n\n\nMF01-0492\n21/02/2023\n- WebApp Quarto with Api REST call to server and render the data from JSON  - WebApp Quarto with Observable JS script cell\n\n\n—\n—\n—\n\n\nMF02-0492\n21/02/2022\nBack-end\n\n\nUF01-1844\n20/03/2023\nStudent Manager MVC Spring [Spring MVC]\n\n\nUF02-1845\n19/04/2023\n\n\n\nUF03-1846\n09/05/2023\n\n\n\nMF02-0492\n10/05/2023"
   },
   {
     "objectID": "laboratories/java_labs/labse00_4.html",
@@ -340,7 +340,7 @@
     "href": "laboratories/spring_boot_labs/spring_boot.html",
     "title": "Spring Boot Laboratories",
     "section": "",
-    "text": "TO-DO: add a description about the content of this site. Will need a left navbar with all the projects listed"
+    "text": "Here’s all the projects developed as part of the Web App Developement course at CIFO La Violeta"
   },
   {
     "objectID": "laboratories/spring_boot_labs/spring_boot_create_project.html",
