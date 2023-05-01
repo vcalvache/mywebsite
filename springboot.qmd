@@ -54,3 +54,31 @@ For these reasons, JSON has largely superseded XML as the most widely used forma
 API contracts are a popular means for API providers and consumers to agree upon how an API will behave. API contracts can be as simple as shared documentation to sophisticated contract management and validation frameworks. Combined with JSON, the most popular data interchange format for modern web-based applications, contracts can be a powerful means to help API providers and consumers develop and test APIs.
 
 You'll implement automated testing and verification of API contracts later in this course.
+
+### REST
+
+REST means Representational State Transfer. In a RESTful system, data objects are called Resource Representations. API REST purpose is to manage the state (values) of those resources (or objects).
+
+The most common REST operations are CRUD (Create, Read, Update, Delete), operations.
+
+REST request are made via HTTP. A caller send a request to a URL. The web server recives the request and route it to a request handler. The handler creates a repons and send it back to the caller.
+
+### Elements of the request
+
+Request
+
+  * Method (also called Verb)
+  * URI (also called Endpoint)
+  * Body
+
+Response
+
+  * Status Code
+  * Body
+
+For CRUD operations the API request are:
+
+    For CREATE: use HTTP method POST.
+    For READ: use HTTP method GET.
+    For UPDATE: use HTTP method PUT.
+    For DELETE: use HTTP method DELETE.

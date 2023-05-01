@@ -1,0 +1,299 @@
+---
+title: "UF01-1844: MVC with Spring Boot Thymeleaf"
+date: 03/09/2023
+sidebar: false
+html: 
+    code-tools:
+      source: true
+---
+
+## Subject
+
+Create a Spring MVC Thyemeleaf with all CRUD operations for a single object.
+No persistante needed.
+
+---
+
+#### Model
+
+Student class and attributes. Lombok annotation has been used to create setters, getters and constructors.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Student.java"}
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Student {
+    private String studentID;
+    private String firstName;
+    private String lastName;
+    private String email;
+}
+```
+:::
+---
+#### Utils class
+Created a utils class that will help to create unique ID's for each object and populating our non-persistent DB.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Utils.java"}
+public class Utils {
+
+    public static String createUUID() {
+        UUID uuid = UUID.randomUUID();
+        String id = uuid.toString();
+        return id;
+    }
+
+    public static HashMap<String, Student> populateStudents(int qty, HashMap<String, Student> students ) {
+
+        Faker faker = new Faker();
+        Student newStudent;
+
+        for (int i = 0; i < qty; i++) {
+            newStudent = new Student();
+
+            String studentID = Utils.createUUID();
+            newStudent.setStudentID(studentID);
+
+            String studentFirstName = faker.name().firstName();
+            newStudent.setFirstName(studentFirstName);
+
+            String studentLastName = faker.name().lastName();
+            newStudent.setLastName(studentLastName);
+
+            newStudent.setEmail("fake@email.com");
+
+            students.put(studentID, newStudent);
+
+        }
+        return  students;
+    }
+
+```
+:::
+---
+
+#### Service 
+
+Service class with all the busines logic needed for CRUD operations
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Service.java"}
+@Service
+public class StudentService {
+    public static HashMap<String, Student> students = new HashMap<>();
+
+    static {
+        Utils.populateStudents(5, students);
+    }
+
+    public static void populateDB(int qty) {
+        Utils.populateStudents(qty,students);
+    }
+
+    public  void createStudent(Student student) {
+
+        String  studentID = Utils.createUUID();
+        student.setStudentID(studentID);
+        students.put(studentID, student);
+    }
+
+    public HashMap<String, Student> getAllStudents (){
+        return students;
+    }
+
+    public Student createStudent(){
+        Student student = new Student();
+        student.setEmail("");
+        return student;
+    }
+
+    public Student findStudentByID(String studentID) {
+        return students.getOrDefault(studentID, null);
+    }
+
+    public void updateStudentByStudentID(Student studentFound) {
+        students.put(studentFound.getStudentID(), studentFound);
+    }
+
+    public void deleteStudentByStudentID(String studentID) {
+        students.remove(studentID);
+    }
+}
+
+```
+:::
+
+--- 
+
+#### Controller 
+
+Here is the controller and all the end-points needed to perform CRUD operations
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Controller.java"}
+@Controller
+@RequestMapping("/student")
+public class StudentController {
+
+    @Autowired
+    StudentService studentService;
+
+    @RequestMapping("/students")
+    public String getAllUsers(Model model){
+        // fetch all users, add to model
+        model.addAttribute("students", studentService.getAllStudents());
+        return "student/students";
+    }
+    @RequestMapping("/createStudent")
+    public String createUser(Student student){
+        studentService.createStudent(student);
+        return "redirect:students";
+    }
+
+    @RequestMapping("/studentForm")
+    public String sendForm(){
+
+        return "student/studentForm";
+    }
+
+    @RequestMapping("/packedStudent")
+    public String packedStudents(@RequestParam("studentID") String studentID, Model model){
+
+        Student studentFound = studentService.findStudentByID(studentID);
+
+        if (studentFound != null){
+            model.addAttribute("studentFromController", studentFound);
+            model.addAttribute("message", "Student  found");}
+        else
+            model.addAttribute("message", "Student not found");
+
+        return "student/studentToUpdate";
+    }
+
+    @PostMapping("/updateStudent/{studentID}")
+    public String updateUser(@PathVariable("studentID") String studentID,
+                             Student updatedStudent) {
+
+        Student studentFound = studentService.findStudentByID(studentID);
+
+        if (studentFound != null) {
+            studentService.updateStudentByStudentID(updatedStudent);
+            return "redirect:/student/students";
+        } else return "student/studentNotFound";
+    }
+
+    @RequestMapping("/deleteStudent")
+    public String deleteStudent(@RequestParam("studentID") String studentID) {
+
+        Student studentFound = studentService.findStudentByID(studentID);
+
+        if (studentFound != null) {
+            studentService.deleteStudentByStudentID(studentID);
+            return "redirect:/student/students";
+        } else return "student/studentNotFound";
+
+    }
+
+    @RequestMapping("/studentDetails")
+    public String studentDetails(@RequestParam("studentID") String studentID, Model model) {
+
+        Student studentFound = studentService.findStudentByID(studentID);
+
+        if (studentFound != null) {
+            model.addAttribute("student",studentFound );
+            return "/student/studentDetails";
+        } else return "student/studentNotFound";
+
+    }
+
+    @RequestMapping("/createFakeStudents")
+    public String createFakeStudents (@RequestParam("qty") int qty) {
+        StudentService.populateDB(qty);
+        return "redirect:/student/students";
+    }
+}
+
+```
+:::
+
+---
+
+#### Tree folder project structure
+
+Here's the structure of the project. Note that there's a Index Controller to manage the home page.
+
+![Project Structure](/imgs/school/schoolManagerTree.png){.preview-image}
+
+---
+
+#### Dependencies
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {html}
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+		<dependency>
+			<groupId>com.github.javafaker</groupId>
+			<artifactId>javafaker</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
+```
+:::
+
+
+
+
