@@ -67,5 +67,7 @@ website:
         title: "Spring Boot Laboratories"
         style: "docked"
         contents:
-          - text: "LUF01-1844"
+          - text: "UF01-1844"
             file: laboratories/spring_boot_labs/UF01-1844.qmd
+          - text: "UF02-1845"
+            file: laboratories/spring_boot_labs/UF02-1845.qmd

@@ -1,0 +1,16 @@
+---
+title: "UF02-1845"
+date: 03/09/2023
+sidebar: false
+html: 
+    code-tools:
+      source: true
+---
+
+## Subject
+
+* Create a Spring MVC Thyemeleaf with all CRUD.
+* Connect to a H2 JPA DB.
+* REST Controller (Optional).
+* Composition/Inherence0 (Optional).
+---
