@@ -2,7 +2,7 @@ project:
   type: website
 
 format:
-  html:
+   html:
     theme:
       light: spacelab
       dark: cyborg
@@ -29,8 +29,9 @@ website:
       - text: "About me"
         file: about_me/about.qmd  
 
-  sidebar:      
-      - title: "Labs"
+  sidebar:    
+      - id: javalabs
+        title: "Java Laboratories"
         style: "docked"
         contents:
           - text: "Lab#SE00-01"
@@ -61,9 +62,10 @@ website:
             file: laboratories/java_labs/labse03_2.qmd
           - text: "Lab#SE03-03"
             file: laboratories/java_labs/labse03_3.qmd
-  
-
-
-
-
-
+   
+      - id: springlabs
+        title: "Spring Boot Laboratories"
+        style: "docked"
+        contents:
+          - text: "LUF01-1844"
+            file: laboratories/spring_boot_labs/UF01-1844.qmd

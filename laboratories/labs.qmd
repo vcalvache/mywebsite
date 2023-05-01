@@ -10,7 +10,7 @@ listing:
         - "spring_boot.qmd"
     sort: date
     max-description-length: 0    
-sidebar: false        
+sidebar: false      
 ---
 
 Here is a table with all the laboratories made during the Web APP Developement course

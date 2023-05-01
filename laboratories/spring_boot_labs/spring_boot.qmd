@@ -1,9 +1,8 @@
 ---
 title: "Spring Boot Laboratories"
 date: 03/08/2023
-sidebar: false
+sidebar: springlabs
 ---
 
-TO-DO: add a description about the content of this site. 
-Will need a left navbar with all the projects listed
+Here's all the projects developed as part of the Web App Developement course at CIFO La Violeta
 

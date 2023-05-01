@@ -16,7 +16,7 @@ You can use Spring to build an aplications.  we will use Spring MVC for the web 
 
 Spring Boot makes easier to work with spring. It cames with some pre-configurated settings that allows to build apps instead of building everything from scratch.
 
-Spring Boot allows to configure how and when dependencies are provided to your application at runtime. This puts you in control of how your application operates in different scenarios.
+Spring Boot allows to configure how and when dependencies are provided to your application at runtime. This puts you in control of how your applqication operates in different scenarios.
 Injection Dependencies will be used to connect and use different technologies in our project, wih some pre-build packages that will make easier to interact between each technology used in our application.
 
 ### Spring Initializr

@@ -42,3 +42,9 @@ Here you can read the subjects to be delivered:
 | UF02-1842 | 10/02/2023  | WebApp Quarto with [advanced features](https://vcalvache.github.io/mywebsite/laboratories/advanced_features.html): markdown basics, figures, tables, Mermaid Diagrams, callout, cross-references, code highlighted   |
 | UF03-1843 | 20/02/2023  | WebApp Quarto with [Document Listings](https://vcalvache.github.io/mywebsite/laboratories/labs.html)|
 | MF01-0492 | 21/02/2023  |  - WebApp Quarto  with [Api REST call to server and render the data from JSON](https://vcalvache.github.io/mywebsite/laboratories/api_rest_call.html) </br>  - WebApp Quarto with [Observable JS script cell](https://vcalvache.github.io/mywebsite/laboratories/observable_js_cell.html) |
+|---|---|---|
+| **MF02-0492**  | **21/02/2022**  | **Back-end** |
+| UF01-1844 | 20/03/2023  | Student Manager MVC Spring [Spring MVC] |
+| UF02-1845 | 19/04/2023  |  |
+| UF03-1846 | 09/05/2023  |  |
+| MF02-0492 | 10/05/2023  |  |
