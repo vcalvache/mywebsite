@@ -1,0 +1,178 @@
+---
+title: "UF02-1845"
+date: 03/09/2023
+sidebar: false
+html: 
+    code-tools:
+      source: true
+---
+
+## Subject
+
+* Create a Spring API REST with all CRUD.
+* Connect to a MONGO DB.
+---
+
+
+#### Model
+
+Movie class and attributes. Lombok annotation has been used to create setters, getters and constructors.
+`Document` and `Id` annotation used to storage Data on DB.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Movie.java"}
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Document(collection = "movies")
+public class Movie {
+    @Id
+    private ObjectId id;
+    private String imdbId;
+    private String title;
+    private String releaseDate;
+    private String trailer;
+    private String poster;
+    private List<String> generes;
+    private List<String> backdrops;
+    @DocumentReference
+    // this annotation relationes review id and stores to the list.
+    private List<Review> reviewIds;
+}
+```
+:::
+---
+
+Review class and attributes. Lombok annotation has been used to create setters, getters and constructors.
+`Document`and `id` annotation used to storage Data on DB.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Review.java"}
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Document(collection = "reviews")
+public class Review {
+    @Id
+    private ObjectId id;
+    private String reviewBody;
+
+    public Review(String reviewBody) {
+        this.reviewBody = reviewBody;
+    }
+}
+```
+:::
+---
+
+
+#### Service 
+
+Service class with all the busines logic needed for CRUD operations for both classes.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="MovieService.java"}
+@Service
+public class MovieService {
+    @Autowired
+    MovieRepository movieRepository;
+    public List<Movie> getAllMovies(){
+            return movieRepository.findAll();
+    }
+
+    public Optional<Movie> getMovieById(ObjectId id){
+        return movieRepository.findById(id);
+    }
+
+    public Optional<Movie> getMovieByImdbId(String imdbId){
+        return movieRepository.findMovieByImdbId(imdbId);
+    }
+
+}
+
+@Service
+public class ReviewService {
+    @Autowired
+    ReviewRepository reviewRepository;
+
+    @Autowired
+    private MongoTemplate mongoTemplate;
+
+    //Review is created and performs the update operation on tue Movie object
+    public Review createReview(String reviewBody, String imdbId){
+        Review newReview = reviewRepository.insert(new Review(reviewBody));
+
+        mongoTemplate.update(Movie.class)
+                .matching(Criteria.where("imdbId").is(imdbId))
+                .apply(new Update().push("reviewIds").value(newReview)).first();
+        return newReview;
+    }
+}
+
+```
+:::
+
+--- 
+
+#### Controller 
+
+Here is the controllers and all the end-points needed to perform CRUD operations for both classes.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Controller.java"}
+@RestController
+@RequestMapping("/api/movies")
+public class MovieController {
+
+    @Autowired
+    MovieService movieService;
+    @GetMapping
+    // returning a Response Entity with the 200 HTTP code as a return
+    public ResponseEntity<List<Movie>> allMovies(){
+        return new ResponseEntity<List<Movie>>(movieService.getAllMovies(), HttpStatus.OK);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Optional<Movie>> getMovieById(@PathVariable ObjectId id){
+        return new ResponseEntity<Optional<Movie>>(movieService.getMovieById(id), HttpStatus.OK);
+    }
+
+    @GetMapping("/imdbId/{imdbId}")
+    public ResponseEntity<Optional<Movie>> getMovieByImdbId(@PathVariable String imdbId){
+        return new ResponseEntity<Optional<Movie>>(movieService.getMovieByImdbId(imdbId), HttpStatus.OK);
+    }
+}
+
+@RestController
+@RequestMapping("/api/reviews")
+public class ReviewController {
+    @Autowired
+    ReviewService reviewService;
+
+    @PostMapping
+    public ResponseEntity<Review> createReview(@RequestBody Map<String, String> payload){
+        return new ResponseEntity<Review>(reviewService.createReview(payload.get("reviewBody"), payload.get("imdbId")), HttpStatus.CREATED);
+
+    }
+}
+
+```
+:::
+
+---
+
+#### Tree folder project structure
+
+Here's the structure of the project. Note that there's a Index Controller to manage the home page.
+
+![Project Structure](/imgs/school/schoolManagerTree.png){.preview-image}
+
+---
+
+#### Repository
+
+Source code here [GitHub](https://github.com/vcalvache/springboot_labs/tree/main/movie-review)

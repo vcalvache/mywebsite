@@ -1,5 +1,0 @@
----
-title: "UF01-1844: MVC with Spring Boot Thymeleaf"
-date: 03/09/2023
-sidebar: false
----

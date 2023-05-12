@@ -293,7 +293,3 @@ Here's the structure of the project. Note that there's a Index Controller to man
 </project>
 ```
 :::
-
-
-
-

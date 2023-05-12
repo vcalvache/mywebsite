@@ -14,3 +14,213 @@ html:
 * REST Controller (Optional).
 * Composition/Inherence0 (Optional).
 ---
+
+#### Project
+
+This Project has been developed during the Webb App Developement course. 
+We are building an app that allows Board Game players to track their games collection,
+open game sessions where other players can join and save all the plays.
+
+---
+
+#### Model
+
+On this section i'm only covering the part that i've developed, the class Boardgame, all the crud operations for the MVC model an the Rest controller.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="BoardGame.java"}
+@Data
+@AllArgsConstructor
+@Entity(name="BoardGame")
+@Table(name="BOARDGAME_TABLE")
+
+public class BoardGame {
+
+    @Id
+    @GenericGenerator(name="system-uuid", strategy="uuid")
+    @Column(name="gameID", updatable=false)
+    private String gameID;
+    @Column(name="gameTitle")
+    private String gameTitle;
+    @Column(name="minPlayers")
+    private int minPlayers;
+    @Column(name="maxPlayers")
+    private int maxPlayers;
+    @Column(name="minPlayTime")
+    private int minPlayTime;
+    @Column(name="maxPlayTime")
+    private int maxPlayTime;
+
+    public BoardGame(String gameTitle){
+        this.gameID = Helpers.generateUUID();
+        this.gameTitle = gameTitle;
+        this.minPlayers = 0;
+        this.maxPlayers = 0;
+        this.minPlayTime = 0;
+        this.maxPlayTime = 0;
+    }
+    public BoardGame(String gameTitle, int minPlayers, int maxPlayers, int minPlayTime, int maxPlayTime){
+        this.gameID = Helpers.generateUUID();
+        this.gameTitle = gameTitle;
+        this.minPlayers = minPlayers;
+        this.maxPlayers = maxPlayers;
+        this.minPlayTime = minPlayTime;
+        this.maxPlayTime = maxPlayTime;
+    }
+
+    public BoardGame(){
+        this.gameID = Helpers.generateUUID();
+    }
+}
+```
+:::
+---
+
+#### Service 
+
+Service class with all the busines logic needed for CRUD operations.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="BoardGameService.java"}
+@@Service
+public class BoardGameService {
+    @Autowired
+    BoardGameRepository boardGameRepository;
+
+    public Iterable<BoardGame> getAllBoardGames() {
+
+        return boardGameRepository.findAll();
+    }
+
+    public BoardGame createGame(BoardGame game){
+        BoardGame newGame = boardGameRepository.save(game);
+        return newGame;
+    }
+
+
+    public boolean addBoardGameToDB(BoardGame game){
+
+        if (boardGameRepository.findById(game.getGameID()).isPresent()){
+            return false;
+        }
+        boardGameRepository.save(game);
+        return true;
+    }
+    
+    public BoardGame getGameByID(String gameID) {
+        Optional<BoardGame> gameFromDB = boardGameRepository.findByGameID(gameID);
+        if (gameFromDB.isPresent()) {
+            return gameFromDB.get();
+        }
+
+        return null;
+    }
+
+    public BoardGame getGameByGameTitle(String gameTitle){
+        Optional<BoardGame> gameFromDB = boardGameRepository.findByGameTitle(gameTitle);
+        if (gameFromDB.isPresent()){
+            return gameFromDB.get();
+        }
+        return null;
+    }
+
+    public boolean deleteGameFromDB(BoardGame game){
+        if (boardGameRepository.findById(game.getGameID()).isPresent()){
+            boardGameRepository.delete(game);
+            return true;
+        }
+        return false;
+    }
+
+    public boolean updateGameFromDB(BoardGame game){
+        if(boardGameRepository.existsById(game.getGameID())){
+            BoardGame gameFromDB = boardGameRepository.findById(game.getGameID()).get();
+
+            if (gameFromDB.getGameTitle() != game.getGameTitle()){
+                gameFromDB.setGameTitle(game.getGameTitle());
+            }
+            if (gameFromDB.getMinPlayers()!= game.getMinPlayers()){
+                gameFromDB.setMinPlayers(game.getMinPlayers());
+            }
+            if (gameFromDB.getMaxPlayers()!= game.getMaxPlayers()){
+                gameFromDB.setMaxPlayers(game.getMaxPlayers());
+            }
+            if (gameFromDB.getMinPlayTime()!= game.getMinPlayTime()){
+                gameFromDB.setMinPlayTime(game.getMinPlayTime());
+            }
+            if (gameFromDB.getMaxPlayTime()!= game.getMaxPlayTime()){
+                gameFromDB.setMaxPlayTime(game.getMaxPlayTime());
+            }
+            boardGameRepository.save(gameFromDB);
+            return true;
+        }
+        return false;
+    }
+}
+
+```
+:::
+
+--- 
+
+#### Controller 
+
+Here is the controllers and all the end-points needed to perform CRUD operations for both classes.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Controller.java"}
+@RestController
+@RequestMapping("/api/movies")
+public class MovieController {
+
+    @Autowired
+    MovieService movieService;
+    @GetMapping
+    // returning a Response Entity with the 200 HTTP code as a return
+    public ResponseEntity<List<Movie>> allMovies(){
+        return new ResponseEntity<List<Movie>>(movieService.getAllMovies(), HttpStatus.OK);
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Optional<Movie>> getMovieById(@PathVariable ObjectId id){
+        return new ResponseEntity<Optional<Movie>>(movieService.getMovieById(id), HttpStatus.OK);
+    }
+
+    @GetMapping("/imdbId/{imdbId}")
+    public ResponseEntity<Optional<Movie>> getMovieByImdbId(@PathVariable String imdbId){
+        return new ResponseEntity<Optional<Movie>>(movieService.getMovieByImdbId(imdbId), HttpStatus.OK);
+    }
+}
+
+@RestController
+@RequestMapping("/api/reviews")
+public class ReviewController {
+    @Autowired
+    ReviewService reviewService;
+
+    @PostMapping
+    public ResponseEntity<Review> createReview(@RequestBody Map<String, String> payload){
+        return new ResponseEntity<Review>(reviewService.createReview(payload.get("reviewBody"), payload.get("imdbId")), HttpStatus.CREATED);
+
+    }
+}
+
+```
+:::
+
+---
+
+#### Tree folder project structure
+
+Here's the structure of the project. Note that there's a Index Controller to manage the home page.
+
+![Project Structure](/imgs/school/schoolManagerTree.png){.preview-image}
+
+---
+
+#### Repository
+
+Source code here [GitHub](https://github.com/vcalvache/springboot_labs/tree/main/movie-review)
