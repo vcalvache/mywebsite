@@ -167,60 +167,351 @@ public class BoardGameService {
 
 #### Controller 
 
-Here is the controllers and all the end-points needed to perform CRUD operations for both classes.
+Here is the controllers and all the end-points needed to perform CRUD operations with thymeleaf.
 
 ::: {.callout-note collapse="true"}
 ### Expand to reveal code
-``` {.java .code-overflow-wrap filename="Controller.java"}
-@RestController
-@RequestMapping("/api/movies")
-public class MovieController {
-
+``` {.java .code-overflow-wrap filename="BoardGameController.java"}
+@Controller
+@RequestMapping("/boardgames")
+public class BoardGameController {
     @Autowired
-    MovieService movieService;
-    @GetMapping
-    // returning a Response Entity with the 200 HTTP code as a return
-    public ResponseEntity<List<Movie>> allMovies(){
-        return new ResponseEntity<List<Movie>>(movieService.getAllMovies(), HttpStatus.OK);
+    BoardGameService boardGameService;
+
+    @RequestMapping({"/", ""})
+    public String index(Model containerToView) {
+        // Retrieve all available users
+        containerToView.addAttribute("boardGamesFromController", boardGameService.getAllBoardGames());
+        return "boardgames/index";
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Optional<Movie>> getMovieById(@PathVariable ObjectId id){
-        return new ResponseEntity<Optional<Movie>>(movieService.getMovieById(id), HttpStatus.OK);
+    @GetMapping(value = {"/creategame", "/creategame/"})
+    public String createBoardGame(Model containerToView) {
+        containerToView.addAttribute("boardgame", new BoardGame());
+        containerToView.addAttribute("operation", "creategame");
+        return "boardgames/creategame.html";
     }
 
-    @GetMapping("/imdbId/{imdbId}")
-    public ResponseEntity<Optional<Movie>> getMovieByImdbId(@PathVariable String imdbId){
-        return new ResponseEntity<Optional<Movie>>(movieService.getMovieByImdbId(imdbId), HttpStatus.OK);
+    @PostMapping(value = "/creategame/{id}")
+    public String createBoardGame(@PathVariable("id") String gameTitle, Optional<BoardGame> game){
+        if(boardGameService.getGameByGameTitle(gameTitle) != null){
+            return "Already on DB";
+        }
+        if(game.isPresent()) {
+            boardGameService.addBoardGameToDB(game.get());
+            //TODO: add a confirmation message with redirection
+        }
+        return "redirect:/boardgames/creategame";
     }
-}
 
-@RestController
-@RequestMapping("/api/reviews")
-public class ReviewController {
-    @Autowired
-    ReviewService reviewService;
+    @GetMapping(value = "/id/{id}")
+    public String getGameByID(@PathVariable("id") String id, Model containerToView) {
+        BoardGame gameFromDB = boardGameService.getGameByID(id);
+        containerToView.addAttribute("boardgame", gameFromDB);
+        return "boardgames/gameDetails";
+    }
+    @GetMapping(value = "game/{gameTitle}")
+    public String getByGameTitle(@PathVariable("gameTitle") String gameTitle, Model containerToView) {
+        BoardGame gameFromDB = boardGameService.getGameByGameTitle(gameTitle);
+        containerToView.addAttribute("boardgame", gameFromDB);
+        return "boardgames/gameDetails";
+    }
 
-    @PostMapping
-    public ResponseEntity<Review> createReview(@RequestBody Map<String, String> payload){
-        return new ResponseEntity<Review>(reviewService.createReview(payload.get("reviewBody"), payload.get("imdbId")), HttpStatus.CREATED);
+    @GetMapping("/deleteGame/{id}")
+    public String deleteGame(@PathVariable("id") String id) {
+        BoardGame toDelete = boardGameService.getGameByID(id);
+        boardGameService.deleteGameFromDB(toDelete);
+        return "redirect:/boardgames/";
+    }
 
+    @GetMapping(value = "/updategame/{id}")
+    public String updateBoardGame(@PathVariable("id") String id, Model containerToView) {
+        // Retrieve the user based on the provided ID
+            BoardGame gameFromDB = boardGameService.getGameByID(id);
+            containerToView.addAttribute("boardgame", gameFromDB);
+            return "boardgames/updategame";
+        }
+
+    @PostMapping(value = "/updategame/{id}")
+    public String updateBoardGame(@PathVariable("id") String id, Optional<BoardGame> updatedGame) {
+        BoardGame gameToUpdate = boardGameService.getGameByID(id);
+
+        if (updatedGame.isPresent()) {
+            if (gameToUpdate != null  && updatedGame.get().getGameID().equals(gameToUpdate.getGameID())) {
+                boardGameService.updateGameFromDB(updatedGame.get());
+            }
+        }
+        // Redirect to the GET method
+        return "redirect:/boardgames/updategame/" + id;
     }
 }
 
 ```
 :::
 
----
+#### Reposiory class
 
-#### Tree folder project structure
-
-Here's the structure of the project. Note that there's a Index Controller to manage the home page.
-
-![Project Structure](/imgs/school/schoolManagerTree.png){.preview-image}
+Code for the repository Interface. Implemented with the CrudRepository framework by Spring Boot.
 
 ---
 
-#### Repository
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="BoardGameRepository.java"}
+public interface BoardGameRepository extends CrudRepository<BoardGame, String> {
+    Optional<BoardGame> findByGameTitle(String gameTitle);
+    Optional<BoardGame> findByGameID(String gameID);
+}
+```
+:::
 
-Source code here [GitHub](https://github.com/vcalvache/springboot_labs/tree/main/movie-review)
+---
+#### HTML templates
+
+Here's the templates used to implement the CRUD operations with TH implementation.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="Index.html.java"}
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>boardgames</title>
+</head>
+<body>
+    <h1>Board Games</h1>
+
+    <table border="2">
+        <tr>
+            <th>GameID</th>
+            <th>Game Title</th>
+            <th>Min players</th>
+            <th>Max Players</th>
+            <th>Min playtime</th>
+            <th>Max playtime</th>
+        </tr>
+    <tr th:each="boardgame: ${boardGamesFromController}">
+            <td th:text="${boardgame.gameID}"></td>
+            <td th:text="${boardgame.gameTitle}"></td>
+            <td th:text="${boardgame.minPlayers}"></td>
+            <td th:text="${boardgame.maxPlayers}"></td>
+            <td th:text="${boardgame.minPlayTime}"></td>
+            <td th:text="${boardgame.maxPlayTime}"></td>
+            <td> <a th:href="@{/boardgames/id/{id}(id = ${boardgame.gameID})}">Details by id reference</a> </td>
+            <td> <a th:href="@{/boardgames/game/{id}(id = ${boardgame.gameTitle})}">Details by title reference</a></td>
+            <td> <a th:href="@{/boardgames/updategame/{id}(id = ${boardgame.gameID})}">Update</a> </td>
+            <td> <a th:href="@{/boardgames/deleteGame/{id}(id = ${boardgame.gameID})}">Delete</a> </td>
+        </tr>
+    </table>
+    <br>
+    <p><a th:href="@{/boardgames/creategame}">Create new Board Game</a></p>
+    <p><a th:href="@{/}" >Go back</a></p>
+
+</body>
+</html>
+```
+:::
+---
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="creategame.java"}
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Create new Board Game</title>
+</head>
+<body>
+    <h1>Create new Board Game</h1>
+
+    <form th:action="@{/boardgames/{operation}/{id}(operation=${operation}, id=${boardgame.gameID})}" th:object="${boardgame}" method="post">
+        <label for="gameTitle">Game Title:</label>
+        <input th:field="*{gameTitle}" type="text" name ="gameTitle" id="gameTitle"><br>
+        <label for="minPlayers">Min players:</label><br>
+        <input th:field="*{minPlayers}" type="text" name ="minPlayers" id="minPlayers"><br>
+        <label for="maxPlayers">Max players:</label><br>
+        <input th:field="*{maxPlayers}" type="text"  name ="maxPlayers" id="maxPlayers"><br>
+        <label for="minPlayTime">Min play time:</label><br>
+       <input th:field="*{minPlayTime}"type="text" name ="minPlayTime" id="minPlayTime"><br>
+        <label for="maxPlayTime">Max Play time:</label><br>
+       <input th:field="*{maxPlayTime}" type="text" name ="maxPlayTime" id="maxPlayTime"><br>
+        <input type="submit" value="Submit"/>
+        <input type="reset" value="Reset fields"/>
+    </form>
+
+    <p><a th:href="@{/boardgames}">Go back</a></p>
+
+</body>
+</html>
+```
+:::
+---
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="gameDetails.java"}
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Details</title>
+</head>
+<body>
+<h1>Game</h1>
+  <div th:object="${boardgame}">
+    <p><b>Game ID: </b><td th:text="${boardgame.gameID}"></td></p>
+    <p><b>Game Title: </b><td th:text="${boardgame.gameTitle}"></td></p>
+    <p><b>Min Players: </b><td th:text="${boardgame.minPlayers}"></td></p>
+    <p><b>Max Players: </b><td th:text="${boardgame.maxPlayers}"></td></p>
+    <p><b>Min Play Time: </b><td th:text="${boardgame.minPlayTime}"></td></p>
+    <p><b>max Play Time: </b><td th:text="${boardgame.maxPlayTime}"></td></p>
+  </div>
+  <td> <a th:href="@{/boardgames/updategame/{id}(id = ${boardgame.gameID})}">Update</a> </td>
+  <p><a th:href="@{/boardgames}" >Go back</a></p>
+
+</body>
+</html>
+```
+:::
+
+---
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="updategame.java"}
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Update</title>
+</head>
+<body>
+<h1>Game parameters</h1>
+<div th:object="${boardgame}">
+  <p><b>Game ID: </b><td th:text="${boardgame.gameID}"></td></p>
+  <p><b>Game Title: </b><label  th:text="${boardgame.gameTitle}" /></td></p>
+  <p><b>Min Players: </b><td th:text="${boardgame.minPlayers}"></td></p>
+  <p><b>Max Players: </b><td th:text="${boardgame.maxPlayers}"></td></p>
+  <p><b>Min Play Time: </b><td th:text="${boardgame.minPlayTime}"></td></p>
+  <p><b>max Play Time: </b><td th:text="${boardgame.maxPlayTime}"></td></p>
+
+  <form th:action="@{/boardgames/updategame/{id}(operation=${operation}, id=${boardgame.gameID})}" th:object="${boardgame}" method="post">
+    <label for="gameID">Game ID:</label><br>
+    <input th:field="*{gameID}" type="text" name ="gameID" id="gameID" readonly><br>
+    <label for="gameTitle">Game Title:</label><br>
+    <input th:field="*{gameTitle}" type="text" name ="gameTitle" id="gameTitle"><br>
+    <label for="minPlayers">Min players:</label><br>
+    <input th:field="*{minPlayers}" type="text" name ="minPlayers" id="minPlayers"><br>
+    <label for="maxPlayers">Max players:</label><br>
+    <input th:field="*{maxPlayers}" type="text"  name ="maxPlayers" id="maxPlayers"><br>
+    <label for="minPlayTime">Min play time:</label><br>
+    <input th:field="*{minPlayTime}"type="text" name ="minPlayTime" id="minPlayTime"><br>
+    <label for="maxPlayTime">Max Play time:</label><br>
+    <input th:field="*{maxPlayTime}" type="text" name ="maxPlayTime" id="maxPlayTime"><br>
+    <input type="submit" value="Submit"/>
+    <input type="reset" value="Reset fields"/>
+  </form>
+
+</div>
+public interface BoardGameRepository extends CrudRepository<BoardGame, String> {
+    Optional<BoardGame> findByGameTitle(String gameTitle);
+    Optional<BoardGame> findByGameID(String gameID);
+}
+<p><a th:href="@{/boardgames/id/{id}(id = ${boardgame.gameID})}">Go Back</a></p>
+
+</body>
+</html>
+```
+:::
+
+---
+
+#### API REST implementation
+
+Here's the class that implements the REST controller to acces DB and obtaining JSON files.
+
+::: {.callout-note collapse="true"}
+### Expand to reveal code
+``` {.java .code-overflow-wrap filename="BoardGameRestController.java"}
+@RestController
+@RequestMapping("/api")
+public class BoardGameRestController {
+
+    @Autowired
+    BoardGameService gameService;
+
+    @GetMapping("")
+    public String index(){
+        return "Welcome to Meeple Match API!";
+    }
+
+    @GetMapping("/boardgames/")
+    public Iterable<BoardGame> getAllGames(){
+        return gameService.getAllBoardGames();
+    }
+
+    @GetMapping("/title/{gameTitle}")
+    public BoardGame getGameByTitle(@PathVariable String gameTitle){
+        Optional<BoardGame> game = Optional.ofNullable(gameService.getGameByGameTitle(gameTitle));
+        if (game.isPresent()){
+            return game.get();
+        }
+        return null;
+    }
+
+    @GetMapping("/id/{gameID}")
+    public BoardGame getGameByID(@PathVariable String gameID){
+        Optional<BoardGame> game = Optional.ofNullable(gameService.getGameByID(gameID));
+        if (game.isPresent()){
+            return game.get();
+        }
+        return null;
+    }
+    @PostMapping(path="createGame", consumes = "application/JSON")
+    public BoardGame createGame(@RequestBody BoardGame game){
+        BoardGame newGame = gameService.createGame(game);
+        return newGame;
+    }
+
+    @DeleteMapping("/deleteGame")
+    public ResponseEntity<BoardGame> deleteGame(@RequestParam("gameID") String gameID){
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("operation", "deleteGame");
+        headers.add("version", "api 1.0");
+
+        Optional<BoardGame> gameFound = Optional.ofNullable(gameService.getGameByID(gameID));
+        boolean game = gameFound.isPresent();
+        if (game){
+            gameService.deleteGameFromDB(gameFound.get());
+            headers.add("operationStatus", "deleted");
+            return ResponseEntity.accepted().headers(headers).body(gameFound.get());
+        }
+        return ResponseEntity.accepted().body(null);
+    }
+
+    @PutMapping("/updateGame/")
+    public ResponseEntity<BoardGame> updateGame(@RequestBody BoardGame game){
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.add("operation", "updateGame");
+        headers.add("version", "api 1.0");
+        Optional<BoardGame> gameFromDB= Optional.ofNullable(gameService.getGameByID(game.getGameID()));
+
+        if (gameFromDB.isPresent()){
+            gameService.updateGameFromDB(game);
+            headers.add("operationStatus", "updated");
+            return  ResponseEntity.accepted().headers(headers).body(gameService.getGameByID(game.getGameID()));
+        }
+        return ResponseEntity.accepted().headers(headers).body(null);
+    }
+}
+```
+:::
+
+---
+
+#### GitHub
+
+Source code to the project's source code [GitHub](https://github.com/vcalvache/gameBoardStats/tree/main/tindergames)
