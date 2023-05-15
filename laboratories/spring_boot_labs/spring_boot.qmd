@@ -1,8 +1,0 @@
----
-title: "Spring Boot Laboratories"
-date: 03/08/2023
-sidebar: springlabs
----
-
-Here's all the projects developed as part of the Web App Developement course at CIFO La Violeta
-
