@@ -1,0 +1,17 @@
+---
+title: "Spring Boot: H2 DB and Thymeleaf"
+date: 03/09/2023
+sidebar: false
+---
+
+:::
+📘 Create a Spring Boot Project
+
+Create a Maven Spring Project
+Install H2 DB
+Define Application.properties
+Create Model: @Entity Book and JPA @Repository
+Create @Controller and @Service
+Create HTML template with Thymeleaf
+:::
+

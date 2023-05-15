@@ -2,7 +2,7 @@ project:
   type: website
 
 format:
-   html:
+  html:
     theme:
       light: spacelab
       dark: cyborg
