@@ -9,8 +9,7 @@ description:  Java SE Lab 02, part 1 work on the Model
 categories: [javase, lab, composition, model]
 toc: true
 number-sections: true
-format:
-    html
+format: html
 ---
 
 ## **Goal**

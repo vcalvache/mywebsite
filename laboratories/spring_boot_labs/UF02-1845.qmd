@@ -2,8 +2,6 @@
 title: "UF02-1845"
 date: 03/09/2023
 sidebar: false
-format:
-    html
 ---
 
 ## Subject
@@ -266,165 +264,14 @@ public interface BoardGameRepository extends CrudRepository<BoardGame, String> {
 :::
 
 ---
+
 #### HTML templates
 
 Here's the templates used to implement the CRUD operations with TH implementation.
 
-::: {.callout-note collapse="true"}
-### Expand to reveal code
-``` {.java .code-overflow-wrap filename="Index.html.java"}
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>boardgames</title>
-</head>
-<body>
-    <h1>Board Games</h1>
-
-    <table border="2">
-        <tr>
-            <th>GameID</th>
-            <th>Game Title</th>
-            <th>Min players</th>
-            <th>Max Players</th>
-            <th>Min playtime</th>
-            <th>Max playtime</th>
-        </tr>
-    <tr th:each="boardgame: ${boardGamesFromController}">
-            <td th:text="${boardgame.gameID}"></td>
-            <td th:text="${boardgame.gameTitle}"></td>
-            <td th:text="${boardgame.minPlayers}"></td>
-            <td th:text="${boardgame.maxPlayers}"></td>
-            <td th:text="${boardgame.minPlayTime}"></td>
-            <td th:text="${boardgame.maxPlayTime}"></td>
-            <td> <a th:href="@{/boardgames/id/{id}(id = ${boardgame.gameID})}">Details by id reference</a> </td>
-            <td> <a th:href="@{/boardgames/game/{id}(id = ${boardgame.gameTitle})}">Details by title reference</a></td>
-            <td> <a th:href="@{/boardgames/updategame/{id}(id = ${boardgame.gameID})}">Update</a> </td>
-            <td> <a th:href="@{/boardgames/deleteGame/{id}(id = ${boardgame.gameID})}">Delete</a> </td>
-        </tr>
-    </table>
-    <br>
-    <p><a th:href="@{/boardgames/creategame}">Create new Board Game</a></p>
-    <p><a th:href="@{/}" >Go back</a></p>
-
-</body>
-</html>
-```
-:::
----
-
-::: {.callout-note collapse="true"}
-### Expand to reveal code
-``` {.java .code-overflow-wrap filename="creategame.java"}
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Create new Board Game</title>
-</head>
-<body>
-    <h1>Create new Board Game</h1>
-
-    <form th:action="@{/boardgames/{operation}/{id}(operation=${operation}, id=${boardgame.gameID})}" th:object="${boardgame}" method="post">
-        <label for="gameTitle">Game Title:</label>
-        <input th:field="*{gameTitle}" type="text" name ="gameTitle" id="gameTitle"><br>
-        <label for="minPlayers">Min players:</label><br>
-        <input th:field="*{minPlayers}" type="text" name ="minPlayers" id="minPlayers"><br>
-        <label for="maxPlayers">Max players:</label><br>
-        <input th:field="*{maxPlayers}" type="text"  name ="maxPlayers" id="maxPlayers"><br>
-        <label for="minPlayTime">Min play time:</label><br>
-       <input th:field="*{minPlayTime}"type="text" name ="minPlayTime" id="minPlayTime"><br>
-        <label for="maxPlayTime">Max Play time:</label><br>
-       <input th:field="*{maxPlayTime}" type="text" name ="maxPlayTime" id="maxPlayTime"><br>
-        <input type="submit" value="Submit"/>
-        <input type="reset" value="Reset fields"/>
-    </form>
-
-    <p><a th:href="@{/boardgames}">Go back</a></p>
-
-</body>
-</html>
-```
-:::
----
-
-::: {.callout-note collapse="true"}
-### Expand to reveal code
-``` {.java .code-overflow-wrap filename="gameDetails.java"}
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8">
-  <title>Game Details</title>
-</head>
-<body>
-<h1>Game</h1>
-  <div th:object="${boardgame}">
-    <p><b>Game ID: </b><td th:text="${boardgame.gameID}"></td></p>
-    <p><b>Game Title: </b><td th:text="${boardgame.gameTitle}"></td></p>
-    <p><b>Min Players: </b><td th:text="${boardgame.minPlayers}"></td></p>
-    <p><b>Max Players: </b><td th:text="${boardgame.maxPlayers}"></td></p>
-    <p><b>Min Play Time: </b><td th:text="${boardgame.minPlayTime}"></td></p>
-    <p><b>max Play Time: </b><td th:text="${boardgame.maxPlayTime}"></td></p>
-  </div>
-  <td> <a th:href="@{/boardgames/updategame/{id}(id = ${boardgame.gameID})}">Update</a> </td>
-  <p><a th:href="@{/boardgames}" >Go back</a></p>
-
-</body>
-</html>
-```
-:::
-
----
-
-::: {.callout-note collapse="true"}
-### Expand to reveal code
-``` {.java .code-overflow-wrap filename="updategame.java"}
-<!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head>
-  <meta charset="UTF-8">
-  <title>Game Update</title>
-</head>
-<body>
-<h1>Game parameters</h1>
-<div th:object="${boardgame}">
-  <p><b>Game ID: </b><td th:text="${boardgame.gameID}"></td></p>
-  <p><b>Game Title: </b><label  th:text="${boardgame.gameTitle}" /></td></p>
-  <p><b>Min Players: </b><td th:text="${boardgame.minPlayers}"></td></p>
-  <p><b>Max Players: </b><td th:text="${boardgame.maxPlayers}"></td></p>
-  <p><b>Min Play Time: </b><td th:text="${boardgame.minPlayTime}"></td></p>
-  <p><b>max Play Time: </b><td th:text="${boardgame.maxPlayTime}"></td></p>
-
-  <form th:action="@{/boardgames/updategame/{id}(operation=${operation}, id=${boardgame.gameID})}" th:object="${boardgame}" method="post">
-    <label for="gameID">Game ID:</label><br>
-    <input th:field="*{gameID}" type="text" name ="gameID" id="gameID" readonly><br>
-    <label for="gameTitle">Game Title:</label><br>
-    <input th:field="*{gameTitle}" type="text" name ="gameTitle" id="gameTitle"><br>
-    <label for="minPlayers">Min players:</label><br>
-    <input th:field="*{minPlayers}" type="text" name ="minPlayers" id="minPlayers"><br>
-    <label for="maxPlayers">Max players:</label><br>
-    <input th:field="*{maxPlayers}" type="text"  name ="maxPlayers" id="maxPlayers"><br>
-    <label for="minPlayTime">Min play time:</label><br>
-    <input th:field="*{minPlayTime}"type="text" name ="minPlayTime" id="minPlayTime"><br>
-    <label for="maxPlayTime">Max Play time:</label><br>
-    <input th:field="*{maxPlayTime}" type="text" name ="maxPlayTime" id="maxPlayTime"><br>
-    <input type="submit" value="Submit"/>
-    <input type="reset" value="Reset fields"/>
-  </form>
-
-</div>
-public interface BoardGameRepository extends CrudRepository<BoardGame, String> {
-    Optional<BoardGame> findByGameTitle(String gameTitle);
-    Optional<BoardGame> findByGameID(String gameID);
-}
-<p><a th:href="@{/boardgames/id/{id}(id = ${boardgame.gameID})}">Go Back</a></p>
-
-</body>
-</html>
-```
-:::
+[Create Board Game](https://github.com/vcalvache/gameBoardStats/blob/main/tindergames/src/main/resources/templates/boardgames/creategame.html)
+[Board Game Details](https://github.com/vcalvache/gameBoardStats/blob/main/tindergames/src/main/resources/templates/boardgames/gameDetails.html)
+[Update Board Game](https://github.com/vcalvache/gameBoardStats/blob/main/tindergames/src/main/resources/templates/boardgames/updategame.html)
 
 ---
 

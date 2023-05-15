@@ -12,7 +12,6 @@ format:
 
 website:
   title: "vcalvache"
-  #cookie-consent: true
   
   navbar:
     background: primary
