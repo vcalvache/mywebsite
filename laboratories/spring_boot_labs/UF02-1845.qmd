@@ -269,9 +269,9 @@ public interface BoardGameRepository extends CrudRepository<BoardGame, String> {
 
 Here's the templates used to implement the CRUD operations with TH implementation.
 
-[Create Board Game](https://github.com/vcalvache/gameBoardStats/blob/main/tindergames/src/main/resources/templates/boardgames/creategame.html)
-[Board Game Details](https://github.com/vcalvache/gameBoardStats/blob/main/tindergames/src/main/resources/templates/boardgames/gameDetails.html)
-[Update Board Game](https://github.com/vcalvache/gameBoardStats/blob/main/tindergames/src/main/resources/templates/boardgames/updategame.html)
+[Create Board Game](https://github.com/vcalvache/gameBoardStats/blob/main/tindergames/src/main/resources/templates/boardgames/creategame.html)<br>
+[Board Game Details](https://github.com/vcalvache/gameBoardStats/blob/main/tindergames/src/main/resources/templates/boardgames/gameDetails.html)<br>
+[Update Board Game](https://github.com/vcalvache/gameBoardStats/blob/main/tindergames/src/main/resources/templates/boardgames/updategame.html)<br>
 
 ---
 
