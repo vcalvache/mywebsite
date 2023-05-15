@@ -13,6 +13,7 @@ html:
 * Connect to a H2 JPA DB.
 * REST Controller (Optional).
 * Composition/Inherence0 (Optional).
+
 ---
 
 #### Project
