@@ -51,7 +51,7 @@ Here you can read the subjects to be delivered:
 |---|---|---|
 | **MF02-0492**  | **21/02/2022**  | **Back-end** |
 | UF01-1844 | 20/03/2023  | Student Manager MVC Spring [Spring MVC](../laboratories/spring_boot_labs/UF01-1844.qmd) |
-|           |             | Movie Review API Rest with MONGO DB [Spring API REST](../laboratories/spring_boot_labs/UF01-1845-mongo.qmd) | 
+|           |             | Movie Review API Rest with MONGO DB [Spring API REST](../laboratories/spring_boot_labs/UF02-1845-mongo.qmd) | 
 | UF02-1845 | 19/04/2023  |  |
 | UF03-1846 | 09/05/2023  |  |
 | MF02-0492 | 10/05/2023  |  |
