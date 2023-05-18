@@ -136,6 +136,8 @@ export default RenderCount;
 
 ### useEffect
 
+This block of code renders a countdown. First, a counter with a value of 5 is initialized. Calling useEffect hook starts a regressive countdown. When the value of countr reaches 0, the counter will be set to 0, and useState changes the value from an empty string to a ignition message to let the user know that the rocket has been launched.
+
 ``` {.jsx .code-overflow-wrap filename="useEffect.js"}
 import { useState, useEffect } from "react";
 
