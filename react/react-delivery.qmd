@@ -1,0 +1,169 @@
+---
+title: "React hooks"
+sidebar: false
+---
+
+## UF03-1846
+
+This is a laboratory with simple React hooks to be delivered as part of the `MF02-0492` deliveries.
+
+---
+
+### useState  
+
+This simple hook alows to select the user's favorite color. When the user clicks the button, the color will be rendered and displayed on screen.
+
+At first, the initial state is an empty string. When cliking a color, it set's the state to the new color.
+
+
+[In this example](https://beta.reactjs.org/reference/react/useState#examples-basic){.external}, the ``count`` state variable holds a number. Clicking the ``button`` increments it.
+
+``` {.jsx .code-overflow-wrap filename="useState.js"}
+import { useState } from "react";
+
+function ChooseColor(){
+    const [color, setColor] = useState("");
+
+    return (
+        <div>
+            <h2>useState hook example</h2>
+            <p>
+            <h4>My favorite color is {color}</h4>
+            <button type="button" onClick={() => setColor("blue")}>Blue</button>
+            <button type="button" onClick={() => setColor("red")}>Red</button>
+            <button type="button" onClick={() => setColor("green")}>Green</button>
+            </p>
+        </div>     
+    )
+}
+
+export default ChooseColor;
+```
+
+### useReducer
+
+On this example, a number is initialized with 0 value. There's two buttons, one for increment or decrement the number.
+
+Clicking on each button will dispatch a value for the reducer to run the selected operation. Will return the current state number to be rendered on screen.
+
+``` {.jsx .code-overflow-wrap filename="useReducer.js"}
+import { useReducer } from 'react';
+
+function reducer(state, action) {
+  switch (action.type) {
+    case 'increment': {
+      return {
+        number: state.number + 1
+      };
+    }
+    case 'decrement': {
+        return {
+            number: state.number - 1
+          };
+    }
+  }
+}
+
+const initialState = { number: 0 };
+
+function Clicker() {
+
+    const [state, dispatch] = useReducer(reducer, initialState);
+    
+    function handleIncrement() {
+        dispatch({ type: 'increment' });
+    }
+    
+    function handleDecrement() {
+        dispatch({ type: 'decrement' }); 
+    }
+
+  return (
+    <>
+    <h2>useReducer hook example</h2>
+        <p></p>
+      <p>Number: {state.number}</p>
+      <button onClick={handleIncrement}>
+        Increment
+      </button>
+      <button onClick={handleDecrement}>
+        decrement
+      </button>
+      
+    </>
+  );
+}
+
+export default Clicker;
+```
+
+### useRef
+
+On this useRef example, combined with the useEffect hook, there's a value that starts with the 0 value.
+Each time the user inputs any charatcer on the box, the screen is rendered and can be seen on screen.
+Every change made within the input field, an event is called and increments the value of the useRef value.
+
+
+``` {.jsx .code-overflow-wrap filename="useRef.js"}
+import { useState, useEffect, useRef} from "react";
+
+function RenderCount(){
+    
+    const renderCount = useRef(0);
+    const [value, setValue] = useState("");
+
+    useEffect(() => {
+        renderCount.current = renderCount.current + 1;
+      });
+    
+
+    return(
+        <div>
+        <h2>useRef hook example</h2>
+            <input
+                type="text"
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+            />
+            <h4>Render Count: {renderCount.current}</h4>
+    </div>  
+    );
+}
+
+export default RenderCount;
+
+```
+
+### useEffect
+
+``` {.jsx .code-overflow-wrap filename="useEffect.js"}
+import { useState, useEffect } from "react";
+
+function Rocket(){
+    const [count, setCount] = useState(5);
+    const [engine, setEngine] = useState("");
+
+    useEffect(() => {
+        setTimeout( () => {
+            setCount(() => count - 1);
+            if (count == 0){
+               setCount(0);
+               setEngine("Ignition!");
+           
+            }
+        }, 1000);
+      });
+
+
+    return (
+        <>
+        <h2>useEffect hook example</h2>
+        <p>{count}</p>
+        <p >{engine}</p>
+      </>
+    );
+}
+
+export default Rocket;
+
+```
