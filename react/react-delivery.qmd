@@ -40,6 +40,8 @@ function ChooseColor(){
 export default ChooseColor;
 ```
 
+---
+
 ### useReducer
 
 On this example, a number is initialized with 0 value. There's two buttons, one for increment or decrement the number.
@@ -97,6 +99,8 @@ function Clicker() {
 export default Clicker;
 ```
 
+---
+
 ### useRef
 
 On this useRef example, combined with the useEffect hook, there's a value that starts with the 0 value.
@@ -134,6 +138,8 @@ export default RenderCount;
 
 ```
 
+---
+
 ### useEffect
 
 This block of code renders a countdown. First, a counter with a value of 5 is initialized. Calling useEffect hook starts a regressive countdown. When the value of countr reaches 0, the counter will be set to 0, and useState changes the value from an empty string to a ignition message to let the user know that the rocket has been launched.
@@ -156,7 +162,6 @@ function Rocket(){
         }, 1000);
       });
 
-
     return (
         <>
         <h2>useEffect hook example</h2>
@@ -170,9 +175,10 @@ export default Rocket;
 
 ```
 
+---
 ### useContext
 
-//TODO 
+// TODO 
 
 ``` {.jsx .code-overflow-wrap filename="useContext.js"}
 
