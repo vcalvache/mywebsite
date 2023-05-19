@@ -1,0 +1,13 @@
+---
+title: "Lab#RE02-1: Router & Hooks"
+date: 05/19/2023
+sidebar: false
+---
+
+Starting a project with the `npx create-react-app books` command.
+
+Installin axios framework  on the books folder using the command `npm install axios`
+
+Next step consists on creating a `component` called BookList. This component will use the [Open Library](https://openlibrary.org/) API to retrive data in our application.
+
+
